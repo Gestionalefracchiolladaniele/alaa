@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+tools/_cache/
+da-fornire/clip/
+__pycache__/
+# PDF di partenza: pesanti (23 MB) e il CV contiene dati personali. Restano solo in locale.
+sorgenti/

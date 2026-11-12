@@ -1,0 +1,11 @@
+/* Font auto-ospitati (Fontsource), solo sottoinsieme latino.
+   Titoli: Bodoni Moda · Testo: Cormorant Garamond · Etichette: Jost · Corsivo: Allura */
+@import '@fontsource/bodoni-moda/latin-400.css';
+@import '@fontsource/bodoni-moda/latin-400-italic.css';
+@import '@fontsource/bodoni-moda/latin-500.css';
+@import '@fontsource/cormorant-garamond/latin-400.css';
+@import '@fontsource/cormorant-garamond/latin-400-italic.css';
+@import '@fontsource/cormorant-garamond/latin-600.css';
+@import '@fontsource/jost/latin-400.css';
+@import '@fontsource/jost/latin-500.css';
+@import '@fontsource/allura/latin-400.css';

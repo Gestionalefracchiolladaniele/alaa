@@ -1,0 +1,8 @@
+---
+/* Il tratto bordeaux sotto i titoli delle copertine (ridisegnato in SVG). */
+interface Props { class?: string }
+const { class: cls = '' } = Astro.props;
+---
+<svg class:list={['swoosh', cls]} viewBox="0 0 360 60" fill="none" aria-hidden="true" data-swoosh>
+  <path d="M4 56 C 70 22, 190 4, 356 10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" />
+</svg>

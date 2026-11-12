@@ -1,0 +1,29 @@
+{
+  "name": "Alaa Attal",
+  "signature": "Arch. Alaa Attal",
+  "kicker": "A Multidisciplinary Creative Journey",
+  "motto": "Designing Beyond Boundaries",
+  "disciplines": ["Architecture", "Interior Design", "Real Estate", "Art & Illustration", "Travel & Culture", "Fashion"],
+  "clapper": {
+    "production": "My Creative Journey",
+    "director": "Me",
+    "camera": "Multidisciplinary Approach",
+    "date": "2026",
+    "scene": "Portfolio",
+    "take": "07"
+  },
+  "contacts": {
+    "email": "alaaattal97@gmail.com",
+    "linkedinLabel": "AlaaAttal",
+    "linkedinUrl": "https://www.linkedin.com/in/alaaattal",
+    "instagram": null
+  },
+  "nav": [
+    { "id": "interior", "label": "Interior Design", "short": "Interior", "href": "/#interior" },
+    { "id": "architecture", "label": "Architecture", "short": "Architecture", "href": "/#architecture" },
+    { "id": "real-estate", "label": "Real Estate", "short": "Real Estate", "href": "/#real-estate" },
+    { "id": "art", "label": "Art", "short": "Art", "href": "/#art" },
+    { "id": "fashion", "label": "Fashion", "short": "Fashion", "href": "/#fashion" },
+    { "id": "travel", "label": "Travel", "short": "Travel", "href": "/#travel" }
+  ]
+}

@@ -1,0 +1,33 @@
+---
+import '../styles/fonts.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+}
+const {
+  title,
+  description = 'Arch. Alaa Attal — a multidisciplinary creative journey: architecture, interior design, real estate, art, fashion and travel.',
+  bodyClass = '',
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f8edd9" />
+    <slot name="head" />
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+    <div class="paper-grain" aria-hidden="true"></div>
+  </body>
+</html>

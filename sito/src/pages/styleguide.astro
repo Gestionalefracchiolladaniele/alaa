@@ -1,0 +1,109 @@
+---
+/* Pagina interna di controllo: colori, font e componenti affiancati a p4 e p1 del PDF.
+   Non e' collegata dal menu. */
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import BookNav from '../components/BookNav.astro';
+import Swoosh from '../components/Swoosh.astro';
+import p04 from '../assets/ref/p04.jpg';
+import p01 from '../assets/ref/p01.jpg';
+import ciak from '../assets/ciak.png';
+import tokensCss from '../styles/tokens.css?raw';
+
+const colors = [...tokensCss.matchAll(/--c-([a-z0-9-]+):\s*(#[0-9a-f]{6});\s*\/\*\s*(.*?)\s*\*\//g)].map((m) => ({
+  name: m[1], hex: m[2], note: m[3],
+}));
+---
+<Base title="Styleguide — Alaa Attal">
+  <meta name="robots" content="noindex" slot="head" />
+  <main id="main" class="sg">
+    <header class="wrap sg__head">
+      <p class="label label--rule">Internal page</p>
+      <h1 class="display">Style<span class="accent">guide</span></h1>
+      <p class="muted">Colours sampled from the PDF pages by <code>tools/sample_palette.py</code>. Fonts self-hosted with Fontsource.</p>
+    </header>
+
+    <section class="wrap sg__compare" aria-label="Comparison with page 4">
+      <div class="sg__mock page-frame">
+        <p class="label label--rule">Portfolio section</p>
+        <h2 class="display sg__title">Interior<br /><em class="accent">Design</em></h2>
+        <ul class="label-list label"><li>Spaces</li><li>Concepts</li><li>Materials</li><li>Styling</li></ul>
+        <Swoosh />
+        <p class="script">The Inspiration</p>
+        <p>My work is driven by a deep interest in spaces, people, and the stories they create. I enjoy connecting different disciplines, perspectives, and experiences to develop meaningful and distinctive ideas.</p>
+        <p class="sans small">Sans body (p3 style): I believe creativity has no boundaries. It grows through experiences, cultures, art, and curiosity.</p>
+      </div>
+      <figure class="sg__ref">
+        <Image src={p04} alt="PDF page 4, Interior Design cover" widths={[700, 1100]} sizes="(min-width: 900px) 50vw, 100vw" />
+        <figcaption class="label">PDF p4 (reference)</figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap sg__compare" aria-label="Comparison with page 1">
+      <div class="sg__mock">
+        <h2 class="display display--hero"><span>Port</span><span class="accent">folio</span></h2>
+        <p class="label">A multidisciplinary<br />creative journey</p>
+        <p class="script">Designing Beyond Boundaries</p>
+        <p class="script sg__sig">Arch. Alaa Attal</p>
+        <Image src={ciak} alt="Clapperboard cut out from the cover" width={260} />
+      </div>
+      <figure class="sg__ref">
+        <Image src={p01} alt="PDF page 1, cover" widths={[700, 1100]} sizes="(min-width: 900px) 50vw, 100vw" />
+        <figcaption class="label">PDF p1 (reference)</figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap" aria-labelledby="sg-colors">
+      <h2 class="heading" id="sg-colors">Colours</h2>
+      <ul class="sg__swatches">
+        {colors.map((c) => (
+          <li><span class="sg__chip" style={`background:${c.hex}`}></span><b class="label">{c.name}</b><code>{c.hex}</code><span class="small muted">{c.note}</span></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="wrap" aria-labelledby="sg-type">
+      <h2 class="heading" id="sg-type">Type</h2>
+      <div class="stack">
+        <p class="display display--hero">Bodoni Moda</p>
+        <p class="display display--h2"><em>Italic display</em> — <span class="accent">two-tone</span></p>
+        <p class="heading">Heading — Design Concept</p>
+        <p class="label">Jost label — Residential project | Sharjah, UAE</p>
+        <p class="script">Allura — Different disciplines. Different perspectives.</p>
+        <p class="lede">Cormorant Garamond body text — A modern, linear pantry from CREO Italian Kitchens that combines refined Italian craftsmanship with contemporary functionality.</p>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="sg-comp">
+      <h2 class="heading" id="sg-comp">Components</h2>
+      <div class="sg__row">
+        <a class="btn" href="#">Primary</a>
+        <a class="btn btn--ghost" href="#">Ghost</a>
+        <a class="btn btn--gold" href="#">Gold</a>
+      </div>
+      <div class="sg__row">
+        <div class="frame-gold sg__frame"><Image src={p04} alt="" width={420} /></div>
+        <div class="polaroid tape sg__pol"><Image src={p01} alt="" width={280} /></div>
+        <BookNav variant="inline" />
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .sg { padding-block: 4rem 8rem; }
+  .sg > section { margin-top: 5rem; }
+  .sg__compare { display: grid; gap: 2rem; align-items: center; }
+  @media (min-width: 900px) { .sg__compare { grid-template-columns: 1fr 1fr; } }
+  .sg__mock { padding: clamp(2rem, 5vw, 4rem); }
+  .sg__title { line-height: .95; }
+  .sg__ref img { width: 100%; box-shadow: var(--shadow-2); }
+  .sg__ref figcaption { margin-top: .6rem; }
+  .sg__sig { font-size: 2.4rem; }
+  .sg__swatches { list-style: none; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); margin-top: 1.5rem; }
+  .sg__swatches li { display: grid; grid-template-columns: 3.2rem 1fr; gap: 0 .8rem; align-items: center; }
+  .sg__chip { grid-row: span 3; width: 3.2rem; height: 3.2rem; border-radius: 50%; box-shadow: var(--shadow-1); }
+  .sg__row { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-end; margin-top: 2rem; }
+  .sg__frame { width: min(440px, 100%); }
+  .sg__pol { width: 300px; transform: rotate(-2deg); }
+</style>

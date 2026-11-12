@@ -1,0 +1,68 @@
+/* Generato da tools/sample_palette.py: colori campionati dalle pagine del PDF.
+   Non modificare i colori a mano: cambia i riquadri nello script e rilancialo. */
+:root {
+  --c-cream: #fbe6d1; /* p1 carta crema della copertina */
+  --c-cream-2: #f8edd9; /* p4 carta crema delle copertine di sezione */
+  --c-cream-deep: #ede3d7; /* p3 carta crema piu' calda (p3) */
+  --c-ink: #2f2516; /* p4 inchiostro dei titoli (INTERIOR) */
+  --c-ink-black: #030100; /* p1 nero di PORT */
+  --c-burgundy: #690f0e; /* p1 bordeaux di FOLIO */
+  --c-burgundy-2: #5e2a25; /* p4 bordeaux di DESIGN */
+  --c-velvet: #441719; /* p30 velluto bordeaux (angolo di p30) */
+  --c-velvet-dark: #1e0302; /* p1 ombra del velluto (p1) */
+  --c-velvet-light: #87322f; /* p1 luce del velluto (p1) */
+  --c-gold: #d0a970; /* p4 disco di ottone (campioni materiali) */
+  --c-gold-light: #e4c194; /* p4 riflesso della cornice */
+  --c-gold-book: #e0cc9b; /* p4 scritta oro sui libri */
+  --c-olive: #534e2b; /* p4 cuscino verde oliva */
+  --c-olive-leaf: #494527; /* p4 foglie d'ulivo (p4) */
+  --c-leather: #533f33; /* p4 dorso dei libri in pelle */
+  --c-leather-dark: #35291f; /* p4 ombra tra i libri */
+  --c-line: #977650; /* p4 filetto della cornice di pagina */
+  --c-stone: #87704c; /* p3 pietra calda (p3) */
+}
+
+:root {
+  /* ruoli */
+  --paper: var(--c-cream-2);
+  --paper-warm: var(--c-cream);
+  --paper-deep: var(--c-cream-deep);
+  --ink: var(--c-ink);
+  --ink-strong: var(--c-ink-black);
+  --accent: var(--c-burgundy);
+  --accent-soft: var(--c-burgundy-2);
+  --gold: var(--c-gold);
+  --gold-light: var(--c-gold-light);
+  --rule: var(--c-line);
+
+  /* font */
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-text: "Cormorant Garamond", Garamond, Georgia, serif;
+  --f-label: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
+  --f-script: "Allura", "Snell Roundhand", cursive;
+
+  /* scala tipografica */
+  --t-hero: clamp(3.2rem, 9vw, 8.5rem);
+  --t-h1: clamp(2.6rem, 6.5vw, 5.6rem);
+  --t-h2: clamp(1.9rem, 3.6vw, 3rem);
+  --t-h3: clamp(1.25rem, 2vw, 1.6rem);
+  --t-body: clamp(1.1rem, 1.2vw, 1.3rem);
+  --t-small: 0.95rem;
+  --t-label: 0.78rem;
+  --t-script: clamp(2rem, 4vw, 3.4rem);
+  --track-label: 0.28em;
+
+  /* spaziature */
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem; --s-5: 1.5rem;
+  --s-6: 2rem; --s-7: 3rem; --s-8: 4.5rem; --s-9: 7rem;
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --maxw: 1320px;
+
+  /* raggi e ombre */
+  --r-1: 2px; --r-2: 6px; --r-3: 14px; --r-round: 999px;
+  --shadow-1: 0 1px 2px rgb(47 37 22 / 0.12), 0 2px 8px rgb(47 37 22 / 0.08);
+  --shadow-2: 0 6px 18px rgb(47 37 22 / 0.16), 0 2px 4px rgb(47 37 22 / 0.1);
+  --shadow-3: 0 18px 48px rgb(47 37 22 / 0.24);
+  --shadow-frame: inset 0 0 0 1px rgb(255 240 200 / 0.35), 0 10px 26px rgb(47 37 22 / 0.3);
+}
+

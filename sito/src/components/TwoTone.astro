@@ -1,0 +1,18 @@
+---
+/* Titolo in due colori come nel PDF (PORT·FOLIO, ARCH·ITECTURE). La parte bordeaux ha
+   data-accent: in F6 arriva "dopo, come una pennellata" (06-tocco-unico.md, altri tocchi #2). */
+interface Props {
+  title: { text: string; accent?: string; accentItalic?: boolean; break?: boolean };
+  as?: 'h1' | 'h2' | 'h3' | 'p';
+  class?: string;
+  id?: string;
+}
+const { title, as: Tag = 'h2', class: cls, id } = Astro.props;
+// parte bordeaux che continua la stessa parola ("folio", "itecture"): niente spazio
+const joined = !!title.accent && /^[a-z]/.test(title.accent);
+---
+<Tag class:list={['display', cls]} id={id} data-two-tone>
+  {title.text && <span class="two-tone__a">{title.text}</span>}{title.break && <br />}{!joined && title.text && title.accent && !title.break && ' '}{title.accent && (
+    <span class:list={['accent', { italic: title.accentItalic }]} data-accent>{title.accent}</span>
+  )}
+</Tag>

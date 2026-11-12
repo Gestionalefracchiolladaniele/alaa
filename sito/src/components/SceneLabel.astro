@@ -1,0 +1,14 @@
+---
+/* Numero di scena in stile ciak ("SCENE 03 — ARCHITECTURE"). In F6 diventa il contatore fisso
+   "SCENE 04 / 09"; qui e' statico nell'angolo della scena. */
+import { pad2 } from '../lib/text';
+interface Props { n: number; name: string; total?: number }
+const { n, name } = Astro.props;
+---
+<p class="scene-label label" data-scene-label={n} aria-hidden="true">
+  <span class="scene-label__k">Scene</span> <span class="scene-label__n">{pad2(n)}</span> — {name}
+</p>
+<style>
+  .scene-label { position: absolute; top: clamp(1rem, 3vw, 2.2rem); left: var(--gutter); z-index: 3; margin: 0; opacity: .75; font-size: .7rem; }
+  .scene-label__n { color: var(--accent); }
+</style>

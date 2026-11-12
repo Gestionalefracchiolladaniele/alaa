@@ -1,0 +1,54 @@
+---
+/* Pellicola dei progetti: striscia orizzontale scorrevole, nell'ordine del PDF.
+   Agganci F6: [data-filmstrip] (da pinnare in orizzontale), [data-film-frame] per ogni fotogramma,
+   data-hero-slot = slot dell'immagine che "cresce" fino alla pagina progetto (transizione tra pagine). */
+import Slot from './Slot.astro';
+import { slugOf, urlOf, type Project } from '../lib/projects';
+import { pad2 } from '../lib/text';
+interface Props { id: string; projects: Project[]; label: string }
+const { id, projects, label } = Astro.props;
+---
+<section class="film" id={id} aria-label={label} data-filmstrip>
+  <div class="film__track" tabindex="0">
+    <ol class="film__frames">
+      {projects.map((p, i) => (
+        <li class="film__frame" data-film-frame data-project={slugOf(p)} data-hero-slot={p.data.hero}>
+          <a href={urlOf(p)} class="film__link">
+            <span class="film__num label">{pad2(i + 1)}</span>
+            <span class="film__img"><Slot id={p.data.hero} sizes="(min-width: 900px) 30vw, 78vw" max={1000} /></span>
+            <span class="film__cap">
+              <span class="film__title">{p.data.shortTitle}</span>
+              {p.data.location && <span class="label film__loc">{p.data.location}</span>}
+            </span>
+            {p.data.model && <span class="film__badge label" title="3D study">3D</span>}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+  <p class="film__hint label wrap" aria-hidden="true">Scroll sideways →</p>
+</section>
+
+<style>
+  .film { padding-block: var(--s-7) var(--s-8); background: var(--c-velvet-dark); color: var(--paper); }
+  .film__track {
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    padding: 38px var(--gutter); scrollbar-color: var(--gold) transparent;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 14px, rgb(248 237 217 / .85) 14px 30px, transparent 30px 44px) 0 10px / 44px 16px repeat-x,
+      repeating-linear-gradient(90deg, transparent 0 14px, rgb(248 237 217 / .85) 14px 30px, transparent 30px 44px) 0 calc(100% - 10px) / 44px 16px repeat-x,
+      #1b1310;
+  }
+  .film__frames { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; width: max-content; }
+  .film__frame { scroll-snap-align: start; width: min(78vw, 26rem); }
+  .film__link { position: relative; display: block; text-decoration: none; color: inherit; background: #0e0a08; padding: 10px; border-radius: 6px; }
+  .film__img { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 3px; }
+  .film__img :global(img) { width: 100%; height: 100%; object-fit: cover; filter: sepia(.15); transition: filter .3s; }
+  .film__link:hover .film__img :global(img), .film__link:focus-visible .film__img :global(img) { filter: none; }
+  .film__cap { display: flex; flex-direction: column; gap: .2em; padding: .8rem .2rem .2rem; }
+  .film__title { font-family: var(--f-display); font-size: 1.15rem; line-height: 1.15; }
+  .film__loc, .film__num { color: var(--c-gold-book); }
+  .film__num { position: absolute; top: 16px; left: 18px; z-index: 1; text-shadow: 0 1px 3px #000; }
+  .film__badge { position: absolute; top: 16px; right: 16px; background: var(--accent); color: var(--paper); padding: .25em .7em; border-radius: 2px; }
+  .film__hint { margin-top: var(--s-4); opacity: .6; color: var(--c-gold-book); }
+</style>

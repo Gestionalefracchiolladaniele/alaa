@@ -15,9 +15,9 @@
  },
  "about-portrait": {
   "file": "about-portrait.jpg",
-  "width": 628,
+  "width": 580,
   "height": 2060,
-  "source": "pdf p2 [214, 56, 528, 1086]",
+  "source": "pdf p2 [238, 56, 528, 1086]",
   "original": false
  },
  "about-coast": {
@@ -64,9 +64,9 @@
  },
  "interior-cover": {
   "file": "interior-cover.jpg",
-  "width": 1572,
+  "width": 1464,
   "height": 2172,
-  "source": "pdf p4 [662, 0, 1448, 1086]",
+  "source": "pdf p4 [716, 0, 1448, 1086]",
   "original": false
  },
  "interior-sketch": {
@@ -1387,44 +1387,44 @@
  },
  "fashion-bw-01": {
   "file": "fashion-bw-01.jpg",
-  "width": 654,
-  "height": 896,
-  "source": "pdf p26 [418, 30, 745, 478]",
+  "width": 580,
+  "height": 710,
+  "source": "pdf p26 [440, 95, 730, 450]",
   "original": false
  },
  "fashion-bw-02": {
   "file": "fashion-bw-02.jpg",
-  "width": 730,
-  "height": 896,
-  "source": "pdf p26 [750, 30, 1115, 478]",
+  "width": 660,
+  "height": 730,
+  "source": "pdf p26 [762, 100, 1092, 465]",
   "original": false
  },
  "fashion-bw-03": {
   "file": "fashion-bw-03.jpg",
-  "width": 340,
-  "height": 770,
-  "source": "pdf p26 [370, 490, 540, 875]",
+  "width": 320,
+  "height": 720,
+  "source": "pdf p26 [378, 500, 538, 860]",
   "original": false
  },
  "fashion-bw-04": {
   "file": "fashion-bw-04.jpg",
-  "width": 384,
-  "height": 770,
-  "source": "pdf p26 [548, 490, 740, 875]",
+  "width": 370,
+  "height": 732,
+  "source": "pdf p26 [553, 500, 738, 866]",
   "original": false
  },
  "fashion-bw-05": {
   "file": "fashion-bw-05.jpg",
-  "width": 394,
-  "height": 770,
-  "source": "pdf p26 [748, 490, 945, 875]",
+  "width": 388,
+  "height": 726,
+  "source": "pdf p26 [752, 505, 946, 868]",
   "original": false
  },
  "fashion-bw-06": {
   "file": "fashion-bw-06.jpg",
-  "width": 424,
-  "height": 780,
-  "source": "pdf p26 [958, 490, 1170, 880]",
+  "width": 384,
+  "height": 720,
+  "source": "pdf p26 [968, 500, 1160, 860]",
   "original": false
  },
  "fashion-bw-sketch": {
@@ -1471,72 +1471,72 @@
  },
  "fashion-om-01": {
   "file": "fashion-om-01.jpg",
-  "width": 660,
-  "height": 950,
-  "source": "pdf p27 [403, 55, 733, 530]",
+  "width": 614,
+  "height": 810,
+  "source": "pdf p27 [415, 110, 722, 515]",
   "original": false
  },
  "fashion-om-02": {
   "file": "fashion-om-02.jpg",
-  "width": 680,
-  "height": 994,
-  "source": "pdf p27 [748, 58, 1088, 555]",
+  "width": 610,
+  "height": 900,
+  "source": "pdf p27 [760, 75, 1065, 525]",
   "original": false
  },
  "fashion-om-03": {
   "file": "fashion-om-03.jpg",
-  "width": 570,
-  "height": 860,
-  "source": "pdf p27 [383, 545, 668, 975]",
+  "width": 546,
+  "height": 770,
+  "source": "pdf p27 [395, 550, 668, 935]",
   "original": false
  },
  "fashion-om-04": {
   "file": "fashion-om-04.jpg",
-  "width": 790,
-  "height": 760,
-  "source": "pdf p27 [680, 585, 1075, 965]",
+  "width": 730,
+  "height": 730,
+  "source": "pdf p27 [695, 590, 1060, 955]",
   "original": false
  },
  "travel-01": {
   "file": "travel-01.jpg",
-  "width": 550,
-  "height": 770,
-  "source": "pdf p29 [425, 100, 700, 485]",
+  "width": 484,
+  "height": 660,
+  "source": "pdf p29 [430, 120, 672, 450]",
   "original": false
  },
  "travel-02": {
   "file": "travel-02.jpg",
-  "width": 566,
-  "height": 740,
-  "source": "pdf p29 [712, 92, 995, 462]",
+  "width": 560,
+  "height": 720,
+  "source": "pdf p29 [712, 95, 992, 455]",
   "original": false
  },
  "travel-03": {
   "file": "travel-03.jpg",
-  "width": 634,
-  "height": 766,
-  "source": "pdf p29 [1018, 82, 1335, 465]",
+  "width": 612,
+  "height": 732,
+  "source": "pdf p29 [1022, 92, 1328, 458]",
   "original": false
  },
  "travel-04": {
   "file": "travel-04.jpg",
-  "width": 588,
-  "height": 726,
-  "source": "pdf p29 [428, 505, 722, 868]",
+  "width": 560,
+  "height": 680,
+  "source": "pdf p29 [440, 520, 720, 860]",
   "original": false
  },
  "travel-05": {
   "file": "travel-05.jpg",
-  "width": 566,
-  "height": 750,
-  "source": "pdf p29 [742, 505, 1025, 880]",
+  "width": 540,
+  "height": 720,
+  "source": "pdf p29 [752, 510, 1022, 870]",
   "original": false
  },
  "travel-06": {
   "file": "travel-06.jpg",
-  "width": 630,
-  "height": 770,
-  "source": "pdf p29 [1045, 500, 1360, 885]",
+  "width": 580,
+  "height": 666,
+  "source": "pdf p29 [1060, 535, 1350, 868]",
   "original": false
  }
 }

@@ -1,9 +1,326 @@
 ---
+/* La home e' "il film": le scene nell'ordine delle pagine del PDF (1 → 30).
+   Versione statica (F2): nessuna animazione. I punti di aggancio per F6 / Fable sono attributi data-*
+   descritti in piano/AVANZAMENTO.md ("Punti di aggancio"). */
+import { getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import BookNav from '../components/BookNav.astro';
+import Slot from '../components/Slot.astro';
+import TwoTone from '../components/TwoTone.astro';
+import Swoosh from '../components/Swoosh.astro';
+import SceneLabel from '../components/SceneLabel.astro';
+import SectionCover from '../components/SectionCover.astro';
+import FilmStrip from '../components/FilmStrip.astro';
+import ScrollSequence from '../components/ScrollSequence.astro';
+import Timeline from '../components/Timeline.astro';
+import Icon from '../components/Icon.astro';
+import site from '../content/site.json';
+import { getProjects } from '../lib/projects';
+import { inline } from '../lib/text';
+import { Image } from 'astro:assets';
+import ciak from '../assets/ciak.png';
+import '../styles/home.css';
+
+const get = async (id: string) => {
+  const e = await getEntry('sections', id);
+  if (!e) throw new Error(`Sezione mancante: ${id}`);
+  return e.data;
+};
+const about = await get('about');
+const philosophy = await get('philosophy');
+const interior = await get('interior');
+const architecture = await get('architecture');
+const realEstate = await get('real-estate');
+const art = await get('art');
+const fashion = await get('fashion');
+const travel = await get('travel');
+const interiorProjects = await getProjects('interior');
+const architectureProjects = await getProjects('architecture');
+
+const aboutExtra = about.extra as {
+  motto: string[]; facts: { label: string; value: string; note?: string; icon: string }[];
+  year: string; counters: { value: number; label: string }[]; moodboard: string[];
+};
+const reBlock = (id: string) => realEstate.blocks.find((b) => b.id === id)!;
+const c = site.clapper;
 ---
-<Base title="Alaa Attal — Portfolio">
-  <main id="main" class="wrap section">
-    <h1 class="display display--hero">Port<span class="accent">folio</span></h1>
-    <p class="label">A multidisciplinary creative journey</p>
+<Base title="Arch. Alaa Attal — Portfolio" bodyClass="home">
+  <!-- Scena 0: apertura a sipario con ciak. SEGNAPOSTO per Fable (06-tocco-unico.md, "Il ciak iniziale").
+       Nascosto finche' il codice dell'apertura non lo attiva (rimuovere [hidden]). -->
+  <div class="opening" data-opening hidden aria-hidden="true">
+    <div class="opening__curtain opening__curtain--left" data-curtain="left"></div>
+    <div class="opening__curtain opening__curtain--right" data-curtain="right"></div>
+    <figure class="opening__ciak" data-ciak>
+      <Image src={ciak} alt="" width={320} loading="eager" data-ciak-img />
+      <dl class="visually-hidden" data-ciak-text>
+        <dt>Production</dt><dd>{c.production}</dd><dt>Director</dt><dd>{c.director}</dd>
+        <dt>Camera</dt><dd>{c.camera}</dd><dt>Date</dt><dd>{c.date}</dd><dt>Scene</dt><dd>{c.scene}</dd><dt>Take</dt><dd>{c.take}</dd>
+      </dl>
+    </figure>
+    <button class="opening__begin label" type="button" data-opening-begin>Click to begin</button>
+  </div>
+
+  <BookNav />
+
+  <main id="main">
+    <!-- Scena 1: copertina (p1) -->
+    <section class="scene scene--cover" id="cover" data-scene="cover" aria-labelledby="cover-title">
+      <SceneLabel n={1} name="Portfolio" />
+      <div class="hero" data-divein data-divein-slot="cover-film" data-divein-rect="22.7,12.3,27.6,41.7" data-divein-next="#about">
+        <ScrollSequence clip="clip-1" fallback="cover-film" class="hero__seq" eager />
+        <span class="hero__door" data-divein-door data-divein-label="Enter the film" style="left:22.7%;top:12.3%;width:27.6%;height:41.7%" aria-hidden="true"></span>
+      </div>
+      <div class="hero__text">
+        <h1 class="display display--hero hero__title" id="cover-title"><span>Port</span><span class="accent" data-accent>folio</span></h1>
+        <p class="label hero__kicker">{site.kicker}</p>
+        <p class="script hero__motto" data-handwrite>{site.motto}</p>
+        <ul class="label label-list hero__disciplines">{site.disciplines.map((d) => <li>{d}</li>)}</ul>
+        <p class="script hero__signature" data-handwrite>{site.signature}</p>
+      </div>
+      <div class="hero__reel" aria-hidden="true"><Slot id="cover-reel" sizes="20vw" decorative max={700} /></div>
+    </section>
+
+    <!-- Scena 2: About Me (p2) -->
+    <section class="scene scene--about" id="about" data-scene="about" aria-labelledby="about-title">
+      <SceneLabel n={2} name="About Me" />
+      <div class="wrap about">
+        <aside class="about__side">
+          <ul class="label about__list">{about.tags.map((t) => <li>{t}</li>)}</ul>
+          <ul class="label about__motto">{aboutExtra.motto.map((t) => <li>{t}</li>)}</ul>
+        </aside>
+        <figure class="about__portrait">
+          <span class="about__arch" aria-hidden="true"></span>
+          <Slot id={about.cover!} sizes="(min-width: 900px) 26vw, 70vw" />
+        </figure>
+        <div class="about__text">
+          <p class="label label--rule"><em>{about.kicker}</em></p>
+          <TwoTone title={about.title} as="h2" class="about__title" id="about-title" />
+          <div class="bar-left">{about.paragraphs.map((p) => <p data-reveal-lines>{p}</p>)}</div>
+          <blockquote class="script about__quote" data-handwrite>{about.quote}</blockquote>
+        </div>
+        <div class="about__mood">{aboutExtra.moodboard.map((id) => <Slot id={id} sizes="(min-width: 900px) 16vw, 45vw" max={700} />)}</div>
+      </div>
+      <div class="wrap">
+        <ul class="facts">
+          {aboutExtra.facts.map((f) => (
+            <li><Icon name={f.icon} /><span class="label">{f.label}<br />{f.value}{f.note && <><br />({f.note})</>}</span></li>
+          ))}
+          <li class="facts__year label">{aboutExtra.year}</li>
+        </ul>
+        <ul class="counters">
+          {aboutExtra.counters.map((k) => (
+            <li><span class="counters__n" data-counter={k.value}>{k.value}</span><span class="label">{k.label}</span></li>
+          ))}
+        </ul>
+        <Timeline />
+      </div>
+    </section>
+
+    <!-- Scena 3: A Creative Philosophy (p3) -->
+    <section class="scene scene--philosophy" id="philosophy" data-scene="philosophy" aria-labelledby="philosophy-title">
+      <SceneLabel n={3} name="Philosophy" />
+      <div class="wrap philo">
+        <div class="philo__text">
+          <p class="label label--rule">{philosophy.kicker}</p>
+          <TwoTone title={philosophy.title} as="h2" id="philosophy-title" class="philo__title" />
+          <p class="label">{philosophy.tags[0]}</p>
+          <div class="bar-left sans philo__body">{philosophy.paragraphs.map((p) => <p data-reveal-lines>{p}</p>)}</div>
+          <p class="script philo__script" data-handwrite>{philosophy.script}</p>
+        </div>
+        <div class="philo__media" data-divein data-divein-slot={philosophy.door!.slot}
+          data-divein-rect={`${philosophy.door!.rect.x},${philosophy.door!.rect.y},${philosophy.door!.rect.w},${philosophy.door!.rect.h}`}
+          data-divein-next="#interior">
+          <ScrollSequence clip="clip-2" fallback={philosophy.cover!} class="philo__seq" />
+          <span class="philo__door" data-divein-door data-divein-label={philosophy.door!.label} aria-hidden="true"
+            style={`left:${philosophy.door!.rect.x}%;top:${philosophy.door!.rect.y}%;width:${philosophy.door!.rect.w}%;height:${philosophy.door!.rect.h}%`}></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scena 4: Interior Design (p4 → p5–p11) -->
+    <section class="scene scene--section" id="interior" data-scene="interior" aria-labelledby="interior-title">
+      <SectionCover id="interior" scene={4} name="Interior Design" kicker={interior.kicker} title={interior.title} tags={interior.tags}
+        cover={interior.cover} sketch={interior.sketch} door={interior.door} next="#interior-film" />
+      <FilmStrip id="interior-film" projects={interiorProjects} label="Interior design projects" />
+    </section>
+
+    <!-- Scena 5: Architecture (p12 → p13–p17) -->
+    <section class="scene scene--section" id="architecture" data-scene="architecture" aria-labelledby="architecture-title">
+      <SectionCover id="architecture" scene={5} name="Architecture" kicker={architecture.kicker} title={architecture.title} tags={architecture.tags}
+        cover={architecture.cover} sketch={architecture.sketch} door={architecture.door} next="#architecture-film" />
+      <FilmStrip id="architecture-film" projects={architectureProjects} label="Architecture projects" />
+    </section>
+
+    <!-- Scena 6: Real Estate (p18 → p19) -->
+    <section class="scene scene--section" id="real-estate" data-scene="real-estate" aria-labelledby="real-estate-title">
+      <SectionCover id="real-estate" scene={6} name="Real Estate" kicker={realEstate.kicker} title={realEstate.title} tags={realEstate.tags}
+        cover={realEstate.cover} sketch={realEstate.sketch} door={realEstate.door} next="#real-estate-body" />
+      <div class="re" id="real-estate-body">
+        <div class="wrap re__grid">
+          <div class="re__intro">
+            <p class="label label--rule">{reBlock('portfolio').kicker}</p>
+            <TwoTone title={reBlock('portfolio').title!} as="h3" class="re__title" />
+            <p class="script">{reBlock('portfolio').script}</p>
+            {reBlock('portfolio').paragraphs.map((p) => <p>{p}</p>)}
+            {reBlock('portfolio').lists.map((l) => (
+              <div class="re__deliver"><p class="script re__small-script">{l.heading}</p><ul class="checks">{l.items.map((x) => <li>{x}</li>)}</ul></div>
+            ))}
+          </div>
+          <figure class="re__photo polaroid tape"><Slot id={reBlock('portfolio').works[0].slot} sizes="(min-width: 900px) 34vw, 90vw" /></figure>
+          <div class="re__cards">
+            {['services', 'experience'].map((id) => (
+              <div class="paper-card">
+                <p class="script re__small-script">{reBlock(id).script}</p>
+                <ul class="re__list">
+                  {reBlock(id).lists.map((l) => (
+                    <li><Icon name={l.icon} size={34} /><div><p class="re__h">{l.heading}</p><p class="small">{l.text}</p></div></li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="wrap re__journey">
+          <p class="script re__small-script">{reBlock('journey').script}</p>
+          <ol class="steps" data-journey>
+            {reBlock('journey').lists.map((l, i) => (
+              <li class="steps__item" data-journey-step={i + 1}><span class="steps__icon"><Icon name={l.icon} size={30} /></span><span class="small">{l.heading}</span></li>
+            ))}
+          </ol>
+          <svg class="steps__line" data-journey-line viewBox="0 0 1000 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 H1000" /></svg>
+          <p class="script re__closing" data-handwrite>{reBlock('journey').paragraphs[0]}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scena 7: Art (p20 → p21–p24) -->
+    <section class="scene scene--section" id="art" data-scene="art" aria-labelledby="art-title">
+      <SectionCover id="art" scene={7} name="Art" kicker={art.kicker} title={art.title} tags={art.tags}
+        cover={art.cover} sketch={art.sketch} door={art.door} next="#art-walls" />
+      <div class="walls" id="art-walls">
+        {art.blocks.map((b) => (
+          <article class="wall" id={`art-${b.id}`} data-art-wall={b.id}>
+            <div class="wrap wall__grid">
+              <div class="wall__text">
+                {b.kicker && <p class="label label--rule">{b.kicker}</p>}
+                {b.title && <TwoTone title={b.title} as="h3" class="wall__title" />}
+                <ul class="label label-list">{b.tags.map((t) => <li>{t}</li>)}</ul>
+                {b.script && <p class="script" data-handwrite>{b.script}</p>}
+                {b.paragraphs.map((p) => <p set:html={inline(p)} />)}
+              </div>
+              <ul class:list={['wall__works', `wall__works--${b.works.length}`]}>
+                {b.works.map((w) => (
+                  <li class="artwork" data-artwork={w.slot}>
+                    <span class="artwork__lamp" data-lamp aria-hidden="true"></span>
+                    <figure class="frame-gold artwork__frame" data-lightbox={w.slot} data-divein-door data-divein-label="Enter the frame">
+                      <Slot id={w.slot} sizes="(min-width: 900px) 24vw, 80vw" max={1000} />
+                    </figure>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Scena 8: Fashion (p25 → p26–p27) -->
+    <section class="scene scene--section" id="fashion" data-scene="fashion" aria-labelledby="fashion-title">
+      <SectionCover id="fashion" scene={8} name="Fashion" kicker={fashion.kicker} title={fashion.title} tags={fashion.tags}
+        cover={fashion.cover} sketch={fashion.sketch} door={fashion.door} next="#fashion-tables" />
+      <div class="tables" id="fashion-tables">
+        {fashion.blocks.map((b) => (
+          <article class="table" id={`fashion-${b.id}`} data-fashion-table={b.id}>
+            <div class="wrap table__grid">
+              <div class="table__text">
+                {b.kicker && <p class="label label--rule">{b.kicker}</p>}
+                {b.title && <TwoTone title={b.title} as="h3" class="table__title" />}
+                <ul class="label label-list">{b.tags.map((t) => <li>{t}</li>)}</ul>
+                {b.script && <p class="script" data-handwrite>{b.script}</p>}
+                {b.paragraphs.map((p) => <p>{p}</p>)}
+                {b.swatches.length > 0 && (
+                  <ul class="swatches">
+                    {b.swatches.map((s) => (
+                      <li>
+                        {s.slot ? <span class="swatches__chip swatches__chip--img"><Slot id={s.slot} sizes="64px" decorative max={200} /></span>
+                                : <span class="swatches__chip" style={`background:${s.hex}`}></span>}
+                        <span><b>{s.name}</b>{s.note && <><br /><span class="small">{s.note}</span></>}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {b.lists.map((l) => (
+                  <div class="table__list">
+                    <p class="re__h">{l.icon && <Icon name={l.icon} size={22} />} {l.heading}</p>
+                    {l.items.length > 0 && <ul class="checks">{l.items.map((x) => <li>{x}</li>)}</ul>}
+                    {l.text && <p class="small">{l.text}</p>}
+                  </div>
+                ))}
+              </div>
+              <ul class="polaroids">
+                {b.works.map((w, i) => (
+                  <li class="polaroid tape" data-polaroid={w.slot} style={`--r:${[-3, 2, -1.5, 3, -2.5, 1.5, -1][i % 7]}deg`}>
+                    <Slot id={w.slot} sizes="(min-width: 900px) 18vw, 44vw" max={800} />
+                    {(w.place || w.caption) && <span class="polaroid__cap script">{w.place ?? w.caption}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Scena 9: Travel (p28 → p29) -->
+    <section class="scene scene--section" id="travel" data-scene="travel" aria-labelledby="travel-title">
+      <SectionCover id="travel" scene={9} name="Travel" kicker={travel.kicker} title={travel.title} tags={travel.tags}
+        cover={travel.cover} sketch={travel.sketch} door={travel.door} next="#travel-journey" />
+      {travel.blocks.map((b) => (
+        <div class="journey" id="travel-journey">
+          <div class="wrap journey__grid">
+            <div class="journey__text">
+              <p class="label label--rule">{b.kicker}</p>
+              <TwoTone title={b.title!} as="h3" class="table__title" />
+              <ul class="label label-list">{b.tags.map((t) => <li>{t}</li>)}</ul>
+              <p class="script" data-handwrite>{b.script}</p>
+              {b.paragraphs.map((p) => <p>{p}</p>)}
+              <!-- SEGNAPOSTO: mappa del mondo in SVG con i 16 paesi (F6). Paesi qui sotto in data-countries. -->
+              <div class="journey__map" data-world-map data-countries={b.lists.slice(0, 3).flatMap((l) => l.items).join('|')}></div>
+              <div class="journey__regions">
+                {b.lists.slice(0, 3).map((l) => (
+                  <div><p class="re__h"><Icon name={l.icon} size={22} /> {l.heading}</p><p class="small">{l.items.join(', ')}</p></div>
+                ))}
+              </div>
+            </div>
+            <ul class="polaroids polaroids--travel">
+              {b.works.map((w, i) => (
+                <li class="polaroid tape" data-polaroid={w.slot} style={`--r:${[-2.5, 2, -1, 1.5, -2, 2.5][i % 6]}deg`}>
+                  <Slot id={w.slot} sizes="(min-width: 900px) 18vw, 44vw" max={800} />
+                  {w.place && <span class="polaroid__cap script">{w.place}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <ul class="wrap themes label">{b.lists[3].items.map((t) => <li>{t}</li>)}</ul>
+        </div>
+      ))}
+    </section>
+
+    <!-- Scena 10: Thank You (p30). [data-curtain-close]: sipario che si chiude (F6, clip 3 facoltativa). -->
+    <section class="scene scene--thanks" id="thank-you" data-scene="thank-you" data-curtain-close aria-labelledby="thanks-title">
+      <SceneLabel n={10} name="Thank You" />
+      <div class="thanks__oval">
+        <h2 class="display thanks__title" id="thanks-title">Thank<br /><em class="accent" data-accent>You</em></h2>
+        <Swoosh class="thanks__swoosh" />
+        <ul class="thanks__contacts">
+          <li><a href={`mailto:${site.contacts.email}`}>{site.contacts.email}</a></li>
+          <li>{site.contacts.linkedinUrl
+            ? <a href={site.contacts.linkedinUrl} rel="noopener">LinkedIn: {site.contacts.linkedinLabel}</a>
+            : <span>LinkedIn: {site.contacts.linkedinLabel}</span>}</li>
+        </ul>
+        <p class="script thanks__sig">{site.signature}</p>
+      </div>
+      <div class="thanks__index"><BookNav variant="inline" /></div>
+    </section>
   </main>
 </Base>

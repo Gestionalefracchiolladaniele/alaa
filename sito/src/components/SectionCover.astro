@@ -1,0 +1,92 @@
+---
+/* Copertina di sezione (p4, 12, 18, 20, 25, 28): titolo HTML a sinistra, natura morta a destra.
+   Punti di aggancio per F6 / Fable (06-tocco-unico.md, "DiveIn"):
+     [data-divein]            il contenitore della porta
+       data-divein-slot       id dello slot che contiene la porta
+       data-divein-rect       "x,y,w,h" in percentuale su quell'immagine (rettangolo di arrivo)
+       data-divein-next       selettore della scena in cui si arriva
+     [data-divein-door]       l'elemento della porta (rettangolo posizionato sopra l'immagine, o lo schizzo intero)
+     [data-cover-zoom]        immagine da far "respirare" (zoom lento)
+     [data-leaf-shadow]       livello vuoto per l'ombra di foglie
+     [data-swoosh]            il tratto bordeaux da disegnare */
+import Slot from './Slot.astro';
+import TwoTone from './TwoTone.astro';
+import Swoosh from './Swoosh.astro';
+import SceneLabel from './SceneLabel.astro';
+
+interface Door { slot: string; rect: { x: number; y: number; w: number; h: number }; label: string }
+interface Props {
+  id: string;
+  scene: number;
+  name: string;
+  kicker?: string;
+  title: { text: string; accent?: string; accentItalic?: boolean; break?: boolean };
+  tags: string[];
+  cover?: string;
+  sketch?: string;
+  door?: Door;
+  next: string;
+}
+const { id, scene, name, kicker, title, tags, cover, sketch, door, next } = Astro.props;
+const rect = door ? `${door.rect.x},${door.rect.y},${door.rect.w},${door.rect.h}` : undefined;
+const doorOnCover = door && door.slot === cover;
+const doorOnSketch = door && door.slot === sketch;
+const doorStandalone = door && !doorOnCover && !doorOnSketch;
+const rectStyle = door ? `left:${door.rect.x}%;top:${door.rect.y}%;width:${door.rect.w}%;height:${door.rect.h}%` : '';
+---
+<header class="cover page-frame" id={`${id}-cover`}
+  data-divein={door ? '' : undefined} data-divein-slot={door?.slot} data-divein-rect={rect} data-divein-next={next}>
+  <SceneLabel n={scene} name={name} />
+  <div class="cover__text">
+    {kicker && <p class="label label--rule">{kicker}</p>}
+    <TwoTone title={title} as="h2" class="cover__title" id={`${id}-title`} />
+    {tags.length > 0 && <ul class="label label-list cover__tags">{tags.map((t) => <li>{t}</li>)}</ul>}
+    <Swoosh class="cover__swoosh" />
+    {sketch && (
+      <div class="cover__sketch" data-divein-door={doorOnSketch ? '' : undefined} data-divein-label={doorOnSketch ? door!.label : undefined}>
+        <Slot id={sketch} sizes="(min-width: 900px) 40vw, 90vw" decorative />
+        {doorOnSketch && door!.rect.w < 100 && <span class="cover__door" style={rectStyle} aria-hidden="true"></span>}
+      </div>
+    )}
+  </div>
+  {cover && (
+    <div class="cover__media">
+      <div class="cover__img" data-cover-zoom>
+        <Slot id={cover} sizes="(min-width: 900px) 55vw, 100vw" />
+        {doorOnCover && <span class="cover__door" style={rectStyle} data-divein-door data-divein-label={door!.label} aria-hidden="true"></span>}
+      </div>
+      <div class="cover__leaves" data-leaf-shadow aria-hidden="true"></div>
+      {doorStandalone && (
+        <div class="cover__doorcard" data-divein-door data-divein-label={door!.label}>
+          <Slot id={door!.slot} sizes="20rem" decorative />
+        </div>
+      )}
+    </div>
+  )}
+  <a class="cover__next label" href={next}>{door?.label ?? 'Continue'} <span aria-hidden="true">↓</span></a>
+</header>
+
+<style>
+  .cover {
+    position: relative; display: grid; gap: var(--s-6); align-items: center;
+    min-height: 100svh; padding: clamp(4.5rem, 8vw, 6rem) var(--gutter) clamp(3rem, 6vw, 4.5rem);
+    background: var(--paper); overflow: hidden;
+  }
+  @media (min-width: 900px) { .cover { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); } }
+  .cover__text { position: relative; z-index: 2; }
+  .cover__title { font-size: clamp(3rem, 8.2vw, 7.4rem); line-height: .92; margin: .35em 0 .3em; }
+  .cover__tags { margin-bottom: var(--s-4); }
+  .cover__swoosh { margin: var(--s-3) 0 var(--s-5); }
+  .cover__sketch { position: relative; max-width: 34rem; mix-blend-mode: multiply; }
+  .cover__media { position: relative; height: 100%; min-height: 50vh; }
+  .cover__img { position: relative; height: 100%; }
+  .cover__img :global(img) { width: 100%; height: 100%; max-height: 88svh; object-fit: cover; object-position: left center; border-radius: 4px; }
+  .cover__leaves { position: absolute; inset: 0; pointer-events: none; }
+  .cover__door { position: absolute; display: block; pointer-events: none; }
+  .cover__doorcard { position: absolute; left: -3rem; bottom: 8%; width: min(14rem, 40%); transform: rotate(-3deg); box-shadow: var(--shadow-3); }
+  .cover__next { position: absolute; left: 50%; bottom: 1.2rem; transform: translateX(-50%); text-decoration: none; opacity: .7; z-index: 3; }
+  @media (max-width: 899px) {
+    .cover__img :global(img) { max-height: 70svh; }
+    .cover__doorcard { left: auto; right: 4%; }
+  }
+</style>

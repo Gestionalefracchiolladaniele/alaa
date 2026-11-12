@@ -1,0 +1,15 @@
+---
+/* Pagine progetto (architecture): una per file in src/content/projects/architecture/, nell'ordine del PDF. */
+import ProjectPage from '../../components/ProjectPage.astro';
+import { getProjects, slugOf } from '../../lib/projects';
+
+export async function getStaticPaths() {
+  const list = await getProjects('architecture');
+  return list.map((project, i) => ({
+    params: { slug: slugOf(project) },
+    props: { project, prev: list[i - 1], next: list[i + 1] },
+  }));
+}
+const { project, prev, next } = Astro.props;
+---
+<ProjectPage project={project} prev={prev} next={next} />

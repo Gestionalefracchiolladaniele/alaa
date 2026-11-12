@@ -1,0 +1,56 @@
+{
+  "scene": 6,
+  "pages": [18, 19],
+  "kicker": "Portfolio Section",
+  "title": { "text": "Real", "accent": "Estate", "accentItalic": true, "break": true },
+  "tags": ["Properties", "Investments", "Development"],
+  "cover": "real-estate-cover",
+  "sketch": "real-estate-sketch",
+  "door": { "slot": "real-estate-cover", "rect": { "x": 4.2, "y": 59.7, "w": 30.9, "h": 19.9 }, "label": "Enter the polaroid" },
+  "blocks": [
+    {
+      "id": "portfolio",
+      "kicker": "Professional Portfolio",
+      "title": { "text": "Real Estate", "accent": "Portfolio", "break": true },
+      "script": "My Approach",
+      "paragraphs": [
+        "Building long-term relationships with clients through trust, expertise, and personalized real estate solutions. I don't just close deals — I guide, advise, and manage investments from A to Z, ensuring a seamless and rewarding experience."
+      ],
+      "lists": [
+        { "heading": "What I Deliver", "items": ["Strong client connections", "Expert consulting", "End-to-end investment management", "Tailored real estate solutions", "Maximized returns & asset value"] }
+      ],
+      "works": [{ "slot": "real-estate-portrait", "caption": "Alaa Attal with a certificate of appreciation" }]
+    },
+    {
+      "id": "services",
+      "script": "My Services",
+      "lists": [
+        { "heading": "Client Relationship Building", "icon": "handshake", "text": "Long-term, trust-based partnerships." },
+        { "heading": "Real Estate Consulting", "icon": "chart", "text": "Market insights, investment advice, and strategic guidance." },
+        { "heading": "Investment Management", "icon": "layers", "text": "From A to Z — selection, acquisition, management, and growth." },
+        { "heading": "Tailored Solutions", "icon": "key", "text": "The best properties and investment opportunities to meet each client's goals." }
+      ]
+    },
+    {
+      "id": "experience",
+      "script": "Project Experience",
+      "lists": [
+        { "heading": "Sharjah Projects", "icon": "wheel", "text": "Residential, commercial, and mixed-use developments in Sharjah." },
+        { "heading": "Dubai Projects", "icon": "tower", "text": "High-value and landmark projects across Dubai's key communities." }
+      ]
+    },
+    {
+      "id": "journey",
+      "script": "End-to-End Investment Journey",
+      "lists": [
+        { "heading": "Understand Client Needs", "icon": "search" },
+        { "heading": "Market Analysis", "icon": "bars" },
+        { "heading": "Property Selection", "icon": "building" },
+        { "heading": "Acquisition & Transactions", "icon": "contract" },
+        { "heading": "Management & Optimization", "icon": "gear" },
+        { "heading": "Long-Term Value & Returns", "icon": "trend" }
+      ],
+      "paragraphs": ["The Right Investment, From A to Z"]
+    }
+  ]
+}

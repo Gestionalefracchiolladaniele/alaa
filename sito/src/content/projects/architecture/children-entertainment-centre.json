@@ -1,0 +1,55 @@
+{
+  "kind": "architecture",
+  "order": 3,
+  "page": 15,
+  "title": { "text": "Children", "accent": "Entertainment Centre", "break": true },
+  "shortTitle": "Children Entertainment Centre",
+  "subtitle": "Architectural Design",
+  "summary": "A vibrant, safe centre for play, creativity and learning.",
+  "hero": "children-centre-hero",
+  "gallery": [
+    { "slot": "children-centre-interior-1", "caption": "Indoor play area" },
+    { "slot": "children-centre-interior-2", "caption": "Café" },
+    { "slot": "children-centre-interior-3", "caption": "Activity room" }
+  ],
+  "texts": [
+    { "heading": "Concept", "body": "A vibrant and safe entertainment centre for children that stimulates creativity, play, and learning through a dynamic, playful form, colorful environment, and child-friendly spaces." },
+    { "heading": "Facade & Detail", "items": ["Aluminum sheets (cladding) — 0.5 cm", "Steel bars — 5–7 cm", "Steel sheets & insulation — 0.5 cm", "Space frame component — 1–1.4 m"] }
+  ],
+  "groups": [
+    { "heading": "Design Inspiration", "items": [
+      { "name": "Playful Form & Movement", "slot": "children-centre-inspiration-1" },
+      { "name": "Color & Joy", "slot": "children-centre-inspiration-2" },
+      { "name": "Play & Discovery", "slot": "children-centre-inspiration-3" }
+    ] },
+    { "heading": "Material & Color Palette", "layout": "list", "items": [
+      { "name": "Aluminum Cladding" }, { "name": "Colored Louvers" }, { "name": "Glass" }, { "name": "Concrete" }, { "name": "Steel Structure" }, { "name": "Playful Panels", "note": "Multi-Color" }
+    ] }
+  ],
+  "palette": [
+    { "name": "Aluminum Cladding", "hex": "#d3cfcf" },
+    { "name": "Glass", "hex": "#99c1dd" },
+    { "name": "Concrete", "hex": "#dfd3ca" },
+    { "name": "Steel Structure", "hex": "#898583" },
+    { "name": "Playful Panels", "hex": "#e3d9d2", "note": "with multi-colour dots" }
+  ],
+  "features": [
+    { "title": "Indoor Play Area", "icon": "gamepad" },
+    { "title": "Creative Arts Zone", "icon": "palette" },
+    { "title": "Learning & Activity Rooms", "icon": "book" },
+    { "title": "Sports Hall", "icon": "run" },
+    { "title": "Party & Event Hall", "icon": "people" },
+    { "title": "Café", "icon": "cutlery" },
+    { "title": "Outdoor Playground", "icon": "tree" },
+    { "title": "Service & Support", "icon": "gear" }
+  ],
+  "drawings": [
+    { "slot": "children-centre-site-plan", "caption": "Site plan" },
+    { "slot": "children-centre-floor-plan", "caption": "Floor plan (ground floor)" },
+    { "slot": "children-centre-elev-front", "caption": "Front elevation (1/100)" },
+    { "slot": "children-centre-elev-left", "caption": "Left elevation (1/100)" },
+    { "slot": "children-centre-elev-right", "caption": "Right elevation (1/100)" },
+    { "slot": "children-centre-sections", "caption": "Sections A–A and B–B (1/100)" },
+    { "slot": "children-centre-facade", "caption": "Facade detail" }
+  ]
+}

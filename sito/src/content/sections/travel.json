@@ -1,0 +1,36 @@
+{
+  "scene": 9,
+  "pages": [28, 29],
+  "kicker": "Portfolio Section",
+  "title": { "text": "Trav", "accent": "el" },
+  "tags": ["Journeys", "Cultures", "Places", "Stories"],
+  "cover": "travel-cover",
+  "sketch": "travel-sketch",
+  "door": { "slot": "travel-cover", "rect": { "x": 19.6, "y": 23.5, "w": 75.4, "h": 41 }, "label": "Enter the globe" },
+  "blocks": [
+    {
+      "id": "journey",
+      "kicker": "Portfolio Section",
+      "title": { "text": "Travel", "accent": "Journey", "accentItalic": true, "break": true },
+      "tags": ["Places", "Cultures", "Experiences"],
+      "script": "The Journey",
+      "paragraphs": [
+        "Through my travels, I explore new places, meet different people, and experience diverse cultures, traditions, food, architecture, history, language, and lifestyle."
+      ],
+      "lists": [
+        { "heading": "Europe", "icon": "pin", "items": ["Italy", "France", "Germany", "Austria", "Netherlands", "The Vatican City"] },
+        { "heading": "Asia", "icon": "dome", "items": ["Turkey", "Thailand", "Georgia", "Cyprus", "Syria", "Lebanon", "Jordan"] },
+        { "heading": "Gulf Countries", "icon": "palm", "items": ["UAE", "Saudi Arabia", "Sultanate of Oman"] },
+        { "heading": "Themes", "items": ["Food", "Architecture", "History", "Language", "Culture", "Traditions", "Lifestyle"] }
+      ],
+      "works": [
+        { "slot": "travel-01", "place": "Venice, Italy" },
+        { "slot": "travel-02", "place": "Paris, France" },
+        { "slot": "travel-03" },
+        { "slot": "travel-04", "place": "Cappadocia, Turkey" },
+        { "slot": "travel-05" },
+        { "slot": "travel-06", "place": "Milan, Italy" }
+      ]
+    }
+  ]
+}

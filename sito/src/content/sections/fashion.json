@@ -1,0 +1,66 @@
+{
+  "scene": 8,
+  "pages": [25, 26, 27],
+  "kicker": "Portfolio Section",
+  "title": { "text": "", "accent": "Fashion" },
+  "tags": ["Styling", "Creative Direction", "Campaigns"],
+  "cover": "fashion-cover",
+  "sketch": "fashion-sketch",
+  "door": { "slot": "fashion-sheet", "rect": { "x": 0, "y": 0, "w": 100, "h": 100 }, "label": "Enter the sketch" },
+  "blocks": [
+    {
+      "id": "black-white",
+      "kicker": "Fashion Portfolio",
+      "title": { "text": "Black &", "accent": "White", "break": true },
+      "tags": ["Collection"],
+      "script": "The Collection",
+      "paragraphs": [
+        "A timeless collection that celebrates the power of black and white — two opposite yet complementary colors that create balance, confidence, and lasting elegance. The collection blends modern tailoring with feminine details, offering versatile looks that move seamlessly from parties to travel and work."
+      ],
+      "lists": [
+        { "heading": "The Power of Black & White", "items": ["Timeless & sophisticated", "Versatile for any occasion", "Effortlessly elegant", "Easy to style and layer", "Projects confidence & strength"] },
+        { "heading": "Parties", "icon": "glass", "text": "Refined looks for special occasions." },
+        { "heading": "Travel", "icon": "plane", "text": "Comfortable, chic looks for every destination." },
+        { "heading": "Work", "icon": "case", "text": "Professional, polished and modern styles for the workday." }
+      ],
+      "works": [
+        { "slot": "fashion-bw-01" }, { "slot": "fashion-bw-02", "place": "Paris" }, { "slot": "fashion-bw-03" },
+        { "slot": "fashion-bw-04" }, { "slot": "fashion-bw-05" }, { "slot": "fashion-bw-06" },
+        { "slot": "fashion-bw-sketch", "caption": "Sketch" }
+      ],
+      "swatches": [
+        { "name": "Black", "hex": "#180502", "note": "Power, Elegance, Strength" },
+        { "name": "White", "hex": "#f2dec5", "note": "Purity, Balance, Simplicity" },
+        { "name": "Fluid Drapes", "hex": "#e9d2b5", "slot": "fashion-bw-element-1" },
+        { "name": "Pleats", "hex": "#ead6bd", "slot": "fashion-bw-element-2" },
+        { "name": "Pearl Accents", "hex": "#2a1a14", "slot": "fashion-bw-element-3" },
+        { "name": "Tailoring", "hex": "#140806", "slot": "fashion-bw-element-4" },
+        { "name": "Soft Fabric Details", "hex": "#e7cdb0", "slot": "fashion-bw-element-5" }
+      ]
+    },
+    {
+      "id": "old-money",
+      "kicker": "Fashion Portfolio",
+      "title": { "text": "Old Money", "accent": "Style", "break": true },
+      "tags": ["Timeless Elegance"],
+      "script": "The Style",
+      "paragraphs": [
+        "A refined approach to dressing that embraces timeless pieces, elegant color combinations, and high-quality essentials. Old Money Style reflects sophistication, subtle luxury, and enduring taste.",
+        "The selected colors — camel/beige, ivory/white, deep burgundy/red, soft blue, and chocolate brown — communicate richness, elegance, refinement, and effortless style."
+      ],
+      "lists": [
+        { "heading": "Style Notes", "items": ["Classic silhouettes", "Refined layering", "Quality over trends", "Understated accessories"] }
+      ],
+      "works": [
+        { "slot": "fashion-om-01", "place": "Rome" }, { "slot": "fashion-om-02" }, { "slot": "fashion-om-03" }, { "slot": "fashion-om-04" }
+      ],
+      "swatches": [
+        { "name": "Camel", "hex": "#c18f60", "note": "quiet luxury & warmth" },
+        { "name": "Ivory", "hex": "#fbeedb", "note": "purity & timeless grace" },
+        { "name": "Burgundy", "hex": "#5e1612", "note": "richness & confidence" },
+        { "name": "Soft Blue", "hex": "#a5abb7", "note": "calm & sophistication" },
+        { "name": "Chocolate", "hex": "#4d2913", "note": "depth & understated elegance" }
+      ]
+    }
+  ]
+}

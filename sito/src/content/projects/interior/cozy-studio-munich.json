@@ -1,0 +1,39 @@
+{
+  "kind": "interior",
+  "order": 2,
+  "page": 6,
+  "title": { "text": "Design", "accent": "Dashboard" },
+  "shortTitle": "Cozy Studio Residence",
+  "script": "Cozy Studio Residence",
+  "location": "Munich, Germany",
+  "summary": "A compact studio designed for warmth, comfort, and a personal touch in Munich.",
+  "hero": "cozy-studio-bedroom",
+  "gallery": [
+    { "slot": "cozy-studio-gallery", "caption": "Gallery wall in the arched niche" },
+    { "slot": "cozy-studio-living", "caption": "Living area" }
+  ],
+  "texts": [
+    { "heading": "The Story", "body": "A compact studio designed for warmth, comfort, and a personal touch in Munich." },
+    { "heading": "The Goal", "body": "To fit all daily needs into a small space while keeping it organized, cozy, and elegant." },
+    { "heading": "The Inspiration", "body": "The client's love for art and pictures, and the need for a warm retreat from Munich's cold weather." }
+  ],
+  "palette": [
+    { "name": "Red", "hex": "#651812", "note": "Warmth & Energy" },
+    { "name": "Gray", "hex": "#514132", "note": "Cozy & Calming" },
+    { "name": "Beige", "hex": "#d3ac85", "note": "Balance & Softness" }
+  ],
+  "groups": [
+    { "heading": "Materials & Textures", "items": [
+      { "name": "Velvet", "note": "Rich & Warm", "slot": "cozy-studio-mat-1" },
+      { "name": "Upholstery", "note": "Soft & Cozy", "slot": "cozy-studio-mat-2" },
+      { "name": "Wood", "note": "Natural Feel", "slot": "cozy-studio-mat-3" },
+      { "name": "Brass", "note": "Elegance & Warm Glow", "slot": "cozy-studio-mat-4" }
+    ] }
+  ],
+  "features": [
+    { "title": "Zoning", "text": "Open & Defined Areas", "icon": "layers" },
+    { "title": "Multi-Use", "text": "Sleep · Work · Relax", "icon": "cube" },
+    { "title": "Storage", "text": "Organized & Clutter-Free", "icon": "drawer" },
+    { "title": "Lighting", "text": "Warm & Layered", "icon": "lamp" }
+  ]
+}

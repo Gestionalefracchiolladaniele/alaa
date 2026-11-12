@@ -1,0 +1,29 @@
+{
+  "scene": 2,
+  "pages": [2],
+  "kicker": "A Multidisciplinary Creative Professional",
+  "title": { "text": "About", "accent": "Me", "accentItalic": false },
+  "tags": ["Architecture", "Interior Design", "Real Estate", "Art & Illustration", "Travel & Culture", "Photography", "Fashion"],
+  "paragraphs": [
+    "I am a creative professional with a background in Architecture, Interior Design, and Real Estate Consultancy, combined with a strong passion for art, photography, fashion, and cultural exploration.",
+    "My work is driven by a deep interest in spaces, people, and the stories they create. I enjoy connecting different disciplines, perspectives, and experiences to develop meaningful and distinctive ideas.",
+    "Having traveled to 16 countries, I have been exposed to diverse cultures, architectural identities, and lifestyles, which continuously inspire my creative approach."
+  ],
+  "quote": "I am passionate about creating, exploring, and bringing a unique aesthetic and cultural awareness to everything I do.",
+  "cover": "about-portrait",
+  "extra": {
+    "motto": ["Spaces.", "People.", "Cultures.", "Ideas.", "All connected"],
+    "facts": [
+      { "label": "Based in", "value": "Dubai, UAE", "icon": "pin" },
+      { "label": "Countries", "value": "16", "icon": "globe" },
+      { "label": "Languages", "value": "AR | EN | TR", "note": "Learning Italian", "icon": "lang" }
+    ],
+    "year": "2026",
+    "counters": [
+      { "value": 16, "label": "Countries" },
+      { "value": 3, "label": "Languages" },
+      { "value": 8, "label": "Chairman's Appreciation Awards" }
+    ],
+    "moodboard": ["about-coast", "about-arch-sketch", "about-velvet", "about-living"]
+  }
+}

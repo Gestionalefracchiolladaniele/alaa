@@ -1,0 +1,35 @@
+---
+/* Un'immagine sostituibile. Legge il manifesto degli slot e lascia ad Astro WebP e srcset.
+   Per sostituirla: metti originali/<id>.<est>, rilancia tools/build_slots.py e la build.
+   data-slot="<id>" resta nel markup: serve a Fable/F6 (DiveIn, lightbox, video al posto della foto). */
+import { Image } from 'astro:assets';
+import { getSlot, widthsFor } from '../lib/slots';
+
+interface Props {
+  id: string;
+  sizes?: string;
+  alt?: string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  /** larghezza massima servita (px) */
+  max?: number;
+  decorative?: boolean;
+}
+const { id, sizes = '100vw', alt, class: cls, loading = 'lazy', fetchpriority, max = 1800, decorative = false } = Astro.props;
+const slot = getSlot(id);
+const widths = widthsFor(slot.image, max);
+---
+<Image
+  src={slot.image}
+  alt={decorative ? '' : (alt ?? slot.alt)}
+  widths={widths}
+  sizes={sizes}
+  format="webp"
+  quality={80}
+  loading={loading}
+  decoding="async"
+  fetchpriority={fetchpriority}
+  class:list={['slot', cls]}
+  data-slot={id}
+/>

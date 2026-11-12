@@ -1,0 +1,53 @@
+{
+  "kind": "interior",
+  "order": 3,
+  "page": 7,
+  "title": { "text": "Classic Luxury", "accent": "Living Room", "break": true },
+  "shortTitle": "Classic Luxury Living Room",
+  "subtitle": "Interior Design Concept",
+  "location": "Dubai, UAE",
+  "type": "Residential Interior",
+  "summary": "A refined classic setting where gold brings prestige and light blue brings calm.",
+  "hero": "classic-luxury-hero",
+  "gallery": [
+    { "slot": "classic-luxury-detail-1", "caption": "Tufted, gilded seating" },
+    { "slot": "classic-luxury-detail-2", "caption": "Ceiling rose and crystal chandelier" },
+    { "slot": "classic-luxury-detail-3", "caption": "Layered drapery" },
+    { "slot": "classic-luxury-detail-4", "caption": "Blue floral accents" }
+  ],
+  "texts": [
+    { "heading": "Client Vision", "items": ["Classic", "Elegant", "Luxurious", "Rich", "Welcoming"] },
+    { "heading": "Design Story", "body": "The client wanted a classic, prestigious, rich-feeling interior with a gold touch. In response, I designed a refined classic setting with ornate detailing, gold finishes and crystal lighting to create a sense of elegance and affluence. I intentionally introduced light blue in the cushions, floral arrangements and rug to soften the richness, add comfort and calm, and maintain a welcoming, uplifting atmosphere for the client." },
+    { "heading": "Design Inspiration", "items": ["Timeless European classic language", "Symmetry and balanced composition", "Carved detailing and refined ornamentation", "Crystal sparkle and elegant lighting", "Warm gold as a statement of prestige"] },
+    { "heading": "Design Intent", "body": "To create a timeless classic interior that balances opulence and comfort, where refined details and warm gold finishes express luxury, while soft blue accents and layered textures bring harmony, calmness and a welcoming sense of home." },
+    { "heading": "Signature Touch", "body": "Gold brings prestige; light blue brings calm and comfort." }
+  ],
+  "palette": [
+    { "name": "Warm Ivory", "hex": "#f2dcc6" },
+    { "name": "Champagne Gold", "hex": "#e2b170" },
+    { "name": "Soft Powder Blue", "hex": "#a2b0b8" },
+    { "name": "Warm Beige", "hex": "#deba92" },
+    { "name": "Polished Cream", "hex": "#f1d6b7" }
+  ],
+  "groups": [
+    { "heading": "Materials & Finishes", "items": [
+      { "name": "Carved & Gilded Timber Furniture", "note": "Classic Finish", "slot": "classic-luxury-mat-1" },
+      { "name": "Ivory Velvet / Textured Upholstery", "slot": "classic-luxury-mat-2" },
+      { "name": "Crystal Chandelier Glass", "slot": "classic-luxury-mat-3" },
+      { "name": "Sheer Lace Curtains with Layered Drapery", "slot": "classic-luxury-mat-4" },
+      { "name": "Polished Porcelain / Marble-Look Flooring", "slot": "classic-luxury-mat-5" },
+      { "name": "Gold Decorative Metalwork", "slot": "classic-luxury-mat-6" }
+    ] }
+  ],
+  "features": [
+    { "title": "Ornate carved furniture with classic detailing.", "icon": "sofa" },
+    { "title": "Crystal chandeliers as a luxurious focal point.", "icon": "chandelier" },
+    { "title": "Decorative ceiling mouldings with gold accents.", "icon": "frame" },
+    { "title": "Layered window treatments with rich drapery and lace sheers.", "icon": "curtain" },
+    { "title": "Blue accents in cushions, rug and floral arrangements.", "icon": "flower" },
+    { "title": "Reflective, light floor for a bright and elegant atmosphere.", "icon": "floor" }
+  ],
+  "drawings": [
+    { "slot": "classic-luxury-capital", "caption": "Design inspiration: the classical capital" }
+  ]
+}

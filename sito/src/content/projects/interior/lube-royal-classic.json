@@ -1,0 +1,55 @@
+{
+  "kind": "interior",
+  "order": 6,
+  "page": 10,
+  "title": { "text": "LUBE —", "accent": "Italian Kitchen" },
+  "shortTitle": "LUBE Royal Classic Kitchen",
+  "subtitle": "Royal Classic Kitchen",
+  "location": "Dubai, UAE",
+  "brand": "LUBE | Italian",
+  "type": "Residential Project",
+  "summary": "A Royal Classic kitchen in warm ivory with antique gold detailing.",
+  "hero": "lube-royal-classic-hero",
+  "texts": [
+    { "heading": "Design Concept", "body": "A luxurious Royal Classic kitchen by LUBE Italian, defined by timeless Italian craftsmanship, symmetry, refined ornamentation, and a warm ivory palette. The design combines elegant carved details, classical mouldings, and functional layout to create a sophisticated and enduring kitchen for a residential project in Dubai." },
+    { "heading": "Handles & Hardware", "items": ["Antique brass / champagne-gold classic pull handles and decorative knobs, matching the Royal Classic style."] },
+    { "heading": "Worktop & Splashback", "items": ["Worktop: black polished granite or quartz (proposed specification).", "Splashback: dark grey stone or quartz (proposed specification)."] }
+  ],
+  "palette": [
+    { "name": "Ivory", "hex": "#e5cbab" },
+    { "name": "Black Granite", "hex": "#16130e" },
+    { "name": "Dark Grey Stone", "hex": "#7a6f64" }
+  ],
+  "groups": [
+    { "heading": "Materials & Finishes", "items": [
+      { "name": "Ivory Lacquered / Painted Solid Wood or MDF", "note": "Raised-Panel", "slot": "lube-royal-classic-mat-1" },
+      { "name": "Antique Gold Detailing", "note": "Patina Finish", "slot": "lube-royal-classic-mat-2" },
+      { "name": "Decorative Black Glass with Metal Grille Insert", "slot": "lube-royal-classic-mat-3" },
+      { "name": "Carved Mouldings & Classical Details", "note": "Italian Style", "slot": "lube-royal-classic-mat-4" }
+    ] },
+    { "heading": "Handles, Worktop & Splashback", "items": [
+      { "name": "Antique brass pull handles and knobs", "slot": "lube-royal-classic-handles" },
+      { "name": "Worktop", "note": "Black polished granite or quartz", "slot": "lube-royal-classic-worktop" },
+      { "name": "Splashback", "note": "Dark grey stone or quartz", "slot": "lube-royal-classic-splash" }
+    ] },
+    { "heading": "Appliances", "items": [
+      { "name": "Built-in Oven", "note": "Integrated", "slot": "lube-royal-classic-appliance-1" },
+      { "name": "Gas Hob", "note": "4–5 Burners", "slot": "lube-royal-classic-appliance-2" },
+      { "name": "Integrated Hood", "note": "Built-in, Matching Cabinetry", "slot": "lube-royal-classic-appliance-3" },
+      { "name": "Dishwasher", "note": "Integrated", "slot": "lube-royal-classic-appliance-4" },
+      { "name": "Refrigerator", "note": "Freestanding or Integrated", "slot": "lube-royal-classic-appliance-5" }
+    ] }
+  ],
+  "features": [
+    { "title": "Ornate Crown Moulding", "text": "Classic cornice with decorative profile.", "icon": "crown" },
+    { "title": "Fluted Pilasters", "text": "Elegant vertical detailing with carved capitals.", "icon": "column" },
+    { "title": "Carved Floral Crest", "text": "A distinctive classical focal element.", "icon": "crest" },
+    { "title": "Curved Cabinetry", "text": "Soft, rounded base units for a graceful finish.", "icon": "curve" },
+    { "title": "Decorative Grille Inserts", "text": "Black glass with elegant geometric metalwork.", "icon": "grid" },
+    { "title": "Durable Surfaces", "text": "High-quality, long-lasting materials suitable for everyday use.", "icon": "shield" }
+  ],
+  "compare": { "drawing": "lube-royal-classic-elevation", "photo": "lube-royal-classic-hero" },
+  "drawings": [
+    { "slot": "lube-royal-classic-elevation", "caption": "Main wall elevation" }
+  ]
+}

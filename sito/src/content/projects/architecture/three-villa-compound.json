@@ -1,0 +1,32 @@
+{
+  "kind": "architecture",
+  "order": 5,
+  "page": 17,
+  "title": { "text": "Three-Villa", "accent": "Compound", "break": true },
+  "shortTitle": "Three-Villa Compound",
+  "subtitle": "Private Residential Compound",
+  "script": "A timeless courtyard living experience, where privacy, nature and tradition come together.",
+  "location": "Dubai, UAE",
+  "type": "Private Residential Compound",
+  "summary": "Three villas around a central courtyard garden.",
+  "hero": "three-villa-garden",
+  "gallery": [
+    { "slot": "three-villa-pool", "caption": "Pool courtyard view" },
+    { "slot": "three-villa-courtyard", "caption": "Central courtyard view" },
+    { "slot": "three-villa-evening", "caption": "Evening view (central garden)" },
+    { "slot": "three-villa-exterior", "caption": "Villa exterior view" }
+  ],
+  "texts": [
+    { "heading": "Design Overview", "body": "A private three-villa compound designed around a central courtyard, creating a serene and cohesive living environment. The layout prioritizes family life, hospitality and outdoor living, with a strong sense of privacy and connection to nature." },
+    { "heading": "Site & Landscape", "items": ["Central landscaped garden with lush greenery and palm trees.", "Pathways linking the villas and outdoor spaces.", "Seating areas for relaxation and gatherings.", "Water features (fountain and pool) visible within the central garden."] },
+    { "heading": "Architectural Character", "items": ["Arcaded elevations with elegant arches and traditional proportions.", "Warm masonry and plaster palette with natural textures.", "Courtyard language that celebrates privacy, light and openness."] },
+    { "heading": "Outdoor Amenities", "items": ["Central swimming pool for recreation and relaxation.", "Expansive lawns for family activities.", "Shaded seating areas and gathering spaces.", "Landscape features and fountains enhance the outdoor experience."] },
+    { "heading": "Design Priorities", "items": ["Privacy and security for all three villas.", "Comfortable family living spaces.", "Warm and welcoming guest hospitality.", "Shaded circulation and outdoor comfort.", "Lush landscape and water features for a serene environment."] },
+    { "heading": "Traditional Values, Modern Living" }
+  ],
+  "stats": [
+    { "label": "Location", "value": "Dubai, UAE" },
+    { "label": "Development", "value": "3 Villas" },
+    { "label": "Project Type", "value": "Private Residential Compound" }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "kind": "architecture",
+  "order": 2,
+  "page": 14,
+  "title": { "text": "Kyrenia Waterfront", "accent": "Art Centre", "break": true },
+  "shortTitle": "Kyrenia Waterfront Art Centre",
+  "subtitle": "Adaptive Reuse & Cultural Revitalization",
+  "script": "History Reimagined",
+  "location": "Kyrenia Harbour, Cyprus",
+  "summary": "A historic stone building becomes an Art Centre, with a sculptural timber pavilion on the waterfront.",
+  "hero": "kyrenia-hero",
+  "gallery": [
+    { "slot": "kyrenia-interior", "caption": "Interior view — gallery" },
+    { "slot": "kyrenia-site-analysis", "caption": "Kyrenia Harbour" }
+  ],
+  "texts": [
+    { "heading": "History Reimagined", "body": "An adaptive reuse project that breathes new life into a historic stone building in Kyrenia Harbour, Cyprus, transforming it into a vibrant Art Centre while adding a contemporary sculptural pavilion on the waterfront. The design celebrates the site's cultural heritage, maritime character, and public life, creating a lively destination for art, exhibition, learning, and community gathering." },
+    { "heading": "Site Analysis — Kyrenia Harbour", "items": [
+      "Historic context: Venetian / Ottoman heritage, historic harbour.",
+      "Climate: Mediterranean, with hot, dry summers and mild, wet winters.",
+      "Pedestrian network: harbour promenade and existing urban fabric links.",
+      "Marina connection: active boat berths, tourism and waterfront life."
+    ] },
+    { "heading": "Adaptive Reuse Strategy", "items": [
+      "Retain — preserve the historic mass, roof form and masonry character.",
+      "Restore — repair stonework, reopen original openings, enhance structural integrity.",
+      "Insert — introduce contemporary art functions, services and accessibility with reversible interventions."
+    ] }
+  ],
+  "palette": [
+    { "name": "Historic Stone", "hex": "#d1a576" },
+    { "name": "Timber Ribs", "hex": "#9c5721" },
+    { "name": "Lime Plaster", "hex": "#e8d3bb" },
+    { "name": "Harbour Water", "hex": "#44858c" },
+    { "name": "Glass", "hex": "#87b1cb" },
+    { "name": "Native Planting", "hex": "#686627" }
+  ],
+  "groups": [
+    { "heading": "Material Palette", "items": [
+      { "name": "Historic Stone", "note": "Existing", "slot": "kyrenia-mat-1" },
+      { "name": "Timber Ribs / Slats", "slot": "kyrenia-mat-2" },
+      { "name": "Glass", "note": "Transparent", "slot": "kyrenia-mat-3" },
+      { "name": "Lime Plaster", "note": "Restoration", "slot": "kyrenia-mat-4" },
+      { "name": "Harbour Water", "note": "Context", "slot": "kyrenia-mat-5" },
+      { "name": "Native Planting", "note": "Mediterranean", "slot": "kyrenia-mat-6" }
+    ] },
+    { "heading": "Pavilion Construction", "layout": "list", "items": [
+      { "name": "Timber Slat Skin", "note": "weathered hardwood" },
+      { "name": "Waterproof Membrane", "note": "lightweight, UV resistant" },
+      { "name": "Curved Ribs", "note": "laminated timber" },
+      { "name": "Air Cavity", "note": "natural ventilation" },
+      { "name": "Base / Plinth", "note": "concrete with stone finish" }
+    ] }
+  ],
+  "drawings": [
+    { "slot": "kyrenia-strategy", "caption": "Retain · Restore · Insert" },
+    { "slot": "kyrenia-site-plan", "caption": "Site plan (1:500)" },
+    { "slot": "kyrenia-pavilion-plan", "caption": "Pavilion plan (1:200)" },
+    { "slot": "kyrenia-ground-floor", "caption": "Art Centre — ground floor plan (1:200)" },
+    { "slot": "kyrenia-first-floor", "caption": "Art Centre — first floor plan (1:200)" },
+    { "slot": "kyrenia-exploded", "caption": "Pavilion construction — exploded axonometric" },
+    { "slot": "kyrenia-elev-ac-north", "caption": "Art Centre — north elevation (1:200)" },
+    { "slot": "kyrenia-elev-ac-south", "caption": "Art Centre — south elevation (1:200)" },
+    { "slot": "kyrenia-elev-pav-west", "caption": "Pavilion — west elevation (1:200)" },
+    { "slot": "kyrenia-elev-pav-north", "caption": "Pavilion — north elevation (1:200)" },
+    { "slot": "kyrenia-section-ac-aa", "caption": "Section A–A (Art Centre) (1:200)" },
+    { "slot": "kyrenia-section-ac-bb", "caption": "Section B–B (Art Centre) (1:200)" },
+    { "slot": "kyrenia-section-pav-aa", "caption": "Section A–A (Pavilion) (1:200)" }
+  ],
+  "legends": [
+    { "heading": "Ground floor", "items": [
+      { "label": "Reception / Information" }, { "label": "Gallery 1 (Main Exhibition)" }, { "label": "Café" }, { "label": "Workshop" }, { "label": "Services" }
+    ] },
+    { "heading": "First floor", "items": [
+      { "label": "Gallery 2 (Temporary)" }, { "label": "Studio (Artists)" }, { "label": "Archive / Collection" }, { "label": "Multipurpose / Event Room" }
+    ] }
+  ],
+  "model": { "file": "/models/kyrenia-pavilion.glb", "kind": "exploded" }
+}

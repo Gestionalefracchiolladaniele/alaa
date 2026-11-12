@@ -1,0 +1,37 @@
+{
+  "kind": "interior",
+  "order": 1,
+  "page": 5,
+  "title": { "text": "Sharjah", "accent": "Residence" },
+  "shortTitle": "Sharjah Residence",
+  "subtitle": "Interior Design Concept Dashboard",
+  "location": "Sharjah, UAE",
+  "summary": "A warm, nostalgic living space shaped around the client's love of green.",
+  "hero": "sharjah-residence-hero",
+  "gallery": [
+    { "slot": "sharjah-residence-view-2", "caption": "Living area" },
+    { "slot": "sharjah-residence-view-3", "caption": "Kitchen, dining and living" }
+  ],
+  "texts": [
+    { "heading": "Client Inspiration", "body": "The client was drawn to green for its calming, grounding quality and connection to nature. Olive and sage tones became the visual thread, bringing a sense of comfort and quiet character into the home." },
+    { "heading": "Design Story", "body": "A warm, nostalgic living space where classic detailing meets everyday comfort. Cream walls soften the palette, while cognac leather, walnut finishes and antique brass add depth and timelessness." },
+    { "heading": "Design Intent", "body": "A welcoming Sharjah home shaped around the client's love of green, layered textures and a refined vintage mood." }
+  ],
+  "palette": [
+    { "name": "Olive Green", "hex": "#675725" },
+    { "name": "Warm Ivory", "hex": "#edcfae" },
+    { "name": "Cognac", "hex": "#823a17" },
+    { "name": "Walnut", "hex": "#542e17" },
+    { "name": "Antique Brass", "hex": "#d59c56" }
+  ],
+  "groups": [
+    { "heading": "Key Materials", "items": [
+      { "name": "Painted Wall Paneling", "slot": "sharjah-residence-mat-1" },
+      { "name": "Striped Wallpaper", "slot": "sharjah-residence-mat-2" },
+      { "name": "Leather Upholstery", "slot": "sharjah-residence-mat-3" },
+      { "name": "Walnut Timber", "slot": "sharjah-residence-mat-4" },
+      { "name": "Patterned Rug", "slot": "sharjah-residence-mat-5" },
+      { "name": "Brass Lighting", "slot": "sharjah-residence-mat-6" }
+    ] }
+  ]
+}

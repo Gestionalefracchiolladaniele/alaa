@@ -1,0 +1,65 @@
+{
+  "kind": "interior",
+  "order": 4,
+  "page": 8,
+  "title": { "text": "Bathroom", "accent": "Design" },
+  "shortTitle": "Thai Inspired Bathroom",
+  "subtitle": "Thai Inspired Modern Bathroom",
+  "location": "Dubai, UAE",
+  "type": "Residential Project",
+  "summary": "A serene, spa-like bathroom inspired by Thai aesthetics.",
+  "hero": "thai-bathroom-hero",
+  "gallery": [
+    { "slot": "thai-bathroom-detail-1", "caption": "Lit niche" },
+    { "slot": "thai-bathroom-detail-2", "caption": "Rattan pendant" },
+    { "slot": "thai-bathroom-detail-3", "caption": "Teak ceiling" },
+    { "slot": "thai-bathroom-detail-4", "caption": "Stone countertop" },
+    { "slot": "thai-bathroom-detail-5", "caption": "Thai artwork" }
+  ],
+  "texts": [
+    { "heading": "Design Concept", "body": "A serene and luxurious bathroom inspired by Thai aesthetics, featuring natural materials, warm lighting, and handcrafted details. The design blends rich textures, modern functionality, and tropical elements to create a spa-like atmosphere within a contemporary residence in Dubai." }
+  ],
+  "palette": [
+    { "name": "Green Marble", "hex": "#282b18" },
+    { "name": "Natural Stone", "hex": "#9e8064" },
+    { "name": "Warm Beige", "hex": "#e5c29e" },
+    { "name": "Teak", "hex": "#7c3706" },
+    { "name": "Brushed Brass", "hex": "#e8b259" }
+  ],
+  "groups": [
+    { "heading": "Materials & Finishes", "items": [
+      { "name": "Green Marble", "note": "Wall Cladding", "slot": "thai-bathroom-mat-1" },
+      { "name": "Natural Stone", "note": "Countertop", "slot": "thai-bathroom-mat-2" },
+      { "name": "Teak Wood", "note": "Vanity & Ceiling", "slot": "thai-bathroom-mat-3" },
+      { "name": "Textured Plaster", "note": "Walls", "slot": "thai-bathroom-mat-4" },
+      { "name": "Brushed Brass", "note": "Fixtures & Accents", "slot": "thai-bathroom-mat-5" },
+      { "name": "Rattan Weave", "note": "Light Shade", "slot": "thai-bathroom-mat-6" }
+    ] },
+    { "heading": "Handles & Fixtures", "items": [
+      { "name": "Brushed brass fixtures and fittings", "slot": "thai-bathroom-tap" },
+      { "name": "Brushed brass rain shower", "slot": "thai-bathroom-shower-head" }
+    ] },
+    { "heading": "Top & Splashback", "items": [
+      { "name": "Green Marble", "note": "Top", "slot": "thai-bathroom-top" },
+      { "name": "Natural Stone", "note": "Splashback", "slot": "thai-bathroom-splash" }
+    ] },
+    { "heading": "Appliances & Sanitaryware", "items": [
+      { "name": "Toilet", "note": "Wall or Floor Mounted", "slot": "thai-bathroom-appliance-1" },
+      { "name": "Bathtub", "note": "Built-in", "slot": "thai-bathroom-appliance-2" },
+      { "name": "Rain Shower Set", "note": "With Hand Shower", "slot": "thai-bathroom-appliance-3" },
+      { "name": "Integrated Basin", "note": "Custom Stone Top", "slot": "thai-bathroom-appliance-4" }
+    ] }
+  ],
+  "features": [
+    { "title": "Thai-Inspired Aesthetic", "text": "A balance of cultural elegance and modern luxury.", "icon": "lotus" },
+    { "title": "Natural & Authentic Materials", "text": "Marble, stone, and teak wood for a warm, organic feel.", "icon": "layers" },
+    { "title": "Spa-Like Experience", "text": "Soft ambient lighting and earthy tones for relaxation.", "icon": "drop" },
+    { "title": "Warm Atmosphere", "text": "Layered lighting with backlit mirror, niche, and pendant.", "icon": "leaf" },
+    { "title": "Functional & Elegant", "text": "A balanced design combining comfort, storage, and style.", "icon": "grid" }
+  ],
+  "compare": { "drawing": "thai-bathroom-elevation", "photo": "thai-bathroom-hero" },
+  "drawings": [
+    { "slot": "thai-bathroom-elevation", "caption": "Main elevation" }
+  ],
+  "toConfirm": true
+}

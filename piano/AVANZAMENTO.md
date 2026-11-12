@@ -24,3 +24,35 @@ Diario di lavoro dell'esecutore (Opus). Aggiornato alla fine di ogni fase.
 - *ciak.png*: scontornato con un inviluppo convesso dei pixel neri; il piccolo cuneo crema tra asta e corpo e un angolino di velluto in basso a sinistra restano dentro. Da rifinire a mano se in apertura si nota.
 
 **Verifica**: `npm run build` verde; `astro check` 0 errori. Controllo a vista dei fotogrammi di riferimento fatto.
+
+## F1 — Contenuti e slot · fatta
+
+**Fatto**
+- Lette tutte le 30 pagine alla risoluzione nativa e trascritti i testi in `sito/src/content/`:
+  - `site.json` (nome, motto, ciak, discipline, contatti, voci del menu);
+  - `sections/` about, philosophy, interior, architecture, real-estate, art, fashion, travel (testi, etichette, porte `door`, blocchi di p19, p21–24, p26–27, p29);
+  - `projects/interior/` 7 progetti (p5–p11) e `projects/architecture/` 5 progetti (p13–p17), un file per tavola;
+  - `cv.json` dal CV, senza data di nascita, stato civile, nazionalità, visto e telefono.
+- Schema di validazione in `sito/src/content.config.ts` (collezioni `projects` e `sections`).
+- `sito/src/data/slots.json`: **220 slot** (vedi sotto perché più dei 90–110 previsti). `tools/build_slots.py` → `sito/src/assets/slots/` (18 MB, in git) e `sito/src/data/slots-report.json`. `tools/contact_sheet.py` → `tools/_cache/contact/`. `tools/check_slots.mjs` controlla che ogni slot citato nei contenuti esista.
+- Componente `Slot.astro` e `lib/slots.ts`: un id sbagliato blocca la build.
+- `piano/DA-CONFERMARE.md` con 37 voci.
+- Correzioni di `05-correzioni-testi.md` applicate tutte; aggiunte: "Featuring" → "featuring" (p11), "White (Purity, Balance, Simplicity)" (p26), nomi dei colori del bagno (p8).
+
+**Scelte**
+- **Ingrandimento: Lanczos 2× con leggera nitidezza.** Real-ESRGAN (ncnn-vulkan, modello x4plus) scaricato e provato su `creo-sharjah-hero`: 206 secondi per una sola immagine, oltre il limite di 2 minuti. Scartato. Il programma scaricato è rimasto solo nella cartella temporanea.
+- 220 slot invece di ~100: ogni campione di materiale, ogni elettrodomestico, ogni disegno e ogni opera ha il suo slot, così le pagine progetto mostrano tutto il contenuto delle tavole e ogni immagine si può sostituire singolarmente. Pesano poco (sono piccoli).
+- I titoli dentro le immagini sono sempre esclusi dai ritagli (le copertine sono ritagliate a destra del titolo; le etichette sotto le foto di p17 e sotto i campioni di p26 sono tagliate). Restano le scritte che fanno parte dei disegni (nomi delle stanze nelle piante, quote, scritte sui dorsi dei libri).
+- Le palette di p9, p10, p11, p13, p14, p15 non esistono come palette nel PDF: ho campionato i colori dai materiali mostrati (segnalato in DA-CONFERMARE #10).
+- Le porte (`door`) delle copertine stanno nei file delle sezioni con il rettangolo in percentuale sull'immagine dello slot.
+
+**Ritagli di qualità dubbia** (da sostituire per primi con gli originali)
+- Tutte le tavole di p13 (Botanic Garden) e p16 (Urban II): testo dei disegni deformato e risoluzione bassa (`needsOriginals`).
+- `children-centre-hero`, `urban-ii-hero`, `kyrenia-hero`: molto larghi e bassi (sono fasce nel PDF).
+- `about-portrait`: alto e stretto (314×1030 nativi), il bordo del vestito è tagliato a sinistra per non prendere la scritta "All connected".
+- Le foto di viaggio (p29) e moda (p26, p27) sono polaroid inclinate: il ritaglio include i bordi bianchi e un po' di sfondo.
+- I quaderni degli schizzi (p23) includono bordi del quaderno e della carta.
+- `botanic-garden-masterplan`: tagliata la punta in basso a destra per escludere la legenda sbagliata del PDF.
+- Campioni piccoli (materiali, elettrodomestici, p8, p10, p11): 80–150 px nativi, vanno mostrati piccoli.
+
+**Verifica**: foglio di controllo guardato pagina per pagina, corretti 20 ritagli (testo dei titoli dentro le copertine, etichette, bordi arrotondati); `astro check` 0 errori con i contenuti validati; `node tools/check_slots.mjs` OK.

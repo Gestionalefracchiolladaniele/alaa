@@ -1,0 +1,15 @@
+{
+  "scene": 3,
+  "pages": [3],
+  "kicker": "My Creative Philosophy",
+  "title": { "text": "A Creative", "accent": "Philosophy", "break": true },
+  "tags": ["Inspired by the world. Expressed through creativity."],
+  "paragraphs": [
+    "I believe creativity has no boundaries. It grows through experiences, cultures, art, and curiosity.",
+    "My approach combines architectural thinking, artistic expression, and an understanding of people and spaces.",
+    "Travel inspires my perspective, art expands my imagination, and my different experiences allow me to approach challenges from different angles."
+  ],
+  "script": "Different disciplines. Different perspectives. One creative vision.",
+  "cover": "philosophy-arch",
+  "door": { "slot": "philosophy-arch", "rect": { "x": 25.9, "y": 17.6, "w": 39.7, "h": 82.4 }, "label": "Through the arch" }
+}

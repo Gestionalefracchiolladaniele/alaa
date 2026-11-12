@@ -1,0 +1,58 @@
+{
+  "kind": "interior",
+  "order": 7,
+  "page": 11,
+  "title": { "text": "CREO —", "accent": "Italian Kitchen" },
+  "shortTitle": "CREO Italian Kitchen, Abu Dhabi",
+  "subtitle": "French New Classic Kitchen",
+  "location": "Abu Dhabi, UAE",
+  "brand": "CREO Italian Kitchens",
+  "type": "Residential Project",
+  "summary": "A French New Classic kitchen with refined paneling and a warm palette.",
+  "hero": "creo-abu-dhabi-hero",
+  "gallery": [
+    { "slot": "creo-abu-dhabi-detail-1", "caption": "Display cabinet detail with classic muntins" },
+    { "slot": "creo-abu-dhabi-detail-2", "caption": "Crown moulding (classic profile)" },
+    { "slot": "creo-abu-dhabi-detail-3", "caption": "Handleless drawer detail (integrated finger groove)" }
+  ],
+  "texts": [
+    { "heading": "Design Concept", "body": "A French New Classic kitchen that blends timeless elegance with modern functionality, featuring refined paneling, graceful proportions, and a warm, sophisticated palette tailored for contemporary living in Abu Dhabi." },
+    { "heading": "Worktop & Splash", "items": ["Elegant marble appearance with soft veining", "Durable, non-porous and stain resistant", "Heat and scratch resistant", "Easy to clean and ideal for Abu Dhabi's lifestyle"] },
+    { "heading": "Handles", "body": "A refined, timeless handle that complements the French classic look with a modern touch." }
+  ],
+  "palette": [
+    { "name": "Soft Grey", "hex": "#a99883" },
+    { "name": "Natural Oak", "hex": "#ab794b" },
+    { "name": "Calacatta Quartz", "hex": "#edd6be" }
+  ],
+  "groups": [
+    { "heading": "Materials & Finishes", "items": [
+      { "name": "Cabinetry", "note": "Lacquered MDF, Soft Grey", "slot": "creo-abu-dhabi-mat-1" },
+      { "name": "Drawer Accents", "note": "Natural Oak Veneer", "slot": "creo-abu-dhabi-mat-2" },
+      { "name": "Display Cabinets", "note": "Clear/Patterned Glass with Muntins", "slot": "creo-abu-dhabi-mat-3" },
+      { "name": "Interior Finish", "note": "Warm Beige with LED Lighting", "slot": "creo-abu-dhabi-mat-4" }
+    ] },
+    { "heading": "Worktop, Splash & Handle", "items": [
+      { "name": "Worktop", "note": "Engineered Quartz (Calacatta Look)", "slot": "creo-abu-dhabi-worktop" },
+      { "name": "Splashback", "note": "Matching Engineered Quartz (Full Height)", "slot": "creo-abu-dhabi-splash" },
+      { "name": "Classic Bar Handle", "note": "Brushed Nickel (Satin Finish)", "slot": "creo-abu-dhabi-handle" }
+    ] },
+    { "heading": "Appliances", "layout": "list", "items": [
+      { "name": "Built-in Oven", "note": "Energy Efficient" },
+      { "name": "Gas Hob", "note": "5 Burners" },
+      { "name": "Integrated Hood", "note": "High Extraction" },
+      { "name": "Dishwasher", "note": "Integrated" },
+      { "name": "Refrigerator", "note": "Built-in or Panel Ready" }
+    ] }
+  ],
+  "features": [
+    { "title": "French New Classic Style", "text": "Elegant paneling, symmetry and refined details", "icon": "fleur" },
+    { "title": "Premium & Durable Materials", "text": "High-quality, long-lasting finishes", "icon": "diamond" },
+    { "title": "Functional Layout", "text": "Spacious island, generous storage and efficient workflow", "icon": "gear" },
+    { "title": "Tailored for Abu Dhabi", "text": "Durable, easy-care surfaces and comfortable, timeless design for modern family living", "icon": "home" }
+  ],
+  "compare": { "drawing": "creo-abu-dhabi-elevation", "photo": "creo-abu-dhabi-hero" },
+  "drawings": [
+    { "slot": "creo-abu-dhabi-elevation", "caption": "Elevation (main wall)" }
+  ]
+}

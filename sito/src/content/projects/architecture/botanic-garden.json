@@ -1,0 +1,97 @@
+{
+  "kind": "architecture",
+  "order": 1,
+  "page": 13,
+  "title": { "text": "Botanic", "accent": "Garden" },
+  "shortTitle": "Botanic Garden",
+  "script": "Landscape, Learning & Community",
+  "location": "Nicosia",
+  "summary": "A botanic garden with an information center, a wedding hall and farm shop kiosks.",
+  "hero": "botanic-garden-masterplan",
+  "texts": [
+    { "heading": "Programme at a glance", "items": ["Visitor Orientation", "Botanical Learning", "Community Events", "Local Farm Produce", "Accessible Circulation", "Shaded Walkways", "Indoor Plant Gallery", "Outdoor Collection"] },
+    { "heading": "Site Context", "items": ["Location: Nicosia", "Context: residential area with easy access", "Site area: ≈ 37,000 m²"] },
+    { "heading": "Information Center", "body": "Orientation, exhibitions and learning, with visitor services and accessible facilities." },
+    { "heading": "Wedding Hall", "body": "A venue for weddings and gatherings, with preparation and catering support." },
+    { "heading": "Farm Shop Kiosks", "body": "Small kiosks selling fresh produce and local products." },
+    { "heading": "Botanical Gardens", "body": "Diverse gardens and indoor plant collections, sensory planting, lawns and water features." },
+    { "heading": "Indoor Experience", "body": "Climate-controlled greenhouse.", "items": ["Exhibition", "Educational Exhibits", "Learning / Workshop"] },
+    { "heading": "Outdoor Experience", "items": ["Themed Botanical Collection", "Shaded Walking Trails", "Landscaped Gardens", "Water Features & Seating"] }
+  ],
+  "groups": [
+    { "heading": "Planting Palette", "items": [
+      { "name": "Lavender", "slot": "botanic-garden-plant-1" },
+      { "name": "Bougainvillea", "slot": "botanic-garden-plant-2" },
+      { "name": "Olive", "slot": "botanic-garden-plant-3" },
+      { "name": "Rosemary", "slot": "botanic-garden-plant-4" }
+    ] },
+    { "heading": "Material Palette", "items": [
+      { "name": "Local Stone", "slot": "botanic-garden-mat-1" },
+      { "name": "Timber Slats", "slot": "botanic-garden-mat-2" },
+      { "name": "Lime Plaster", "slot": "botanic-garden-mat-3" },
+      { "name": "Glass", "note": "Greenhouse", "slot": "botanic-garden-mat-4" }
+    ] }
+  ],
+  "palette": [
+    { "name": "Local Stone", "hex": "#e5b783" },
+    { "name": "Timber", "hex": "#c07c3f" },
+    { "name": "Lime Plaster", "hex": "#fadab7" }
+  ],
+  "drawings": [
+    { "slot": "botanic-garden-masterplan", "caption": "Master plan (1:500)" },
+    { "slot": "botanic-garden-context", "caption": "Context plan (NTS)" },
+    { "slot": "botanic-garden-info-plan", "caption": "1 · Information Center — ground floor plan (1:300)" },
+    { "slot": "botanic-garden-wedding-plan", "caption": "2 · Wedding Hall — ground floor plan (1:500)" },
+    { "slot": "botanic-garden-wedding-section", "caption": "2 · Wedding Hall — section" },
+    { "slot": "botanic-garden-kiosk-plan", "caption": "3 · Farm Shop Kiosk (typ.) — plan (1:100)" },
+    { "slot": "botanic-garden-kiosk-elevation", "caption": "3 · Farm Shop Kiosk (typ.) — elevation (1:100)" },
+    { "slot": "botanic-garden-circulation", "caption": "Circulation diagram" },
+    { "slot": "botanic-garden-indoor-outdoor", "caption": "Indoor / outdoor experience" },
+    { "slot": "botanic-garden-section-bb", "caption": "Section B–B (1:500)" },
+    { "slot": "botanic-garden-section-cc", "caption": "Section C–C (1:500)" }
+  ],
+  "legends": [
+    { "heading": "Master plan", "items": [
+      { "key": "1", "label": "Information Center" },
+      { "key": "2", "label": "Wedding Hall" },
+      { "key": "3", "label": "Farm Shop Kiosks" },
+      { "label": "Pedestrian Paths" },
+      { "label": "Main Access Road" },
+      { "label": "Plaza / Gathering" },
+      { "label": "Lawns / Open Green" },
+      { "label": "Botanical Collections" },
+      { "label": "Sensory Planting" },
+      { "label": "Water Feature" },
+      { "label": "Site Entrance" },
+      { "label": "Secondary Entrance" }
+    ] },
+    { "heading": "Information Center", "items": [
+      { "label": "Reception / Information" },
+      { "label": "Exhibition / Interpretation" },
+      { "label": "Learning / Workshop" },
+      { "label": "Visitor Services" },
+      { "label": "Accessible Toilets" }
+    ] },
+    { "heading": "Wedding Hall", "items": [
+      { "label": "Main Hall" },
+      { "label": "Pre-Function Area" },
+      { "label": "Bride Preparation Room" },
+      { "label": "Groom Preparation Room" },
+      { "label": "Catering Support" }
+    ] },
+    { "heading": "Circulation", "items": [
+      { "label": "Main Circulation" },
+      { "label": "Secondary Path" },
+      { "label": "Garden Walk (Nature Walk)" },
+      { "label": "Nodes / Gathering" }
+    ] }
+  ],
+  "stats": [
+    { "label": "Site Area", "value": "≈ 37,000 m²" },
+    { "label": "Green Area", "value": "≈ 70%" },
+    { "label": "Building Footprint", "value": "≈ 5,200 m²" },
+    { "label": "Parking Spaces", "value": "≈ 180" }
+  ],
+  "needsOriginals": true,
+  "toConfirm": true
+}

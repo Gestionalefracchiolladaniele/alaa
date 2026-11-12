@@ -1,0 +1,1542 @@
+{
+ "cover-film": {
+  "file": "cover-film.jpg",
+  "width": 1960,
+  "height": 1102,
+  "source": "pdf p1 [468, 172, 1448, 723]",
+  "original": false
+ },
+ "cover-reel": {
+  "file": "cover-reel.jpg",
+  "width": 596,
+  "height": 640,
+  "source": "pdf p1 [1150, 690, 1448, 1010]",
+  "original": false
+ },
+ "about-portrait": {
+  "file": "about-portrait.jpg",
+  "width": 628,
+  "height": 2060,
+  "source": "pdf p2 [214, 56, 528, 1086]",
+  "original": false
+ },
+ "about-coast": {
+  "file": "about-coast.jpg",
+  "width": 424,
+  "height": 384,
+  "source": "pdf p2 [1168, 148, 1380, 340]",
+  "original": false
+ },
+ "about-arch-sketch": {
+  "file": "about-arch-sketch.jpg",
+  "width": 264,
+  "height": 280,
+  "source": "pdf p2 [1124, 356, 1256, 496]",
+  "original": false
+ },
+ "about-velvet": {
+  "file": "about-velvet.jpg",
+  "width": 332,
+  "height": 308,
+  "source": "pdf p2 [1262, 504, 1428, 658]",
+  "original": false
+ },
+ "about-living": {
+  "file": "about-living.jpg",
+  "width": 510,
+  "height": 386,
+  "source": "pdf p2 [1153, 662, 1408, 855]",
+  "original": false
+ },
+ "philosophy-arch": {
+  "file": "philosophy-arch.jpg",
+  "width": 1560,
+  "height": 910,
+  "source": "pdf p3 [668, 120, 1448, 575]",
+  "original": false
+ },
+ "philosophy-scene": {
+  "file": "philosophy-scene.jpg",
+  "width": 1560,
+  "height": 2172,
+  "source": "pdf p3 [668, 0, 1448, 1086]",
+  "original": false
+ },
+ "interior-cover": {
+  "file": "interior-cover.jpg",
+  "width": 1572,
+  "height": 2172,
+  "source": "pdf p4 [662, 0, 1448, 1086]",
+  "original": false
+ },
+ "interior-sketch": {
+  "file": "interior-sketch.jpg",
+  "width": 1030,
+  "height": 734,
+  "source": "pdf p4 [50, 598, 565, 965]",
+  "original": false
+ },
+ "architecture-cover": {
+  "file": "architecture-cover.jpg",
+  "width": 1236,
+  "height": 2112,
+  "source": "pdf p12 [830, 30, 1448, 1086]",
+  "original": false
+ },
+ "architecture-sketch": {
+  "file": "architecture-sketch.jpg",
+  "width": 940,
+  "height": 720,
+  "source": "pdf p12 [35, 600, 505, 960]",
+  "original": false
+ },
+ "real-estate-cover": {
+  "file": "real-estate-cover.jpg",
+  "width": 1566,
+  "height": 2112,
+  "source": "pdf p18 [665, 30, 1448, 1086]",
+  "original": false
+ },
+ "real-estate-polaroid": {
+  "file": "real-estate-polaroid.jpg",
+  "width": 484,
+  "height": 420,
+  "source": "pdf p18 [698, 660, 940, 870]",
+  "original": false
+ },
+ "real-estate-sketch": {
+  "file": "real-estate-sketch.jpg",
+  "width": 1060,
+  "height": 640,
+  "source": "pdf p18 [30, 640, 560, 960]",
+  "original": false
+ },
+ "art-cover": {
+  "file": "art-cover.jpg",
+  "width": 1480,
+  "height": 2112,
+  "source": "pdf p20 [708, 30, 1448, 1086]",
+  "original": false
+ },
+ "art-easel": {
+  "file": "art-easel.jpg",
+  "width": 810,
+  "height": 980,
+  "source": "pdf p20 [845, 225, 1250, 715]",
+  "original": false
+ },
+ "art-sketch": {
+  "file": "art-sketch.jpg",
+  "width": 1170,
+  "height": 810,
+  "source": "pdf p20 [35, 555, 620, 960]",
+  "original": false
+ },
+ "fashion-cover": {
+  "file": "fashion-cover.jpg",
+  "width": 1086,
+  "height": 1952,
+  "source": "pdf p25 [905, 110, 1448, 1086]",
+  "original": false
+ },
+ "fashion-sheet": {
+  "file": "fashion-sheet.jpg",
+  "width": 530,
+  "height": 630,
+  "source": "pdf p25 [785, 540, 1050, 855]",
+  "original": false
+ },
+ "fashion-sketch": {
+  "file": "fashion-sketch.jpg",
+  "width": 1050,
+  "height": 650,
+  "source": "pdf p25 [35, 590, 560, 915]",
+  "original": false
+ },
+ "travel-cover": {
+  "file": "travel-cover.jpg",
+  "width": 1326,
+  "height": 2172,
+  "source": "pdf p28 [785, 0, 1448, 1086]",
+  "original": false
+ },
+ "travel-globe": {
+  "file": "travel-globe.jpg",
+  "width": 1000,
+  "height": 890,
+  "source": "pdf p28 [915, 255, 1415, 700]",
+  "original": false
+ },
+ "travel-sketch": {
+  "file": "travel-sketch.jpg",
+  "width": 1030,
+  "height": 650,
+  "source": "pdf p28 [60, 575, 575, 900]",
+  "original": false
+ },
+ "sharjah-residence-hero": {
+  "file": "sharjah-residence-hero.jpg",
+  "width": 1356,
+  "height": 994,
+  "source": "pdf p5 [40, 243, 718, 740]",
+  "original": false
+ },
+ "sharjah-residence-view-2": {
+  "file": "sharjah-residence-view-2.jpg",
+  "width": 652,
+  "height": 590,
+  "source": "pdf p5 [728, 243, 1054, 538]",
+  "original": false
+ },
+ "sharjah-residence-view-3": {
+  "file": "sharjah-residence-view-3.jpg",
+  "width": 652,
+  "height": 384,
+  "source": "pdf p5 [728, 548, 1054, 740]",
+  "original": false
+ },
+ "sharjah-residence-mat-1": {
+  "file": "sharjah-residence-mat-1.jpg",
+  "width": 280,
+  "height": 196,
+  "source": "pdf p5 [548, 860, 688, 958]",
+  "original": false
+ },
+ "sharjah-residence-mat-2": {
+  "file": "sharjah-residence-mat-2.jpg",
+  "width": 248,
+  "height": 196,
+  "source": "pdf p5 [706, 860, 830, 958]",
+  "original": false
+ },
+ "sharjah-residence-mat-3": {
+  "file": "sharjah-residence-mat-3.jpg",
+  "width": 248,
+  "height": 196,
+  "source": "pdf p5 [848, 860, 972, 958]",
+  "original": false
+ },
+ "sharjah-residence-mat-4": {
+  "file": "sharjah-residence-mat-4.jpg",
+  "width": 248,
+  "height": 196,
+  "source": "pdf p5 [990, 860, 1114, 958]",
+  "original": false
+ },
+ "sharjah-residence-mat-5": {
+  "file": "sharjah-residence-mat-5.jpg",
+  "width": 248,
+  "height": 196,
+  "source": "pdf p5 [1132, 860, 1256, 958]",
+  "original": false
+ },
+ "sharjah-residence-mat-6": {
+  "file": "sharjah-residence-mat-6.jpg",
+  "width": 276,
+  "height": 196,
+  "source": "pdf p5 [1276, 860, 1414, 958]",
+  "original": false
+ },
+ "cozy-studio-gallery": {
+  "file": "cozy-studio-gallery.jpg",
+  "width": 786,
+  "height": 1448,
+  "source": "pdf p6 [25, 88, 418, 812]",
+  "original": false
+ },
+ "cozy-studio-bedroom": {
+  "file": "cozy-studio-bedroom.jpg",
+  "width": 1160,
+  "height": 540,
+  "source": "pdf p6 [842, 283, 1422, 553]",
+  "original": false
+ },
+ "cozy-studio-living": {
+  "file": "cozy-studio-living.jpg",
+  "width": 1160,
+  "height": 484,
+  "source": "pdf p6 [842, 566, 1422, 808]",
+  "original": false
+ },
+ "cozy-studio-mat-1": {
+  "file": "cozy-studio-mat-1.jpg",
+  "width": 178,
+  "height": 166,
+  "source": "pdf p6 [473, 900, 562, 983]",
+  "original": false
+ },
+ "cozy-studio-mat-2": {
+  "file": "cozy-studio-mat-2.jpg",
+  "width": 180,
+  "height": 166,
+  "source": "pdf p6 [588, 900, 678, 983]",
+  "original": false
+ },
+ "cozy-studio-mat-3": {
+  "file": "cozy-studio-mat-3.jpg",
+  "width": 180,
+  "height": 166,
+  "source": "pdf p6 [703, 900, 793, 983]",
+  "original": false
+ },
+ "cozy-studio-mat-4": {
+  "file": "cozy-studio-mat-4.jpg",
+  "width": 182,
+  "height": 166,
+  "source": "pdf p6 [819, 900, 910, 983]",
+  "original": false
+ },
+ "classic-luxury-hero": {
+  "file": "classic-luxury-hero.jpg",
+  "width": 1804,
+  "height": 1238,
+  "source": "pdf p7 [22, 95, 924, 714]",
+  "original": false
+ },
+ "classic-luxury-capital": {
+  "file": "classic-luxury-capital.jpg",
+  "width": 254,
+  "height": 200,
+  "source": "pdf p7 [958, 430, 1085, 530]",
+  "original": false
+ },
+ "classic-luxury-mat-1": {
+  "file": "classic-luxury-mat-1.jpg",
+  "width": 190,
+  "height": 180,
+  "source": "pdf p7 [357, 773, 452, 863]",
+  "original": false
+ },
+ "classic-luxury-mat-2": {
+  "file": "classic-luxury-mat-2.jpg",
+  "width": 186,
+  "height": 180,
+  "source": "pdf p7 [457, 773, 550, 863]",
+  "original": false
+ },
+ "classic-luxury-mat-3": {
+  "file": "classic-luxury-mat-3.jpg",
+  "width": 184,
+  "height": 180,
+  "source": "pdf p7 [553, 773, 645, 863]",
+  "original": false
+ },
+ "classic-luxury-mat-4": {
+  "file": "classic-luxury-mat-4.jpg",
+  "width": 184,
+  "height": 180,
+  "source": "pdf p7 [649, 773, 741, 863]",
+  "original": false
+ },
+ "classic-luxury-mat-5": {
+  "file": "classic-luxury-mat-5.jpg",
+  "width": 182,
+  "height": 180,
+  "source": "pdf p7 [745, 773, 836, 863]",
+  "original": false
+ },
+ "classic-luxury-mat-6": {
+  "file": "classic-luxury-mat-6.jpg",
+  "width": 146,
+  "height": 180,
+  "source": "pdf p7 [840, 773, 913, 863]",
+  "original": false
+ },
+ "classic-luxury-detail-1": {
+  "file": "classic-luxury-detail-1.jpg",
+  "width": 272,
+  "height": 200,
+  "source": "pdf p7 [359, 960, 495, 1060]",
+  "original": false
+ },
+ "classic-luxury-detail-2": {
+  "file": "classic-luxury-detail-2.jpg",
+  "width": 248,
+  "height": 200,
+  "source": "pdf p7 [502, 960, 626, 1060]",
+  "original": false
+ },
+ "classic-luxury-detail-3": {
+  "file": "classic-luxury-detail-3.jpg",
+  "width": 270,
+  "height": 200,
+  "source": "pdf p7 [632, 960, 767, 1060]",
+  "original": false
+ },
+ "classic-luxury-detail-4": {
+  "file": "classic-luxury-detail-4.jpg",
+  "width": 278,
+  "height": 200,
+  "source": "pdf p7 [773, 960, 912, 1060]",
+  "original": false
+ },
+ "thai-bathroom-hero": {
+  "file": "thai-bathroom-hero.jpg",
+  "width": 1384,
+  "height": 1122,
+  "source": "pdf p8 [30, 115, 722, 676]",
+  "original": false
+ },
+ "thai-bathroom-mat-1": {
+  "file": "thai-bathroom-mat-1.jpg",
+  "width": 222,
+  "height": 196,
+  "source": "pdf p8 [747, 346, 858, 444]",
+  "original": false
+ },
+ "thai-bathroom-mat-2": {
+  "file": "thai-bathroom-mat-2.jpg",
+  "width": 208,
+  "height": 196,
+  "source": "pdf p8 [873, 346, 977, 444]",
+  "original": false
+ },
+ "thai-bathroom-mat-3": {
+  "file": "thai-bathroom-mat-3.jpg",
+  "width": 214,
+  "height": 196,
+  "source": "pdf p8 [990, 346, 1097, 444]",
+  "original": false
+ },
+ "thai-bathroom-mat-4": {
+  "file": "thai-bathroom-mat-4.jpg",
+  "width": 198,
+  "height": 196,
+  "source": "pdf p8 [1112, 346, 1211, 444]",
+  "original": false
+ },
+ "thai-bathroom-mat-5": {
+  "file": "thai-bathroom-mat-5.jpg",
+  "width": 184,
+  "height": 196,
+  "source": "pdf p8 [1225, 346, 1317, 444]",
+  "original": false
+ },
+ "thai-bathroom-mat-6": {
+  "file": "thai-bathroom-mat-6.jpg",
+  "width": 168,
+  "height": 196,
+  "source": "pdf p8 [1330, 346, 1414, 444]",
+  "original": false
+ },
+ "thai-bathroom-tap": {
+  "file": "thai-bathroom-tap.jpg",
+  "width": 208,
+  "height": 218,
+  "source": "pdf p8 [750, 545, 854, 654]",
+  "original": false
+ },
+ "thai-bathroom-shower-head": {
+  "file": "thai-bathroom-shower-head.jpg",
+  "width": 216,
+  "height": 218,
+  "source": "pdf p8 [860, 545, 968, 654]",
+  "original": false
+ },
+ "thai-bathroom-top": {
+  "file": "thai-bathroom-top.jpg",
+  "width": 316,
+  "height": 160,
+  "source": "pdf p8 [1127, 545, 1285, 625]",
+  "original": false
+ },
+ "thai-bathroom-splash": {
+  "file": "thai-bathroom-splash.jpg",
+  "width": 260,
+  "height": 160,
+  "source": "pdf p8 [1297, 545, 1427, 625]",
+  "original": false
+ },
+ "thai-bathroom-elevation": {
+  "file": "thai-bathroom-elevation.jpg",
+  "width": 706,
+  "height": 406,
+  "source": "pdf p8 [365, 727, 718, 930]",
+  "original": false
+ },
+ "thai-bathroom-appliance-1": {
+  "file": "thai-bathroom-appliance-1.jpg",
+  "width": 170,
+  "height": 240,
+  "source": "pdf p8 [800, 745, 885, 865]",
+  "original": false
+ },
+ "thai-bathroom-appliance-2": {
+  "file": "thai-bathroom-appliance-2.jpg",
+  "width": 326,
+  "height": 170,
+  "source": "pdf p8 [935, 770, 1098, 855]",
+  "original": false
+ },
+ "thai-bathroom-appliance-3": {
+  "file": "thai-bathroom-appliance-3.jpg",
+  "width": 150,
+  "height": 254,
+  "source": "pdf p8 [1135, 735, 1210, 862]",
+  "original": false
+ },
+ "thai-bathroom-appliance-4": {
+  "file": "thai-bathroom-appliance-4.jpg",
+  "width": 322,
+  "height": 204,
+  "source": "pdf p8 [1257, 760, 1418, 862]",
+  "original": false
+ },
+ "thai-bathroom-detail-1": {
+  "file": "thai-bathroom-detail-1.jpg",
+  "width": 288,
+  "height": 180,
+  "source": "pdf p8 [350, 970, 494, 1060]",
+  "original": false
+ },
+ "thai-bathroom-detail-2": {
+  "file": "thai-bathroom-detail-2.jpg",
+  "width": 194,
+  "height": 180,
+  "source": "pdf p8 [500, 970, 597, 1060]",
+  "original": false
+ },
+ "thai-bathroom-detail-3": {
+  "file": "thai-bathroom-detail-3.jpg",
+  "width": 216,
+  "height": 180,
+  "source": "pdf p8 [604, 970, 712, 1060]",
+  "original": false
+ },
+ "thai-bathroom-detail-4": {
+  "file": "thai-bathroom-detail-4.jpg",
+  "width": 216,
+  "height": 180,
+  "source": "pdf p8 [718, 970, 826, 1060]",
+  "original": false
+ },
+ "thai-bathroom-detail-5": {
+  "file": "thai-bathroom-detail-5.jpg",
+  "width": 240,
+  "height": 180,
+  "source": "pdf p8 [833, 970, 953, 1060]",
+  "original": false
+ },
+ "creo-sharjah-hero": {
+  "file": "creo-sharjah-hero.jpg",
+  "width": 1502,
+  "height": 986,
+  "source": "pdf p9 [42, 170, 793, 663]",
+  "original": false
+ },
+ "creo-sharjah-mat-1": {
+  "file": "creo-sharjah-mat-1.jpg",
+  "width": 204,
+  "height": 184,
+  "source": "pdf p9 [816, 376, 918, 468]",
+  "original": false
+ },
+ "creo-sharjah-mat-2": {
+  "file": "creo-sharjah-mat-2.jpg",
+  "width": 224,
+  "height": 184,
+  "source": "pdf p9 [932, 376, 1044, 468]",
+  "original": false
+ },
+ "creo-sharjah-mat-3": {
+  "file": "creo-sharjah-mat-3.jpg",
+  "width": 216,
+  "height": 184,
+  "source": "pdf p9 [1059, 376, 1167, 468]",
+  "original": false
+ },
+ "creo-sharjah-mat-4": {
+  "file": "creo-sharjah-mat-4.jpg",
+  "width": 206,
+  "height": 184,
+  "source": "pdf p9 [1183, 376, 1286, 468]",
+  "original": false
+ },
+ "creo-sharjah-mat-5": {
+  "file": "creo-sharjah-mat-5.jpg",
+  "width": 224,
+  "height": 184,
+  "source": "pdf p9 [1300, 376, 1412, 468]",
+  "original": false
+ },
+ "creo-sharjah-handle": {
+  "file": "creo-sharjah-handle.jpg",
+  "width": 204,
+  "height": 232,
+  "source": "pdf p9 [816, 590, 918, 706]",
+  "original": false
+ },
+ "creo-sharjah-worktop": {
+  "file": "creo-sharjah-worktop.jpg",
+  "width": 252,
+  "height": 232,
+  "source": "pdf p9 [1127, 590, 1253, 706]",
+  "original": false
+ },
+ "creo-sharjah-elevation": {
+  "file": "creo-sharjah-elevation.jpg",
+  "width": 1132,
+  "height": 490,
+  "source": "pdf p9 [380, 785, 946, 1030]",
+  "original": false
+ },
+ "creo-sharjah-appliance-1": {
+  "file": "creo-sharjah-appliance-1.jpg",
+  "width": 266,
+  "height": 298,
+  "source": "pdf p9 [1001, 803, 1134, 952]",
+  "original": false
+ },
+ "creo-sharjah-appliance-2": {
+  "file": "creo-sharjah-appliance-2.jpg",
+  "width": 258,
+  "height": 298,
+  "source": "pdf p9 [1145, 803, 1274, 952]",
+  "original": false
+ },
+ "creo-sharjah-appliance-3": {
+  "file": "creo-sharjah-appliance-3.jpg",
+  "width": 254,
+  "height": 298,
+  "source": "pdf p9 [1286, 803, 1413, 952]",
+  "original": false
+ },
+ "lube-royal-classic-hero": {
+  "file": "lube-royal-classic-hero.jpg",
+  "width": 1454,
+  "height": 1182,
+  "source": "pdf p10 [37, 130, 764, 721]",
+  "original": false
+ },
+ "lube-royal-classic-mat-1": {
+  "file": "lube-royal-classic-mat-1.jpg",
+  "width": 308,
+  "height": 214,
+  "source": "pdf p10 [784, 363, 938, 470]",
+  "original": false
+ },
+ "lube-royal-classic-mat-2": {
+  "file": "lube-royal-classic-mat-2.jpg",
+  "width": 328,
+  "height": 214,
+  "source": "pdf p10 [952, 363, 1116, 470]",
+  "original": false
+ },
+ "lube-royal-classic-mat-3": {
+  "file": "lube-royal-classic-mat-3.jpg",
+  "width": 274,
+  "height": 214,
+  "source": "pdf p10 [1131, 363, 1268, 470]",
+  "original": false
+ },
+ "lube-royal-classic-mat-4": {
+  "file": "lube-royal-classic-mat-4.jpg",
+  "width": 278,
+  "height": 214,
+  "source": "pdf p10 [1283, 363, 1422, 470]",
+  "original": false
+ },
+ "lube-royal-classic-handles": {
+  "file": "lube-royal-classic-handles.jpg",
+  "width": 344,
+  "height": 234,
+  "source": "pdf p10 [785, 603, 957, 720]",
+  "original": false
+ },
+ "lube-royal-classic-worktop": {
+  "file": "lube-royal-classic-worktop.jpg",
+  "width": 290,
+  "height": 134,
+  "source": "pdf p10 [1131, 603, 1276, 670]",
+  "original": false
+ },
+ "lube-royal-classic-splash": {
+  "file": "lube-royal-classic-splash.jpg",
+  "width": 270,
+  "height": 134,
+  "source": "pdf p10 [1288, 603, 1423, 670]",
+  "original": false
+ },
+ "lube-royal-classic-elevation": {
+  "file": "lube-royal-classic-elevation.jpg",
+  "width": 1084,
+  "height": 550,
+  "source": "pdf p10 [348, 785, 890, 1060]",
+  "original": false
+ },
+ "lube-royal-classic-appliance-1": {
+  "file": "lube-royal-classic-appliance-1.jpg",
+  "width": 190,
+  "height": 190,
+  "source": "pdf p10 [925, 845, 1020, 940]",
+  "original": false
+ },
+ "lube-royal-classic-appliance-2": {
+  "file": "lube-royal-classic-appliance-2.jpg",
+  "width": 204,
+  "height": 126,
+  "source": "pdf p10 [1030, 862, 1132, 925]",
+  "original": false
+ },
+ "lube-royal-classic-appliance-3": {
+  "file": "lube-royal-classic-appliance-3.jpg",
+  "width": 204,
+  "height": 190,
+  "source": "pdf p10 [1138, 845, 1240, 940]",
+  "original": false
+ },
+ "lube-royal-classic-appliance-4": {
+  "file": "lube-royal-classic-appliance-4.jpg",
+  "width": 170,
+  "height": 208,
+  "source": "pdf p10 [1249, 838, 1334, 942]",
+  "original": false
+ },
+ "lube-royal-classic-appliance-5": {
+  "file": "lube-royal-classic-appliance-5.jpg",
+  "width": 164,
+  "height": 264,
+  "source": "pdf p10 [1343, 810, 1425, 942]",
+  "original": false
+ },
+ "creo-abu-dhabi-hero": {
+  "file": "creo-abu-dhabi-hero.jpg",
+  "width": 1442,
+  "height": 1224,
+  "source": "pdf p11 [16, 125, 737, 737]",
+  "original": false
+ },
+ "creo-abu-dhabi-mat-1": {
+  "file": "creo-abu-dhabi-mat-1.jpg",
+  "width": 168,
+  "height": 228,
+  "source": "pdf p11 [762, 348, 846, 462]",
+  "original": false
+ },
+ "creo-abu-dhabi-mat-2": {
+  "file": "creo-abu-dhabi-mat-2.jpg",
+  "width": 160,
+  "height": 228,
+  "source": "pdf p11 [857, 348, 937, 462]",
+  "original": false
+ },
+ "creo-abu-dhabi-mat-3": {
+  "file": "creo-abu-dhabi-mat-3.jpg",
+  "width": 160,
+  "height": 228,
+  "source": "pdf p11 [948, 348, 1028, 462]",
+  "original": false
+ },
+ "creo-abu-dhabi-mat-4": {
+  "file": "creo-abu-dhabi-mat-4.jpg",
+  "width": 158,
+  "height": 228,
+  "source": "pdf p11 [1039, 348, 1118, 462]",
+  "original": false
+ },
+ "creo-abu-dhabi-worktop": {
+  "file": "creo-abu-dhabi-worktop.jpg",
+  "width": 260,
+  "height": 146,
+  "source": "pdf p11 [1151, 170, 1281, 243]",
+  "original": false
+ },
+ "creo-abu-dhabi-splash": {
+  "file": "creo-abu-dhabi-splash.jpg",
+  "width": 276,
+  "height": 146,
+  "source": "pdf p11 [1293, 170, 1431, 243]",
+  "original": false
+ },
+ "creo-abu-dhabi-handle": {
+  "file": "creo-abu-dhabi-handle.jpg",
+  "width": 366,
+  "height": 138,
+  "source": "pdf p11 [765, 588, 948, 657]",
+  "original": false
+ },
+ "creo-abu-dhabi-detail-1": {
+  "file": "creo-abu-dhabi-detail-1.jpg",
+  "width": 344,
+  "height": 356,
+  "source": "pdf p11 [322, 797, 494, 975]",
+  "original": false
+ },
+ "creo-abu-dhabi-detail-2": {
+  "file": "creo-abu-dhabi-detail-2.jpg",
+  "width": 306,
+  "height": 356,
+  "source": "pdf p11 [505, 797, 658, 975]",
+  "original": false
+ },
+ "creo-abu-dhabi-detail-3": {
+  "file": "creo-abu-dhabi-detail-3.jpg",
+  "width": 308,
+  "height": 356,
+  "source": "pdf p11 [668, 797, 822, 975]",
+  "original": false
+ },
+ "creo-abu-dhabi-elevation": {
+  "file": "creo-abu-dhabi-elevation.jpg",
+  "width": 1124,
+  "height": 480,
+  "source": "pdf p11 [862, 795, 1424, 1035]",
+  "original": false
+ },
+ "botanic-garden-masterplan": {
+  "file": "botanic-garden-masterplan.jpg",
+  "width": 1134,
+  "height": 954,
+  "source": "pdf p13 [395, 148, 962, 625]",
+  "original": false
+ },
+ "botanic-garden-context": {
+  "file": "botanic-garden-context.jpg",
+  "width": 400,
+  "height": 240,
+  "source": "pdf p13 [22, 172, 222, 292]",
+  "original": false
+ },
+ "botanic-garden-info-plan": {
+  "file": "botanic-garden-info-plan.jpg",
+  "width": 480,
+  "height": 310,
+  "source": "pdf p13 [22, 360, 262, 515]",
+  "original": false
+ },
+ "botanic-garden-wedding-plan": {
+  "file": "botanic-garden-wedding-plan.jpg",
+  "width": 496,
+  "height": 440,
+  "source": "pdf p13 [22, 600, 270, 820]",
+  "original": false
+ },
+ "botanic-garden-wedding-section": {
+  "file": "botanic-garden-wedding-section.jpg",
+  "width": 716,
+  "height": 100,
+  "source": "pdf p13 [22, 845, 380, 895]",
+  "original": false
+ },
+ "botanic-garden-kiosk-plan": {
+  "file": "botanic-garden-kiosk-plan.jpg",
+  "width": 254,
+  "height": 140,
+  "source": "pdf p13 [55, 962, 182, 1032]",
+  "original": false
+ },
+ "botanic-garden-kiosk-elevation": {
+  "file": "botanic-garden-kiosk-elevation.jpg",
+  "width": 370,
+  "height": 154,
+  "source": "pdf p13 [200, 958, 385, 1035]",
+  "original": false
+ },
+ "botanic-garden-circulation": {
+  "file": "botanic-garden-circulation.jpg",
+  "width": 460,
+  "height": 330,
+  "source": "pdf p13 [410, 675, 640, 840]",
+  "original": false
+ },
+ "botanic-garden-indoor-outdoor": {
+  "file": "botanic-garden-indoor-outdoor.jpg",
+  "width": 746,
+  "height": 224,
+  "source": "pdf p13 [757, 668, 1130, 780]",
+  "original": false
+ },
+ "botanic-garden-section-bb": {
+  "file": "botanic-garden-section-bb.jpg",
+  "width": 734,
+  "height": 150,
+  "source": "pdf p13 [405, 925, 772, 1000]",
+  "original": false
+ },
+ "botanic-garden-section-cc": {
+  "file": "botanic-garden-section-cc.jpg",
+  "width": 694,
+  "height": 150,
+  "source": "pdf p13 [788, 925, 1135, 1000]",
+  "original": false
+ },
+ "botanic-garden-plant-1": {
+  "file": "botanic-garden-plant-1.jpg",
+  "width": 130,
+  "height": 180,
+  "source": "pdf p13 [1148, 470, 1213, 560]",
+  "original": false
+ },
+ "botanic-garden-plant-2": {
+  "file": "botanic-garden-plant-2.jpg",
+  "width": 132,
+  "height": 180,
+  "source": "pdf p13 [1222, 470, 1288, 560]",
+  "original": false
+ },
+ "botanic-garden-plant-3": {
+  "file": "botanic-garden-plant-3.jpg",
+  "width": 124,
+  "height": 180,
+  "source": "pdf p13 [1296, 470, 1358, 560]",
+  "original": false
+ },
+ "botanic-garden-plant-4": {
+  "file": "botanic-garden-plant-4.jpg",
+  "width": 130,
+  "height": 180,
+  "source": "pdf p13 [1367, 470, 1432, 560]",
+  "original": false
+ },
+ "botanic-garden-mat-1": {
+  "file": "botanic-garden-mat-1.jpg",
+  "width": 130,
+  "height": 170,
+  "source": "pdf p13 [1151, 640, 1216, 725]",
+  "original": false
+ },
+ "botanic-garden-mat-2": {
+  "file": "botanic-garden-mat-2.jpg",
+  "width": 128,
+  "height": 170,
+  "source": "pdf p13 [1225, 640, 1289, 725]",
+  "original": false
+ },
+ "botanic-garden-mat-3": {
+  "file": "botanic-garden-mat-3.jpg",
+  "width": 124,
+  "height": 170,
+  "source": "pdf p13 [1298, 640, 1360, 725]",
+  "original": false
+ },
+ "botanic-garden-mat-4": {
+  "file": "botanic-garden-mat-4.jpg",
+  "width": 130,
+  "height": 170,
+  "source": "pdf p13 [1368, 640, 1433, 725]",
+  "original": false
+ },
+ "kyrenia-hero": {
+  "file": "kyrenia-hero.jpg",
+  "width": 1552,
+  "height": 444,
+  "source": "pdf p14 [302, 30, 1078, 252]",
+  "original": false
+ },
+ "kyrenia-site-analysis": {
+  "file": "kyrenia-site-analysis.jpg",
+  "width": 428,
+  "height": 372,
+  "source": "pdf p14 [18, 298, 232, 484]",
+  "original": false
+ },
+ "kyrenia-strategy": {
+  "file": "kyrenia-strategy.jpg",
+  "width": 220,
+  "height": 372,
+  "source": "pdf p14 [420, 298, 530, 484]",
+  "original": false
+ },
+ "kyrenia-site-plan": {
+  "file": "kyrenia-site-plan.jpg",
+  "width": 786,
+  "height": 372,
+  "source": "pdf p14 [710, 298, 1103, 484]",
+  "original": false
+ },
+ "kyrenia-pavilion-plan": {
+  "file": "kyrenia-pavilion-plan.jpg",
+  "width": 640,
+  "height": 372,
+  "source": "pdf p14 [1115, 298, 1435, 484]",
+  "original": false
+ },
+ "kyrenia-ground-floor": {
+  "file": "kyrenia-ground-floor.jpg",
+  "width": 630,
+  "height": 320,
+  "source": "pdf p14 [15, 535, 330, 695]",
+  "original": false
+ },
+ "kyrenia-first-floor": {
+  "file": "kyrenia-first-floor.jpg",
+  "width": 610,
+  "height": 320,
+  "source": "pdf p14 [370, 535, 675, 695]",
+  "original": false
+ },
+ "kyrenia-exploded": {
+  "file": "kyrenia-exploded.jpg",
+  "width": 576,
+  "height": 400,
+  "source": "pdf p14 [712, 530, 1000, 730]",
+  "original": false
+ },
+ "kyrenia-mat-1": {
+  "file": "kyrenia-mat-1.jpg",
+  "width": 156,
+  "height": 120,
+  "source": "pdf p14 [1172, 538, 1250, 598]",
+  "original": false
+ },
+ "kyrenia-mat-2": {
+  "file": "kyrenia-mat-2.jpg",
+  "width": 158,
+  "height": 120,
+  "source": "pdf p14 [1263, 538, 1342, 598]",
+  "original": false
+ },
+ "kyrenia-mat-3": {
+  "file": "kyrenia-mat-3.jpg",
+  "width": 156,
+  "height": 120,
+  "source": "pdf p14 [1355, 538, 1433, 598]",
+  "original": false
+ },
+ "kyrenia-mat-4": {
+  "file": "kyrenia-mat-4.jpg",
+  "width": 156,
+  "height": 116,
+  "source": "pdf p14 [1172, 632, 1250, 690]",
+  "original": false
+ },
+ "kyrenia-mat-5": {
+  "file": "kyrenia-mat-5.jpg",
+  "width": 158,
+  "height": 116,
+  "source": "pdf p14 [1263, 632, 1342, 690]",
+  "original": false
+ },
+ "kyrenia-mat-6": {
+  "file": "kyrenia-mat-6.jpg",
+  "width": 156,
+  "height": 116,
+  "source": "pdf p14 [1355, 632, 1433, 690]",
+  "original": false
+ },
+ "kyrenia-elev-ac-north": {
+  "file": "kyrenia-elev-ac-north.jpg",
+  "width": 520,
+  "height": 170,
+  "source": "pdf p14 [22, 765, 282, 850]",
+  "original": false
+ },
+ "kyrenia-elev-ac-south": {
+  "file": "kyrenia-elev-ac-south.jpg",
+  "width": 524,
+  "height": 170,
+  "source": "pdf p14 [348, 765, 610, 850]",
+  "original": false
+ },
+ "kyrenia-elev-pav-west": {
+  "file": "kyrenia-elev-pav-west.jpg",
+  "width": 324,
+  "height": 160,
+  "source": "pdf p14 [628, 770, 790, 850]",
+  "original": false
+ },
+ "kyrenia-elev-pav-north": {
+  "file": "kyrenia-elev-pav-north.jpg",
+  "width": 486,
+  "height": 160,
+  "source": "pdf p14 [815, 770, 1058, 850]",
+  "original": false
+ },
+ "kyrenia-section-ac-aa": {
+  "file": "kyrenia-section-ac-aa.jpg",
+  "width": 610,
+  "height": 230,
+  "source": "pdf p14 [40, 905, 345, 1020]",
+  "original": false
+ },
+ "kyrenia-section-ac-bb": {
+  "file": "kyrenia-section-ac-bb.jpg",
+  "width": 480,
+  "height": 230,
+  "source": "pdf p14 [400, 905, 640, 1020]",
+  "original": false
+ },
+ "kyrenia-section-pav-aa": {
+  "file": "kyrenia-section-pav-aa.jpg",
+  "width": 800,
+  "height": 216,
+  "source": "pdf p14 [650, 912, 1050, 1020]",
+  "original": false
+ },
+ "kyrenia-interior": {
+  "file": "kyrenia-interior.jpg",
+  "width": 708,
+  "height": 516,
+  "source": "pdf p14 [1078, 770, 1432, 1028]",
+  "original": false
+ },
+ "children-centre-hero": {
+  "file": "children-centre-hero.jpg",
+  "width": 2080,
+  "height": 460,
+  "source": "pdf p15 [0, 150, 1040, 380]",
+  "original": false
+ },
+ "children-centre-inspiration-1": {
+  "file": "children-centre-inspiration-1.jpg",
+  "width": 180,
+  "height": 182,
+  "source": "pdf p15 [1088, 237, 1178, 328]",
+  "original": false
+ },
+ "children-centre-inspiration-2": {
+  "file": "children-centre-inspiration-2.jpg",
+  "width": 184,
+  "height": 182,
+  "source": "pdf p15 [1205, 237, 1297, 328]",
+  "original": false
+ },
+ "children-centre-inspiration-3": {
+  "file": "children-centre-inspiration-3.jpg",
+  "width": 184,
+  "height": 182,
+  "source": "pdf p15 [1323, 237, 1415, 328]",
+  "original": false
+ },
+ "children-centre-site-plan": {
+  "file": "children-centre-site-plan.jpg",
+  "width": 736,
+  "height": 684,
+  "source": "pdf p15 [27, 420, 395, 762]",
+  "original": false
+ },
+ "children-centre-floor-plan": {
+  "file": "children-centre-floor-plan.jpg",
+  "width": 724,
+  "height": 660,
+  "source": "pdf p15 [418, 420, 780, 750]",
+  "original": false
+ },
+ "children-centre-elev-front": {
+  "file": "children-centre-elev-front.jpg",
+  "width": 786,
+  "height": 184,
+  "source": "pdf p15 [817, 420, 1210, 512]",
+  "original": false
+ },
+ "children-centre-elev-left": {
+  "file": "children-centre-elev-left.jpg",
+  "width": 786,
+  "height": 182,
+  "source": "pdf p15 [817, 537, 1210, 628]",
+  "original": false
+ },
+ "children-centre-elev-right": {
+  "file": "children-centre-elev-right.jpg",
+  "width": 786,
+  "height": 178,
+  "source": "pdf p15 [817, 656, 1210, 745]",
+  "original": false
+ },
+ "children-centre-sections": {
+  "file": "children-centre-sections.jpg",
+  "width": 700,
+  "height": 506,
+  "source": "pdf p15 [25, 805, 375, 1058]",
+  "original": false
+ },
+ "children-centre-facade": {
+  "file": "children-centre-facade.jpg",
+  "width": 220,
+  "height": 410,
+  "source": "pdf p15 [398, 825, 508, 1030]",
+  "original": false
+ },
+ "children-centre-interior-1": {
+  "file": "children-centre-interior-1.jpg",
+  "width": 290,
+  "height": 460,
+  "source": "pdf p15 [1012, 815, 1157, 1045]",
+  "original": false
+ },
+ "children-centre-interior-2": {
+  "file": "children-centre-interior-2.jpg",
+  "width": 278,
+  "height": 460,
+  "source": "pdf p15 [1161, 815, 1300, 1045]",
+  "original": false
+ },
+ "children-centre-interior-3": {
+  "file": "children-centre-interior-3.jpg",
+  "width": 270,
+  "height": 460,
+  "source": "pdf p15 [1305, 815, 1440, 1045]",
+  "original": false
+ },
+ "urban-ii-hero": {
+  "file": "urban-ii-hero.jpg",
+  "width": 1460,
+  "height": 390,
+  "source": "pdf p16 [360, 0, 1090, 195]",
+  "original": false
+ },
+ "urban-ii-masterplan": {
+  "file": "urban-ii-masterplan.jpg",
+  "width": 1366,
+  "height": 1140,
+  "source": "pdf p16 [385, 230, 1068, 800]",
+  "original": false
+ },
+ "urban-ii-context": {
+  "file": "urban-ii-context.jpg",
+  "width": 346,
+  "height": 220,
+  "source": "pdf p16 [22, 240, 195, 350]",
+  "original": false
+ },
+ "urban-ii-circulation": {
+  "file": "urban-ii-circulation.jpg",
+  "width": 380,
+  "height": 240,
+  "source": "pdf p16 [30, 420, 220, 540]",
+  "original": false
+ },
+ "urban-ii-green": {
+  "file": "urban-ii-green.jpg",
+  "width": 380,
+  "height": 180,
+  "source": "pdf p16 [30, 575, 220, 665]",
+  "original": false
+ },
+ "urban-ii-landuse": {
+  "file": "urban-ii-landuse.jpg",
+  "width": 370,
+  "height": 200,
+  "source": "pdf p16 [30, 715, 215, 815]",
+  "original": false
+ },
+ "urban-ii-typologies": {
+  "file": "urban-ii-typologies.jpg",
+  "width": 690,
+  "height": 410,
+  "source": "pdf p16 [1095, 265, 1440, 470]",
+  "original": false
+ },
+ "urban-ii-section-aa": {
+  "file": "urban-ii-section-aa.jpg",
+  "width": 890,
+  "height": 210,
+  "source": "pdf p16 [30, 870, 475, 975]",
+  "original": false
+ },
+ "urban-ii-section-bb": {
+  "file": "urban-ii-section-bb.jpg",
+  "width": 790,
+  "height": 210,
+  "source": "pdf p16 [515, 870, 910, 975]",
+  "original": false
+ },
+ "three-villa-garden": {
+  "file": "three-villa-garden.jpg",
+  "width": 1372,
+  "height": 896,
+  "source": "pdf p17 [26, 276, 712, 724]",
+  "original": false
+ },
+ "three-villa-pool": {
+  "file": "three-villa-pool.jpg",
+  "width": 682,
+  "height": 442,
+  "source": "pdf p17 [725, 276, 1066, 497]",
+  "original": false
+ },
+ "three-villa-courtyard": {
+  "file": "three-villa-courtyard.jpg",
+  "width": 686,
+  "height": 442,
+  "source": "pdf p17 [1078, 276, 1421, 497]",
+  "original": false
+ },
+ "three-villa-evening": {
+  "file": "three-villa-evening.jpg",
+  "width": 682,
+  "height": 386,
+  "source": "pdf p17 [725, 532, 1066, 725]",
+  "original": false
+ },
+ "three-villa-exterior": {
+  "file": "three-villa-exterior.jpg",
+  "width": 686,
+  "height": 386,
+  "source": "pdf p17 [1078, 532, 1421, 725]",
+  "original": false
+ },
+ "real-estate-portrait": {
+  "file": "real-estate-portrait.jpg",
+  "width": 1180,
+  "height": 1536,
+  "source": "pdf p19 [432, 40, 1022, 808]",
+  "original": false
+ },
+ "art-digital-01": {
+  "file": "art-digital-01.jpg",
+  "width": 752,
+  "height": 1028,
+  "source": "pdf p21 [592, 228, 968, 742]",
+  "original": false
+ },
+ "art-digital-02": {
+  "file": "art-digital-02.jpg",
+  "width": 480,
+  "height": 644,
+  "source": "pdf p21 [1072, 148, 1312, 470]",
+  "original": false
+ },
+ "art-digital-03": {
+  "file": "art-digital-03.jpg",
+  "width": 572,
+  "height": 582,
+  "source": "pdf p21 [1074, 575, 1360, 866]",
+  "original": false
+ },
+ "art-digital-04": {
+  "file": "art-digital-04.jpg",
+  "width": 732,
+  "height": 996,
+  "source": "pdf p22 [580, 168, 946, 666]",
+  "original": false
+ },
+ "art-digital-05": {
+  "file": "art-digital-05.jpg",
+  "width": 586,
+  "height": 874,
+  "source": "pdf p22 [1062, 220, 1355, 657]",
+  "original": false
+ },
+ "art-sketch-01": {
+  "file": "art-sketch-01.jpg",
+  "width": 660,
+  "height": 824,
+  "source": "pdf p23 [530, 100, 860, 512]",
+  "original": false
+ },
+ "art-sketch-02": {
+  "file": "art-sketch-02.jpg",
+  "width": 680,
+  "height": 900,
+  "source": "pdf p23 [885, 50, 1225, 500]",
+  "original": false
+ },
+ "art-sketch-03": {
+  "file": "art-sketch-03.jpg",
+  "width": 664,
+  "height": 1010,
+  "source": "pdf p23 [468, 540, 800, 1045]",
+  "original": false
+ },
+ "art-sketch-04": {
+  "file": "art-sketch-04.jpg",
+  "width": 660,
+  "height": 1010,
+  "source": "pdf p23 [830, 540, 1160, 1045]",
+  "original": false
+ },
+ "art-painting-01": {
+  "file": "art-painting-01.jpg",
+  "width": 430,
+  "height": 514,
+  "source": "pdf p24 [445, 190, 660, 447]",
+  "original": false
+ },
+ "art-painting-02": {
+  "file": "art-painting-02.jpg",
+  "width": 390,
+  "height": 514,
+  "source": "pdf p24 [690, 190, 885, 447]",
+  "original": false
+ },
+ "art-painting-03": {
+  "file": "art-painting-03.jpg",
+  "width": 410,
+  "height": 514,
+  "source": "pdf p24 [915, 190, 1120, 447]",
+  "original": false
+ },
+ "art-painting-04": {
+  "file": "art-painting-04.jpg",
+  "width": 424,
+  "height": 514,
+  "source": "pdf p24 [1148, 190, 1360, 447]",
+  "original": false
+ },
+ "art-painting-05": {
+  "file": "art-painting-05.jpg",
+  "width": 546,
+  "height": 536,
+  "source": "pdf p24 [447, 552, 720, 820]",
+  "original": false
+ },
+ "art-painting-06": {
+  "file": "art-painting-06.jpg",
+  "width": 510,
+  "height": 536,
+  "source": "pdf p24 [757, 552, 1012, 820]",
+  "original": false
+ },
+ "art-painting-07": {
+  "file": "art-painting-07.jpg",
+  "width": 556,
+  "height": 536,
+  "source": "pdf p24 [1052, 552, 1330, 820]",
+  "original": false
+ },
+ "fashion-bw-01": {
+  "file": "fashion-bw-01.jpg",
+  "width": 654,
+  "height": 896,
+  "source": "pdf p26 [418, 30, 745, 478]",
+  "original": false
+ },
+ "fashion-bw-02": {
+  "file": "fashion-bw-02.jpg",
+  "width": 730,
+  "height": 896,
+  "source": "pdf p26 [750, 30, 1115, 478]",
+  "original": false
+ },
+ "fashion-bw-03": {
+  "file": "fashion-bw-03.jpg",
+  "width": 340,
+  "height": 770,
+  "source": "pdf p26 [370, 490, 540, 875]",
+  "original": false
+ },
+ "fashion-bw-04": {
+  "file": "fashion-bw-04.jpg",
+  "width": 384,
+  "height": 770,
+  "source": "pdf p26 [548, 490, 740, 875]",
+  "original": false
+ },
+ "fashion-bw-05": {
+  "file": "fashion-bw-05.jpg",
+  "width": 394,
+  "height": 770,
+  "source": "pdf p26 [748, 490, 945, 875]",
+  "original": false
+ },
+ "fashion-bw-06": {
+  "file": "fashion-bw-06.jpg",
+  "width": 424,
+  "height": 780,
+  "source": "pdf p26 [958, 490, 1170, 880]",
+  "original": false
+ },
+ "fashion-bw-sketch": {
+  "file": "fashion-bw-sketch.jpg",
+  "width": 648,
+  "height": 840,
+  "source": "pdf p26 [1130, 0, 1454, 420]",
+  "original": false
+ },
+ "fashion-bw-element-1": {
+  "file": "fashion-bw-element-1.jpg",
+  "width": 170,
+  "height": 140,
+  "source": "pdf p26 [710, 952, 795, 1022]",
+  "original": false
+ },
+ "fashion-bw-element-2": {
+  "file": "fashion-bw-element-2.jpg",
+  "width": 164,
+  "height": 140,
+  "source": "pdf p26 [830, 952, 912, 1022]",
+  "original": false
+ },
+ "fashion-bw-element-3": {
+  "file": "fashion-bw-element-3.jpg",
+  "width": 164,
+  "height": 140,
+  "source": "pdf p26 [948, 952, 1030, 1022]",
+  "original": false
+ },
+ "fashion-bw-element-4": {
+  "file": "fashion-bw-element-4.jpg",
+  "width": 164,
+  "height": 140,
+  "source": "pdf p26 [1068, 952, 1150, 1022]",
+  "original": false
+ },
+ "fashion-bw-element-5": {
+  "file": "fashion-bw-element-5.jpg",
+  "width": 168,
+  "height": 140,
+  "source": "pdf p26 [1188, 952, 1272, 1022]",
+  "original": false
+ },
+ "fashion-om-01": {
+  "file": "fashion-om-01.jpg",
+  "width": 660,
+  "height": 950,
+  "source": "pdf p27 [403, 55, 733, 530]",
+  "original": false
+ },
+ "fashion-om-02": {
+  "file": "fashion-om-02.jpg",
+  "width": 680,
+  "height": 994,
+  "source": "pdf p27 [748, 58, 1088, 555]",
+  "original": false
+ },
+ "fashion-om-03": {
+  "file": "fashion-om-03.jpg",
+  "width": 570,
+  "height": 860,
+  "source": "pdf p27 [383, 545, 668, 975]",
+  "original": false
+ },
+ "fashion-om-04": {
+  "file": "fashion-om-04.jpg",
+  "width": 790,
+  "height": 760,
+  "source": "pdf p27 [680, 585, 1075, 965]",
+  "original": false
+ },
+ "travel-01": {
+  "file": "travel-01.jpg",
+  "width": 550,
+  "height": 770,
+  "source": "pdf p29 [425, 100, 700, 485]",
+  "original": false
+ },
+ "travel-02": {
+  "file": "travel-02.jpg",
+  "width": 566,
+  "height": 740,
+  "source": "pdf p29 [712, 92, 995, 462]",
+  "original": false
+ },
+ "travel-03": {
+  "file": "travel-03.jpg",
+  "width": 634,
+  "height": 766,
+  "source": "pdf p29 [1018, 82, 1335, 465]",
+  "original": false
+ },
+ "travel-04": {
+  "file": "travel-04.jpg",
+  "width": 588,
+  "height": 726,
+  "source": "pdf p29 [428, 505, 722, 868]",
+  "original": false
+ },
+ "travel-05": {
+  "file": "travel-05.jpg",
+  "width": 566,
+  "height": 750,
+  "source": "pdf p29 [742, 505, 1025, 880]",
+  "original": false
+ },
+ "travel-06": {
+  "file": "travel-06.jpg",
+  "width": 630,
+  "height": 770,
+  "source": "pdf p29 [1045, 500, 1360, 885]",
+  "original": false
+ }
+}

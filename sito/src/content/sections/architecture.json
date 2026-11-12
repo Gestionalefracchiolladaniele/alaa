@@ -1,0 +1,10 @@
+{
+  "scene": 5,
+  "pages": [12, 13, 14, 15, 16, 17],
+  "kicker": "Portfolio Section",
+  "title": { "text": "Arch", "accent": "itecture" },
+  "tags": ["Concepts", "Design", "Planning", "Development"],
+  "cover": "architecture-cover",
+  "sketch": "architecture-sketch",
+  "door": { "slot": "architecture-sketch", "rect": { "x": 0, "y": 25, "w": 92, "h": 75 }, "label": "Enter the portico" }
+}

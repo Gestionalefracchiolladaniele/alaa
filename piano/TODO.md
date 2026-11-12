@@ -11,7 +11,7 @@ Stato: `[ ]` da fare · `[~]` in corso · `[x]` fatto. Chi: **F** = Fable, **O**
 
 ### Opus: fondamenta, contenuti, sito statico
 - [x] O · F0 — progetto Astro, cartelle, git, estrazione pagine, colori e font, pagina styleguide, fotogrammi di partenza per le clip
-- [ ] O · F1 — tutti i testi trascritti e corretti, `cv.json`, manifesto degli slot, ritagli, foglio di controllo, `DA-CONFERMARE.md`
+- [x] O · F1 — tutti i testi trascritti e corretti, `cv.json`, manifesto degli slot, ritagli, foglio di controllo, `DA-CONFERMARE.md`
 - [ ] O · F2 — home statica nell'ordine del PDF, menu a libri, template pagina progetto, 12 pagine progetto statiche
 
 ### Daniele

@@ -1,0 +1,10 @@
+{
+  "scene": 4,
+  "pages": [4, 5, 6, 7, 8, 9, 10, 11],
+  "kicker": "Portfolio Section",
+  "title": { "text": "Interior", "accent": "Design", "accentItalic": true, "break": true },
+  "tags": ["Spaces", "Concepts", "Materials", "Styling"],
+  "cover": "interior-cover",
+  "sketch": "interior-sketch",
+  "door": { "slot": "interior-sketch", "rect": { "x": 0, "y": 0, "w": 100, "h": 100 }, "label": "Enter the sketch" }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "architecture",
+  "order": 4,
+  "page": 16,
+  "title": { "text": "Urban", "accent": "II" },
+  "shortTitle": "Urban II — Dikmen",
+  "subtitle": "Dikmen Residential Urban Design Project",
+  "script": "A Sustainable, Walkable and Community-Oriented Neighbourhood",
+  "location": "Dikmen, Nicosia",
+  "summary": "A green, connected and livable residential neighbourhood.",
+  "hero": "urban-ii-hero",
+  "texts": [
+    { "heading": "Project Vision", "body": "A green, connected and livable residential neighbourhood with a high-quality living environment, pedestrian networks, accessible public spaces, and a balanced relationship between built and open areas." },
+    { "heading": "Site Context", "items": ["Location: Dikmen, Nicosia", "Climate: Mediterranean", "Topography: gentle slope", "Access: main arterial road connection"] }
+  ],
+  "features": [
+    { "title": "Walkability", "text": "A safe and continuous pedestrian network.", "icon": "walk" },
+    { "title": "Community Living", "text": "Neighbourhood open spaces and daily amenities close to home.", "icon": "people" },
+    { "title": "Sustainability", "text": "Green spaces and shaded routes for a comfortable environment.", "icon": "leaf" },
+    { "title": "Connectivity", "text": "A clear network of roads and easy access to the city.", "icon": "nodes" },
+    { "title": "Livability", "text": "A balanced mix of housing, services, and recreation.", "icon": "home" }
+  ],
+  "drawings": [
+    { "slot": "urban-ii-masterplan", "caption": "Master plan (1:500)" },
+    { "slot": "urban-ii-context", "caption": "Site context" },
+    { "slot": "urban-ii-circulation", "caption": "Circulation analysis" },
+    { "slot": "urban-ii-green", "caption": "Green network" },
+    { "slot": "urban-ii-landuse", "caption": "Land use zoning" },
+    { "slot": "urban-ii-typologies", "caption": "Residential typologies — Type A and Type B, ground and first floor" },
+    { "slot": "urban-ii-section-aa", "caption": "Section A–A (residential street): sidewalk 3.0 · green 2.5 · car lane 3.5 · car lane 3.5 · green 2.5 · sidewalk 3.0 (m)" },
+    { "slot": "urban-ii-section-bb", "caption": "Section B–B (secondary street): sidewalk 2.5 · green 2.5 · car lane 3.0 · car lane 3.0 · green 2.5 · sidewalk 2.5 (m)" }
+  ],
+  "legends": [
+    { "heading": "Circulation analysis", "items": [{ "label": "Primary Road" }, { "label": "Secondary Road" }, { "label": "Local Street" }, { "label": "Pedestrian Path" }] },
+    { "heading": "Green network", "items": [{ "label": "Main Green Spine" }, { "label": "Neighbourhood Green" }, { "label": "Buffer Green" }, { "label": "Public Plaza / Open Space" }] },
+    { "heading": "Land use zoning", "items": [{ "label": "Residential" }, { "label": "Neighbourhood Centre" }, { "label": "Education" }, { "label": "Health Care" }, { "label": "Commercial / Shops" }, { "label": "Recreational" }, { "label": "Green Area / Landscape" }] }
+  ],
+  "stats": [
+    { "label": "Site Area", "value": "≈ 18.5 ha" },
+    { "label": "Number of Buildings", "value": "58" },
+    { "label": "Building Height", "value": "7–8 Floors" },
+    { "label": "Total Housing Units", "value": "≈ 1,856" },
+    { "label": "Green Open Space", "value": "≈ 35%" },
+    { "label": "Parking Spaces", "value": "≈ 1,200" }
+  ],
+  "needsOriginals": true,
+  "toConfirm": true
+}

@@ -1,0 +1,73 @@
+{
+  "_note": "Dal CV (sorgenti/). Esclusi di proposito: data di nascita, stato civile, nazionalita', visto, telefono.",
+  "profile": "With a bachelor's degree in Architecture and experience in interior design, architectural consultancy, and real estate, I guide clients from layout analysis to completion while helping them visualize their property's potential. I also manage post-purchase client relationships, ensuring a smooth experience from vision to delivery.",
+  "experience": [
+    {
+      "role": "Sr. Customer Relationship and Account Manager",
+      "org": "Azizi Developments LLC",
+      "place": "Dubai, UAE",
+      "from": "Jul 2024",
+      "to": "Present",
+      "points": ["Real estate investment consulting and advisory", "Post-purchase client account management", "Client support and issue resolution", "Due, overdue and advance collection"]
+    },
+    {
+      "role": "Freelancer — 2D floor plans and interior designs",
+      "org": "Independent",
+      "place": "Sharjah and Dubai, UAE",
+      "from": "Oct 2023",
+      "to": "Present",
+      "points": []
+    },
+    {
+      "role": "Real Estate Consultant",
+      "org": "Alroya Almomayza Real Estate",
+      "place": "Dubai and Sharjah, UAE",
+      "from": "Oct 2022",
+      "to": "Oct 2023",
+      "points": ["Real estate consultation and brokerage", "Real estate sales and investments"]
+    },
+    {
+      "role": "Interior Designer",
+      "org": "Lube and Creo Industries (Italian brand), Amisa KCT",
+      "place": "Dubai, UAE",
+      "from": "Jun 2020",
+      "to": "Jun 2022",
+      "points": ["Sales engineer", "Kitchens, wardrobes, living rooms and offices interior designer", "MEP drawings", "Materials knowledge", "Worktops and appliances sales", "Accounting, contracts, follow-up"]
+    },
+    {
+      "role": "Architect (Internship)",
+      "org": "Al Amarah Al Arabia Engineering Consultant",
+      "place": "Sharjah, UAE",
+      "from": "Jun 2018",
+      "to": "Sep 2018",
+      "points": ["Architectural drawings, construction drawings and 3D drawings"]
+    },
+    {
+      "role": "Architect (Internship)",
+      "org": "Al Wathba Building Cont. Co. (L.L.C)",
+      "place": "Sharjah, UAE",
+      "from": "Jun 2017",
+      "to": "Sep 2017",
+      "points": ["Construction site supervision"]
+    }
+  ],
+  "education": [
+    { "title": "Bachelor of Architecture", "org": "Near East University", "place": "Nicosia, Cyprus", "from": "Sep 2015", "to": "Jun 2019" }
+  ],
+  "awards": [
+    { "title": "Chairman's Appreciation Award", "text": "Received 8 appreciation awards in recognition of outstanding performance.", "from": "Jul 2024", "to": "Present" },
+    { "title": "Design Excellence Recognition", "text": "Selected among the best showroom designs for installation at Amisa KCT showrooms in Abu Dhabi and Sharjah.", "from": "Jan 2022", "to": "Jun 2022" },
+    { "title": "Fully Funded Cultural & Language Scholarship", "text": "Awarded a one-month fully funded study visit to Turkey by the Yunus Emre Institute.", "from": "Jul 2019", "to": "Aug 2019" },
+    { "title": "50% Tuition Scholarship", "text": "Awarded a 50% scholarship for the Bachelor's degree in Architectural Engineering at Near East University in Cyprus.", "from": "Sep 2015", "to": "Jun 2019" }
+  ],
+  "languages": [
+    { "name": "Arabic", "level": "Native" },
+    { "name": "English", "level": "Fluent" },
+    { "name": "Turkish", "level": "Proficient" },
+    { "name": "Italian", "level": "Learning" }
+  ],
+  "skills": {
+    "hard": ["Microsoft Office", "EPMS", "Alameen", "3CAD", "AutoCAD", "Salesforce"],
+    "soft": ["A good work ethic and positive attitude", "Communication, analytical and interpersonal skills", "Organized, with an eye for detail"]
+  }
+}

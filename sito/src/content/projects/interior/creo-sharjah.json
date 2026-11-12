@@ -1,0 +1,53 @@
+{
+  "kind": "interior",
+  "order": 5,
+  "page": 9,
+  "title": { "text": "CREO —", "accent": "Italian Kitchen" },
+  "shortTitle": "CREO Italian Kitchen, Sharjah",
+  "subtitle": "Modern Pantry Design",
+  "location": "Sharjah, UAE",
+  "brand": "CREO Italian Kitchens",
+  "type": "Residential Project",
+  "summary": "A modern, linear pantry with warm-lit glass cabinets.",
+  "hero": "creo-sharjah-hero",
+  "texts": [
+    { "heading": "Design Concept", "body": "A modern, linear pantry from CREO Italian Kitchens that combines refined Italian craftsmanship with contemporary functionality. A sleek, integrated wall solution that provides generous storage, a practical preparation zone, and elegant display through warm-lit glass cabinets." },
+    { "heading": "Handles & Hardware", "items": ["Handleless design with integrated finger-pull grooves", "Clean, seamless flat fronts", "Discreet black metal fittings and accessories (rails, shelves)"] },
+    { "heading": "Worktop & Splashback", "items": ["Dark engineered quartz / sintered stone", "Matching full-height or recessed backsplash", "Durable, non-porous, heat and stain resistant", "Easy to clean and maintain"] }
+  ],
+  "palette": [
+    { "name": "Matt Grey", "hex": "#6d5c4c" },
+    { "name": "Walnut", "hex": "#815334" },
+    { "name": "Dark Quartz", "hex": "#473d33" }
+  ],
+  "groups": [
+    { "heading": "Materials & Finishes", "items": [
+      { "name": "Matt Grey Lacquer Cabinetry", "slot": "creo-sharjah-mat-1" },
+      { "name": "Walnut Veneer Drawer Fronts", "note": "Natural Wood Look", "slot": "creo-sharjah-mat-2" },
+      { "name": "Smoked/Clear Glass with Black Aluminium Frame", "slot": "creo-sharjah-mat-3" },
+      { "name": "Warm LED Lighting", "note": "Integrated", "slot": "creo-sharjah-mat-4" },
+      { "name": "Dark Quartz Worktop & Splashback", "note": "Engineered / Sintered", "slot": "creo-sharjah-mat-5" }
+    ] },
+    { "heading": "Details", "items": [
+      { "name": "Handleless finger-pull groove", "slot": "creo-sharjah-handle" },
+      { "name": "Dark quartz worktop", "slot": "creo-sharjah-worktop" }
+    ] },
+    { "heading": "Appliances & Lighting", "items": [
+      { "name": "Built-in Oven", "note": "Integrated", "slot": "creo-sharjah-appliance-1" },
+      { "name": "Integrated Storage & Accessories", "note": "Rail / Shelf System", "slot": "creo-sharjah-appliance-2" },
+      { "name": "LED Task Lighting, Warm White", "note": "Under & Inside Cabinets", "slot": "creo-sharjah-appliance-3" }
+    ] }
+  ],
+  "features": [
+    { "title": "Italian Quality & Design", "text": "A premium kitchen by CREO, combining modern aesthetics with long-lasting performance.", "icon": "diamond" },
+    { "title": "Layered Display Storage", "text": "Tall glass cabinets with warm LED lighting to showcase crockery and accents.", "icon": "layers" },
+    { "title": "Ergonomic Preparation Zone", "text": "A functional recessed niche with organized shelving and rail system for daily use.", "icon": "tools" },
+    { "title": "Durable & Easy-Clean Surfaces", "text": "Engineered quartz worktop and splashback, resistant to heat, stains, and scratches.", "icon": "sparkle" },
+    { "title": "Integrated Contemporary Look", "text": "A seamless, built-in composition with concealed storage and a refined, linear design.", "icon": "grid" }
+  ],
+  "compare": { "drawing": "creo-sharjah-elevation", "photo": "creo-sharjah-hero" },
+  "drawings": [
+    { "slot": "creo-sharjah-elevation", "caption": "Main wall elevation" }
+  ],
+  "model": { "file": "/models/creo-kitchen.glb", "kind": "configurator" }
+}

@@ -1,0 +1,61 @@
+{
+  "scene": 7,
+  "pages": [20, 21, 22, 23, 24],
+  "kicker": "Portfolio Section",
+  "title": { "text": "Ar", "accent": "t" },
+  "tags": ["Painting", "Sculpture", "Visual Arts", "Digital Art"],
+  "cover": "art-cover",
+  "sketch": "art-sketch",
+  "door": { "slot": "art-cover", "rect": { "x": 18.5, "y": 18.5, "w": 54.7, "h": 46.4 }, "label": "Enter the painting" },
+  "blocks": [
+    {
+      "id": "digital-love",
+      "kicker": "Portfolio",
+      "title": { "text": "Digital", "accent": "Art" },
+      "tags": ["Love", "Emotions", "Romance", "Concept Art"],
+      "script": "The Inspiration",
+      "paragraphs": [
+        "My digital art is inspired by love in all its forms — the connection between two souls, the depth of human emotions, and the timeless beauty of romance.",
+        "I translate these feelings into visual stories that blend symbolism, mood, and imagination, creating artworks that are both emotional and cinematic."
+      ],
+      "works": [{ "slot": "art-digital-01" }, { "slot": "art-digital-02" }, { "slot": "art-digital-03" }]
+    },
+    {
+      "id": "digital-self-love",
+      "kicker": "Portfolio",
+      "title": { "text": "Digital", "accent": "Art" },
+      "tags": ["Self Love", "Healing", "Growth", "Emotions"],
+      "script": "The Inspiration",
+      "paragraphs": [
+        "My digital art expresses self-love — the journey of accepting, valuing, and embracing myself in all forms.",
+        "It reflects the beauty of inner peace, self-acceptance, and personal growth, where I find strength in my emotions, healing in nature, and confidence in simply being me."
+      ],
+      "works": [{ "slot": "art-digital-04" }, { "slot": "art-digital-05" }]
+    },
+    {
+      "id": "sketch",
+      "kicker": "Portfolio Section",
+      "title": { "text": "Sketch", "accent": "Art" },
+      "tags": ["Ideas", "Sketches", "Concepts"],
+      "script": "The Inspiration",
+      "paragraphs": [
+        "My ideas often come from a feeling, a scene, a story, or a simple moment in daily life.",
+        "I quickly translate these ideas into sketches — a first, raw expression that helps me explore the concept, build the composition, and develop it further.",
+        "I love working with a minimal and expressive palette of *black, silver, and gold,* which gives my sketches a timeless and elegant character."
+      ],
+      "works": [{ "slot": "art-sketch-01" }, { "slot": "art-sketch-02" }, { "slot": "art-sketch-03" }, { "slot": "art-sketch-04" }]
+    },
+    {
+      "id": "paintings",
+      "kicker": "Portfolio",
+      "title": { "text": "Paint", "accent": "ings" },
+      "tags": ["Acrylic", "Oil Colors"],
+      "script": "The Inspiration",
+      "paragraphs": [
+        "My paintings are a personal expression of love, emotions, and life's simple poetry — from nostalgia and solitude to hope and self-discovery.",
+        "I use *acrylic* colors for their versatility, texture, and bold expression, and *oil colors* for their richness, depth, and emotional atmosphere."
+      ],
+      "works": [{ "slot": "art-painting-01" }, { "slot": "art-painting-02" }, { "slot": "art-painting-03" }, { "slot": "art-painting-04" }, { "slot": "art-painting-05" }, { "slot": "art-painting-06" }, { "slot": "art-painting-07" }]
+    }
+  ]
+}

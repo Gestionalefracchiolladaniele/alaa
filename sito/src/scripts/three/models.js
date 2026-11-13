@@ -81,6 +81,7 @@ function setup(el) {
       host.setAttribute('role', 'img');
       host.setAttribute('aria-label', kind === 'configurator'
         ? '3D model of the CREO kitchen, Sharjah' : '3D model of the Kyrenia pavilion, exploded into its layers');
+      zoomUI(stage, api.viewer);
       el.classList.add('is-ready', 'is-building');
       whenVisible(() => api.build().then(() => el.classList.remove('is-building')));
     } catch (e) {
@@ -88,6 +89,24 @@ function setup(el) {
     }
   };
   whenNear(el, load);
+}
+
+/* ---------- zoom: + e − sopra il modello, in basso a sinistra ---------- */
+function zoomUI(stage, viewer) {
+  if (!stage || stage.querySelector('.mv-zoom')) return;
+  viewer.zoomable = true;   // anche Ctrl + rotella
+  const box = make('div', 'mv-zoom');
+  box.setAttribute('role', 'group');
+  box.setAttribute('aria-label', 'Zoom');
+  const btn = (txt, label, f) => {
+    const b = make('button', 'mv-zoom__btn', txt);
+    b.type = 'button';
+    b.setAttribute('aria-label', label);
+    b.addEventListener('click', () => viewer.zoom(f));
+    return b;
+  };
+  box.append(btn('+', 'Zoom in', 1 / 1.2), btn('−', 'Zoom out', 1.2));
+  stage.appendChild(box);
 }
 
 /* ---------- pulsanti per togliere e rimettere i pezzi (cucina e padiglione) ---------- */
@@ -164,7 +183,7 @@ function kitchenUI(ui, k) {
   zout.type = 'button';
   zout.setAttribute('aria-label', 'Zoom out');
   zout.addEventListener('click', () => k.viewer.zoom(1.15));
-  tools.append(led, zin, zout);
+  tools.append(led);
 
   const reset = make('button', 'btn mv-reset', "Alaa's design");
   reset.type = 'button';

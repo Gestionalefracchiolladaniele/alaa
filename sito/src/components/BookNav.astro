@@ -11,7 +11,7 @@ const tints = ['#5a4033', '#4e3a2f', '#614536', '#533f33', '#5c3f30', '#4a372c']
 <nav class:list={['booknav', `booknav--${variant}`]} aria-label="Sections" data-booknav>
   {variant === 'fixed' && (
     <button class="booknav__toggle" type="button" aria-expanded="false" aria-controls="booknav-list" data-booknav-toggle>
-      <span class="label">Index</span>
+      <span class="label">Index</span><span class="booknav__arrow" aria-hidden="true"></span>
     </button>
   )}
   <ul class="booknav__stack" id={variant === 'fixed' ? 'booknav-list' : undefined}>
@@ -42,7 +42,18 @@ const tints = ['#5a4033', '#4e3a2f', '#614536', '#533f33', '#5c3f30', '#4a372c']
   .booknav--fixed .booknav__book:hover, .booknav--fixed .booknav__book:focus-visible, .booknav--fixed .booknav__book[aria-current='true'] { transform: translateX(-8px); }
   .booknav--fixed { transition: opacity .4s, visibility .4s; }
   :global(html.at-finale) .booknav--fixed { opacity: 0; visibility: hidden; }
-  .booknav__toggle { display: none; }
+  /* pulsante per aprire e chiudere il menu (scelta di Daniele, 13 nov): anche sul computer */
+  .booknav--fixed { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .booknav--fixed .booknav__toggle {
+    order: 2; display: inline-flex; align-items: center; gap: .5em; padding: .45em .8em; border-radius: 3px;
+    background: var(--c-leather); border: 0; cursor: pointer; box-shadow: var(--shadow-2);
+  }
+  .booknav--fixed .booknav__toggle .label { color: var(--c-gold-book); font-size: .6rem; }
+  .booknav__arrow { width: .45em; height: .45em; border-right: 1.5px solid var(--c-gold-book); border-bottom: 1.5px solid var(--c-gold-book); transform: rotate(45deg) translateY(-2px); transition: transform .25s; }
+  @media (min-width: 900px) {
+    .booknav--fixed.is-closed .booknav__stack { display: none; }
+    .booknav--fixed.is-closed .booknav__arrow { transform: rotate(-135deg) translateY(-2px); }
+  }
 
   @media (max-width: 899px) {
     .booknav--fixed .booknav__toggle {
@@ -59,15 +70,28 @@ const tints = ['#5a4033', '#4e3a2f', '#614536', '#533f33', '#5c3f30', '#4a372c']
 </style>
 
 <script>
+  // Telefono: il pulsante apre il pannello (chiuso di partenza).
+  // Computer: il menu e' aperto; il pulsante lo chiude e lo riapre, e la scelta resta ricordata.
+  const desktop = () => window.matchMedia('(min-width: 900px)').matches;
+  const KEY = 'aa-booknav-closed';
   for (const nav of document.querySelectorAll<HTMLElement>('[data-booknav]')) {
     const btn = nav.querySelector<HTMLButtonElement>('[data-booknav-toggle]');
     if (!btn) continue;
+    const sync = () => btn.setAttribute('aria-expanded', String(desktop() ? !nav.classList.contains('is-closed') : nav.classList.contains('is-open')));
+    try { if (localStorage.getItem(KEY) === '1') nav.classList.add('is-closed'); } catch { /* niente */ }
+    sync();
     btn.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', String(open));
+      if (desktop()) {
+        const closed = nav.classList.toggle('is-closed');
+        try { localStorage.setItem(KEY, closed ? '1' : '0'); } catch { /* niente */ }
+      } else {
+        nav.classList.toggle('is-open');
+      }
+      sync();
     });
     nav.addEventListener('click', (e) => {
-      if ((e.target as HTMLElement).closest('a')) { nav.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); }
+      if (!desktop() && (e.target as HTMLElement).closest('a')) { nav.classList.remove('is-open'); sync(); }
     });
+    window.matchMedia('(min-width: 900px)').addEventListener('change', sync);
   }
 </script>

@@ -282,6 +282,8 @@ function setup(el, gsap) {
   if (!clip || !host || !el.hasAttribute('data-sequence-available')) return fallbackZoom(gsap, el, img);
 
   const scene = el.closest('[data-scene]');
+  // telefono: l'arco resta un'immagine ferma, senza scroll ne' video (scelta di Daniele, 13 nov)
+  if (isMobile() && scene?.id === 'philosophy') return;
   const kind = !scene ? 'cross' : scene.id === 'philosophy' ? 'arch' : isMobile() ? 'cross' : scene.id === 'cover' ? 'cover' : 'cross';
   const st = { player: null, p: 0 };
 

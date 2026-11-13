@@ -73,6 +73,9 @@ In ordine di tempo. Tutte del 12 novembre 2026, salvo diversa indicazione. Ogni 
 | 3D che si compone, pulsanti per togliere i pezzi, padiglione con barra invece dello scroll (13 nov) | Scelta di Daniele |
 | Progetti con il 3D per primi nelle pellicole (13 nov) | Metterli in evidenza; l'ordine del PDF vale per gli altri |
 | Pubblicazione su Vercel, codice su GitHub (13 nov) | Scelta di Daniele |
+| Pulsanti + e − sopra i modelli 3D; pannello della cucina più piccolo (13 nov) | Scelta di Daniele |
+| Menu a libri richiudibile anche sul computer, scelta ricordata (13 nov) | Scelta di Daniele: a volte dà fastidio |
+| Arco e porte con lo stesso effetto anche sul telefono (13 nov) | Scelta di Daniele |
 
 ## Lasciate in sospeso
 

@@ -107,3 +107,19 @@ Stampa i fotogrammi al secondo dello scroll, in totale e scena per scena, con tu
 3. Invia l'indirizzo che compare. Senza un account gratuito il sito viene cancellato dopo poco: controlla cosa dice la pagina.
 
 L'indirizzo è pubblico per chiunque lo abbia.
+
+## Salvare e pubblicare (GitHub + Vercel)
+
+Il codice sta su https://github.com/Gestionalefracchiolladaniele/alaa (ramo `main`). Vercel ripubblica il sito da solo a ogni caricamento.
+
+```
+git add -A
+git commit -m "descrizione della modifica"
+git push origin master:main
+```
+
+In locale il ramo si chiama `master`, su GitHub `main`: per questo serve `master:main`.
+
+Impostazioni del progetto su Vercel: Root Directory `sito`, Framework Astro, Build `npm run build`, Output `dist`. Se la build si lamenta della versione di Node: Settings → Build and Deployment → Node.js Version → 24.x.
+
+Non vanno su GitHub (esclusi in `.gitignore`): `sorgenti/` (PDF e CV), `da-fornire/clip/`, `tools/_cache/`, i vecchi fotogrammi in `sito/public/sequences/*/desktop|mobile`.

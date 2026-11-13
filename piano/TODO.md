@@ -28,10 +28,13 @@ Stato: `[ ]` da fare · `[~]` in corso · `[x]` fatto. Chi: **F** = Fable, **O**
 - [~] O · Scritte in corsivo che si scrivono da sole, testi riga per riga, contatori — scritti da Opus, costruito, da rifinire
 - [~] F · Sipario che si chiude nel finale; porta della copertina verso About — scritti e costruiti, da guardare
 - [x] F · Prima build di tutto il movimento, in `C:/progetti/alaa-attal` (F: è danneggiato)
-- [ ] F · **Alleggerire lo scroll misurando** (`tools/misura_scroll.mjs`): a Daniele il sito risulta pesante
-- [ ] F · **Raccogliere e correggere le cose che a Daniele non piacciono**, scena per scena
+- [x] F · Alleggerire lo scroll: versione leggera con video veri, porte a clic, testi una volta sola (13 nov)
+- [~] F · Raccogliere e correggere le cose che a Daniele non piacciono: fatti ciak, copertina, arco, 3D, menu, Experience; continuare scena per scena
 
-> Il Blocco C qui sotto resta fermo finché questi due punti non sono chiusi.
+- [~] O · Telefono: arco e porte sistemati (13 nov); resto da controllare
+- [x] D/O · Codice su GitHub; Vercel da collegare (Root Directory `sito`)
+
+> Il Blocco C qui sotto può partire quando Daniele lo chiede.
 
 ## Blocco C — Opus, replica e completamento
 - [ ] O · Le altre porte (Architecture, Real Estate, Art, Fashion, Travel) con `DiveIn`

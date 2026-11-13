@@ -4,7 +4,7 @@ Sito portfolio interattivo dell'architetta Alaa Attal, costruito a partire dal s
 
 Questa cartella dice **cosa esiste oggi e come si usa**. Cosa si vuole costruire sta invece nella cartella `piano/`.
 
-Ultimo aggiornamento: 12 novembre 2026, sera.
+Ultimo aggiornamento: 13 novembre 2026, sera.
 
 **Il progetto ora sta in `C:\progetti\alaa-attal`** (il disco F: è danneggiato). Leggi prima `RIPARTENZA.md`.
 
@@ -39,9 +39,11 @@ Altri documenti, nella cartella `piano/`:
 | F2 — home statica e 12 pagine progetto | Fatto |
 | Modello 3D della cucina Creo | Fatto |
 | Modello 3D del padiglione di Kyrenia | Fatto; forma dell'apertura piccola in sospeso |
-| Prova 3D nel browser (configuratore e padiglione che si apre) | Portata dentro il sito; costruita, da guardare |
-| Apertura a sipario, video legati allo scroll, gesto "entrare", scritte che si scrivono, sipario finale | Costruiti e visti da Daniele: da alleggerire e rifinire, molte cose non gli piacciono |
-| Sezioni interattive (arte, moda, viaggi, real estate), mobile, controlli finali | Da fare |
+| 3D nel sito: si compone pezzo per pezzo, colori, pezzi da togliere, zoom, barra del padiglione | Fatto |
+| Movimento (versione leggera): sipari in codice, video veri, porte a clic, arco legato allo scroll, testi che compaiono | Fatto; approvato da Daniele ("tutto ok") |
+| Telefono | Arco e porte sistemati; controllo completo scena per scena da fare |
+| Sezioni interattive (arte, moda, viaggi, real estate), controlli finali | Da fare (Blocco C) |
+| Codice su GitHub, pubblicazione su Vercel | GitHub fatto; Vercel collegato da Daniele |
 | Clip video AI (1 pellicola, 2 arco, 3 sipario) | Arrivate e trasformate in fotogrammi; della 1 si usa tutto |
 | File originali di Alaa | Non ancora disponibili |
 

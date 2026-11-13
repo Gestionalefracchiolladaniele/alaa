@@ -183,3 +183,13 @@ Scelta di Daniele dopo aver provato il sito senza movimento: quella è la base.
 - `BookNav.astro`: menu più piccolo e più alto; nascosto con `html.at-finale` (impostata da `finale.js`).
 - Tolta la bobina `cover-reel` dalla copertina e i libri sotto Thank You.
 - Il "non funziona" dell'arco legato allo scroll era il server di Python (niente richieste parziali): l'anteprima ora usa `astro preview`.
+
+## Ritocchi dopo la prova di Daniele (13 novembre, sera tardi) — Opus
+
+- Arco: tornato legato allo scroll (era stato provato a clic). Il "non va" era il server di Python dell'anteprima, che non accetta richieste parziali: il video non si poteva sfogliare. Anteprima ora con `astro preview`.
+- Copertina: tolta la bobina (`cover-reel`) sopra il video.
+- Experience: pulsante centrato e con bordo; `ScrollTrigger.refresh()` su `toggle` dei `<details>` e su `ResizeObserver` di `main` (il cassetto spostava l'arco).
+- Telefono: `setupArch` anche su mobile, con fermo quando l'arco è al centro (`g.shift`), scena senza taglio verticale; ingrandimento delle porte anche su mobile. Verificato con foto a 390 px.
+- 3D: `zoomUI` (+ e − sopra il modello), pannello della cucina compatto.
+- Menu a libri: pulsante Index anche su desktop, stato in `localStorage`.
+- Codice su GitHub (`Gestionalefracchiolladaniele/alaa`, `git push origin master:main`); vecchi fotogrammi esclusi da git.

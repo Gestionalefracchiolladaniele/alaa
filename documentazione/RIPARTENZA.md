@@ -22,6 +22,18 @@ Il 12 novembre alle 19 circa il disco F: (HGST da 500 GB, meccanico) ha comincia
 
 Il sito con il movimento **si costruisce e si apre**. Daniele l'ha guardato: **molte cose non gli piacciono** e lo scroll gli risulta **pesante**. Il lavoro adesso non è aggiungere: è **alleggerire e rifinire** quello che c'è. Il Blocco C è fermo finché la base non lo convince.
 
+## Aggiornamenti successivi del 13 novembre (sera tardi)
+
+- **Repository GitHub:** https://github.com/Gestionalefracchiolladaniele/alaa, ramo `main`. In locale il ramo si chiama `master`: per caricare usare **`git push origin master:main`** (un `git push` semplice non va a buon fine). Ogni caricamento ripubblica il sito su Vercel.
+- **Vercel:** Root Directory `sito`, preset Astro, build `npm run build`, output `dist`; se serve, Node 24.x.
+- **Experience (About):** pulsante al centro con bordo dorato e "+" in un cerchio bordeaux. Corretto il bug per cui, aprendolo, lo scroll saltava sul video dell'arco: `home.js` ricalcola le sezioni fissate a ogni apertura/chiusura e quando cambiano le altezze.
+- **Telefono:** l'arco si ferma con l'arco al centro dello schermo e si allarga a tutto schermo come sul computer (`g.shift` in `setupArch`; la scena non taglia più l'arco: `overflow: visible` in `motion.css`). Le porte a clic si ingrandiscono anche sul telefono. Verificato con foto dello schermo a 390 px.
+- **3D:** pulsanti + e − tondi sopra il modello, in basso a sinistra, per cucina e padiglione (`zoomUI` in `models.js`); pannello della cucina più stretto (12,2 rem) e compatto, sempre a destra.
+- **Menu a libri:** pulsante "Index" con freccia anche sul computer per chiuderlo e riaprirlo; la scelta resta ricordata (`localStorage`, chiave `aa-booknav-closed`). Posizione: in basso a destra, un po' più in alto del bordo.
+- **Foto dello schermo:** Daniele ora le accetta per controllare il lavoro. Script in uso: Edge senza finestra via protocollo di debug (porta 9334), viewport 390×844 per il telefono e 1440×900 per il computer.
+
+Da fare, se Daniele lo chiede: velo della porta di Interior crema invece di marrone; link LinkedIn ed email visibili prima di diffondere il link; pagina d'ingresso con password (Vercel la offre solo a pagamento); controllo completo del telefono scena per scena; Blocco C (`piano/TODO.md`).
+
 ## Stato al 13 novembre (sera) — leggere prima di tutto
 
 Daniele ha detto "tutto ok" su questa versione. Il codice è salvato in git e caricato su GitHub (`Gestionalefracchiolladaniele/alaa`); si pubblicherà su **Vercel** (cartella del progetto: `sito`).

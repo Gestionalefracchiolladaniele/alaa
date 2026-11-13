@@ -282,7 +282,7 @@ function setup(el, gsap) {
   if (!clip || !host || !el.hasAttribute('data-sequence-available')) return fallbackZoom(gsap, el, img);
 
   const scene = el.closest('[data-scene]');
-  const kind = isMobile() || !scene ? 'cross' : scene.id === 'cover' ? 'cover' : scene.id === 'philosophy' ? 'arch' : 'cross';
+  const kind = !scene ? 'cross' : scene.id === 'philosophy' ? 'arch' : isMobile() ? 'cross' : scene.id === 'cover' ? 'cover' : 'cross';
   const st = { player: null, p: 0 };
 
   // disegna la posizione corrente; senza fotogrammi (rete) zoom sull'immagine
@@ -369,7 +369,10 @@ function setupArch(el, scene, host, fallback, st, render, gsap) {
     g.w0 = el.offsetWidth || 1;
     g.h0 = el.offsetHeight || 1;
     g.left0 = pRect.left + el.offsetLeft;
-    g.top0 = pRect.top - sRect.top + el.offsetTop;   // durante il pin la scena ha il bordo alto a 0
+    const rel = pRect.top - sRect.top + el.offsetTop;   // posizione dell'arco dentro la scena
+    // spostamento del punto di fermo: 0 sul computer (la scena sta in uno schermo), sul telefono l'arco al centro
+    g.shift = isMobile() ? Math.max(0, Math.round(rel + (el.offsetHeight || 0) / 2 - window.innerHeight / 2)) : 0;
+    g.top0 = rel - g.shift;   // durante il pin la scena ha il bordo alto a -shift
     g.vw = document.documentElement.clientWidth || window.innerWidth;
     g.vh = window.innerHeight;
     g.cw = Math.ceil(Math.max(g.vw, g.vh * g.ar));
@@ -408,7 +411,7 @@ function setupArch(el, scene, host, fallback, st, render, gsap) {
   const tl = gsap.timeline({
     defaults: { ease: 'none' },
     scrollTrigger: {
-      trigger: scene, start: 'top top', end: () => '+=' + Math.round(window.innerHeight * 2.5),
+      trigger: scene, start: () => { measure(); return 'top+=' + g.shift + ' top'; }, end: () => '+=' + Math.round(window.innerHeight * (isMobile() ? 2 : 2.5)),
       pin: true, scrub: true, invalidateOnRefresh: true,
       onRefresh: () => { measure(); apply(g.e); },
     },

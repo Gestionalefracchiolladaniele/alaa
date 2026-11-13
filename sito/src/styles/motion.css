@@ -53,3 +53,7 @@ html.motion-on .hw-done .hw-word { -webkit-mask-image: none; mask-image: none; }
 /* 3D: pulsanti per togliere e rimettere i pezzi */
 .mv-parts { flex-wrap: wrap; gap: .4rem; }
 .mv-part[aria-pressed='false'] { opacity: .5; text-decoration: line-through; }
+
+/* Arco: mentre si allarga a tutto schermo non deve essere tagliato dal bordo della sezione
+   (sul telefono la sezione e' piu' alta dello schermo e viene fermata a meta'). */
+html.motion-on .scene--philosophy { overflow: visible; overflow-x: clip; }

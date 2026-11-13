@@ -116,7 +116,7 @@ export function init() {
     const stage = cover.querySelector('[data-divein-stage]');
     const doorEl = cover.querySelector('[data-divein-door]');
     const rectEl = !doorEl ? null : doorEl.matches('.cover__door') ? doorEl : doorEl.querySelector('.cover__door') || doorEl;
-    const zoom = rectEl && !isMobile();   // sul telefono solo la dissolvenza
+    const zoom = !!rectEl;   // anche sul telefono la porta si ingrandisce
     cover.classList.add('dive--active');
     veil.style.background = nextColour(next);
     const to = zoom ? target(stage, rectEl) : null;

@@ -75,7 +75,8 @@ In ordine di tempo. Tutte del 12 novembre 2026, salvo diversa indicazione. Ogni 
 | Pubblicazione su Vercel, codice su GitHub (13 nov) | Scelta di Daniele |
 | Pulsanti + e − sopra i modelli 3D; pannello della cucina più piccolo (13 nov) | Scelta di Daniele |
 | Menu a libri richiudibile anche sul computer, scelta ricordata (13 nov) | Scelta di Daniele: a volte dà fastidio |
-| Arco e porte con lo stesso effetto anche sul telefono (13 nov) | Scelta di Daniele |
+| Porte a clic con lo stesso ingrandimento anche sul telefono (13 nov) | Scelta di Daniele |
+| Sul telefono l'arco è un'immagine ferma, senza scroll né video (13 nov) | La versione animata sul telefono dava problemi |
 
 ## Lasciate in sospeso
 

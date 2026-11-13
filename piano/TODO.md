@@ -31,7 +31,7 @@ Stato: `[ ]` da fare · `[~]` in corso · `[x]` fatto. Chi: **F** = Fable, **O**
 - [x] F · Alleggerire lo scroll: versione leggera con video veri, porte a clic, testi una volta sola (13 nov)
 - [~] F · Raccogliere e correggere le cose che a Daniele non piacciono: fatti ciak, copertina, arco, 3D, menu, Experience; continuare scena per scena
 
-- [~] O · Telefono: arco e porte sistemati (13 nov); resto da controllare
+- [~] O · Telefono: porte con ingrandimento, arco come immagine ferma (13 nov); resto da controllare
 - [x] D/O · Codice su GitHub; Vercel da collegare (Root Directory `sito`)
 
 > Il Blocco C qui sotto può partire quando Daniele lo chiede.

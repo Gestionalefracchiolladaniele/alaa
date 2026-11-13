@@ -41,7 +41,7 @@ Altri documenti, nella cartella `piano/`:
 | Modello 3D del padiglione di Kyrenia | Fatto; forma dell'apertura piccola in sospeso |
 | 3D nel sito: si compone pezzo per pezzo, colori, pezzi da togliere, zoom, barra del padiglione | Fatto |
 | Movimento (versione leggera): sipari in codice, video veri, porte a clic, arco legato allo scroll, testi che compaiono | Fatto; approvato da Daniele ("tutto ok") |
-| Telefono | Arco e porte sistemati; controllo completo scena per scena da fare |
+| Telefono | Porte con ingrandimento, arco come immagine ferma; controllo completo scena per scena da fare |
 | Sezioni interattive (arte, moda, viaggi, real estate), controlli finali | Da fare (Blocco C) |
 | Codice su GitHub, pubblicazione su Vercel | GitHub fatto; Vercel collegato da Daniele |
 | Clip video AI (1 pellicola, 2 arco, 3 sipario) | Arrivate e trasformate in fotogrammi; della 1 si usa tutto |

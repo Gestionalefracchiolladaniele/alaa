@@ -189,7 +189,7 @@ Scelta di Daniele dopo aver provato il sito senza movimento: quella è la base.
 - Arco: tornato legato allo scroll (era stato provato a clic). Il "non va" era il server di Python dell'anteprima, che non accetta richieste parziali: il video non si poteva sfogliare. Anteprima ora con `astro preview`.
 - Copertina: tolta la bobina (`cover-reel`) sopra il video.
 - Experience: pulsante centrato e con bordo; `ScrollTrigger.refresh()` su `toggle` dei `<details>` e su `ResizeObserver` di `main` (il cassetto spostava l'arco).
-- Telefono: `setupArch` anche su mobile, con fermo quando l'arco è al centro (`g.shift`), scena senza taglio verticale; ingrandimento delle porte anche su mobile. Verificato con foto a 390 px.
+- Telefono: provato `setupArch` anche su mobile (fermo con l'arco al centro, `g.shift`), poi spento su richiesta di Daniele: sul telefono l'arco è un'immagine ferma (`return` all'inizio di `setup` in `sequence.js`). Ingrandimento delle porte anche su mobile.
 - 3D: `zoomUI` (+ e − sopra il modello), pannello della cucina compatto.
 - Menu a libri: pulsante Index anche su desktop, stato in `localStorage`.
 - Codice su GitHub (`Gestionalefracchiolladaniele/alaa`, `git push origin master:main`); vecchi fotogrammi esclusi da git.

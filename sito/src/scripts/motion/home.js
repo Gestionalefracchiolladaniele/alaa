@@ -17,3 +17,9 @@ reveal();                             // testi che compaiono una volta sola, zoo
 finale();                             // sipario finale in codice
 ScrollTrigger.sort();
 ScrollTrigger.refresh();
+
+// quando un cassetto (Experience) si apre o si chiude la pagina cambia altezza: ricalcolo le sezioni fissate
+document.querySelectorAll('details').forEach((d) => d.addEventListener('toggle', () => ScrollTrigger.refresh()));
+// idem quando le immagini caricate in ritardo cambiano le altezze
+let rt = 0;
+new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => ScrollTrigger.refresh(), 200); }).observe(document.querySelector('main') || document.body);

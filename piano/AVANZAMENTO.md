@@ -112,3 +112,74 @@ Diario di lavoro dell'esecutore (Opus). Aggiornato alla fine di ogni fase.
 - Le icone sono ridisegnate semplici: da rivedere a vista.
 - Nella pellicola su desktop non c'è ancora il pin orizzontale (F6): si scorre di lato con trackpad, Maiusc+rotella o tastiera (la striscia è focalizzabile).
 - `ciak.png` da rifinire (CORREZIONI #5, di Fable).
+
+## F6 — Movimento (prima stesura, 12 novembre sera)
+
+Scritta da Fable (base, porte, sipario) e da un agente Opus (sequenze, testi, 3D). **Mai costruita:** `npm run build` fallisce con `EIO: i/o error, read` perché il disco F: ha blocchi danneggiati e alcuni file di `node_modules` non si leggono. Verificato solo `node --check` su ogni `.js`. Nessun controllo a vista.
+
+**File nuovi**
+- `sito/src/scripts/motion/core.js` — `motion()` (Lenis + ScrollTrigger, una volta), `reduced`, `isMobile()`, `fullMotion()`, `EASE`, curva `enter`, `lockScroll()` / `unlockScroll()`. Mette `motion-on` o `motion-reduced` su `<html>`.
+- `sito/src/scripts/motion/home.js` — ingresso della home: `opening`, `sequence`, `divein`, `reveal`, poi `ScrollTrigger.sort()` e `refresh()`.
+- `sito/src/scripts/motion/divein.js` — porte delle copertine di sezione: pin di uno schermo, `[data-divein-stage]` si ingrandisce finché la porta riempie lo schermo, velo del colore della scena di arrivo. Salta le porte che contengono `[data-scroll-sequence]` (copertina e arco).
+- `sito/src/scripts/motion/opening.js` — sipario: clip 3 al contrario tramite `createPlayer`, poi ingrandimento ×3,2; riserva in CSS. Lancia `opening:done`.
+- `sito/src/scripts/motion/sequence.js` — `createPlayer(clip, host, { fit })` → player con `count`, `canvas`, `keyed`, `variant`, `width`, `height`, `draw(pos, force)`, `first`, `ready`, `preload({ from })`, `resize()`, `destroy()`; `init()` lega copertina (pin breve, colonna destra) e arco (pin di circa 2,5 schermi, riquadro che si allarga a tutto schermo, velo crema finale).
+- `sito/src/scripts/motion/reveal.js` — `[data-reveal-lines]`, `[data-counter]`, `[data-two-tone]`, `[data-swoosh]`, `[data-cover-zoom]` (proprietà CSS `scale` via `--cz`), `[data-handwrite]`.
+- `sito/src/scripts/motion/project.js` — ingresso delle pagine progetto.
+- `sito/src/scripts/three/viewer-core.js`, `kitchen.js`, `pavilion.js` (dal prototipo, opzioni e colori invariati), `models.js` (carica three.js con `import()` quando il riquadro si avvicina).
+- `sito/src/styles/doors.css` (porte e sipario), `sito/src/styles/motion.css` (sequenze, testi, 3D).
+
+**File modificati**
+- `index.astro`: import di `motion.css` e `doors.css`; blocco `[data-opening]` (ruolo dialog, `[data-opening-stage]`, script in linea che decide se mostrarlo); `<script>` che carica `home.js`.
+- `SectionCover.astro`: il contenuto sta in `.cover__stage[data-divein-stage]`; griglia e padding spostati dalla copertina allo stage.
+- `ScrollSequence.astro`: legge il manifest alla build e mette `data-sequence-available`.
+- `ProjectPage.astro`: blocco `[data-model-viewer]`, suoi stili, `<script>`, import di `motion.css`.
+
+**Resta**
+- Prima build e correzione degli errori; `npm run check`; peso del JavaScript della home.
+- Controllo a vista di tutto (Daniele).
+- Sipario del finale, porta della copertina verso About (Fable).
+
+## F6 — Movimento, seconda parte (12 novembre, sera tardi) — Fable
+
+Il progetto è stato copiato in `C:/progetti/alaa-attal` (720 file verificati, git integro, PDF del portfolio mancante). `npm ci` e `npm run build` riusciti al primo tentativo: 14 pagine. JavaScript della home circa 59 KB compressi (limite 150); three.js a parte, 204 KB compressi, caricato solo nelle due pagine con il 3D.
+
+**Aggiunto**
+- `scripts/motion/finale.js`: sipario che si richiude a Thank You (clip 3 in avanti, dietro l'ovale). Stili in `doors.css`.
+- `addCoverDoor` in `divein.js`, usata da `sequence.js`: dopo la clip della copertina si entra in un fotogramma e si arriva ad About.
+- Interruttori di diagnostica `/?off=...` (`OFF` in `core.js`) e `tools/misura_scroll.mjs`.
+
+**Cambiato su richiesta di Daniele**
+- Tolto il ciak dall'apertura (rimosso il blocco `[data-ciak]` da `index.astro`).
+- Clip 1 intera: `tools/clips.json` (0–119, qualità 62), fotogrammi rigenerati; la copertina resta fissata per 1,6 schermi di clip più 1 di porta.
+
+**Tentativi sullo scroll, fatti senza misurare (da rivedere con la misura)**
+- grana della carta senza `mix-blend-mode`;
+- `scrub: true` al posto di 0,5–0,6 in `sequence.js`, `divein.js`, `finale.js`;
+- cache di `ImageBitmap` intorno al fotogramma corrente e densità del canvas a 1 in `sequence.js`;
+- `will-change: transform` fisso sugli stage delle porte;
+- Lenis: `lerp` 0,06 (inerzia), rotella 1.
+
+Dopo i primi quattro Daniele ha trovato lo scroll peggiorato. Nessuno è stato verificato singolarmente.
+
+**Non verificato:** tutto ciò che riguarda l'aspetto. Nessun controllo a vista da parte di chi ha scritto il codice.
+
+## Versione leggera con porte a clic (12 novembre, ore 20:30) — Fable
+
+Scelta di Daniele dopo aver provato il sito senza movimento: quella è la base.
+- **Spenti di serie:** scroll morbido (Lenis), testi animati (`reveal.js`), video legati allo scroll (`sequence.js`). Il codice resta; si riaccendono per prova con `/?on=lenis,reveal,sequence` (`ON` in `core.js`). Gli interruttori `?off=` non esistono più: `tools/misura_scroll.mjs` va adattato se serve ancora.
+- **Sipario d'apertura:** solo i due pannelli disegnati in CSS (`USE_FILM = false` in `opening.js`); il video delle tende (clip 3) non si usa più.
+- **Sipario finale:** due pannelli CSS che si chiudono una volta, a tempo, dietro l'ovale (`finale.js`).
+- **Porte:** `divein.js` riscritto. Ogni copertina di sezione è un cancello: ciò che viene dopo è nascosto (`[data-gate-hidden]`) finché non si clicca la porta o il pulsante "Enter ... ↓". Al clic: ingrandimento verso la porta, velo, arrivo al contenuto. Scorrere non basta per passare. Una volta aperta, la parte resta aperta. Il menu a libri apre i cancelli necessari senza animazione. Copertina e Philosophy non sono cancelli.
+- Costruito senza errori; **non guardato**.
+
+## Versione leggera definitiva (13 novembre) — Opus
+
+- Video veri in `sito/public/video/` (ffmpeg da `da-fornire/clip`): `clip-1.mp4` 842 KB (+ mobile 314 KB), `clip-2.mp4` 3,3 MB tutti fotogrammi chiave (+ mobile 1,4 MB).
+- `sequence.js`: `createVideoPlayer` (stessa interfaccia del lettore a fotogrammi, salta con `currentTime`); copertina in loop da sola; arco legato allo scroll con `setupArch` (`ARCH_SCROLL = true`).
+- `divein.js`: porte a clic (cancelli); `enterArch` per l'arco a clic, spento (`ARCH_CLICK = false`).
+- `reveal.js`: zoom copertine con `animation-timeline: view()` (classe `.cz-css` in `motion.css`).
+- `scripts/three/assemble.js` (nuovo): composizione pezzo per pezzo e pulsanti mostra/nascondi; `kitchen.js` e `pavilion.js` espongono `parts`, `toggle`, `build`; `models.js` senza pin, barra per il padiglione.
+- `lib/projects.ts`: progetti con `model` per primi.
+- `BookNav.astro`: menu più piccolo e più alto; nascosto con `html.at-finale` (impostata da `finale.js`).
+- Tolta la bobina `cover-reel` dalla copertina e i libri sotto Thank You.
+- Il "non funziona" dell'arco legato allo scroll era il server di Python (niente richieste parziali): l'anteprima ora usa `astro preview`.

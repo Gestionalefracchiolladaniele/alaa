@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prova 3D — cucina Creo e padiglione Kyrenia</title>
+<script type="importmap">
+{ "imports": {
+    "three": "/sito/node_modules/three/build/three.module.js",
+    "three/addons/": "/sito/node_modules/three/examples/jsm/"
+} }
+</script>
+<style>
+  :root { --cream:#f1e4d0; --paper:#e7d6bb; --ink:#2a1c14; --velvet:#6a1524; --gold:#b9924c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.5 Georgia, serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 80px; display: flex; flex-direction: column; gap: 56px; }
+  h1 { font-size: 2rem; margin: 0; font-weight: 500; }
+  h2 { font-size: 1.5rem; margin: 0 0 4px; font-weight: 500; }
+  h2 i { color: var(--velvet); }
+  p { margin: 0; max-width: 62ch; }
+  .note { font: 13px/1.4 system-ui, sans-serif; color: #6b5a4c; }
+  .stage { position: relative; aspect-ratio: 16 / 9; background: var(--paper); overflow: hidden; margin-top: 14px; }
+  .stage > .view { position: absolute; inset: 0; }
+  .stage canvas { display: block; }
+  .study { position: absolute; left: 12px; top: 10px; font: 11px system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #fff; opacity: .8; pointer-events: none; }
+  .panel { position: absolute; right: 12px; top: 12px; width: 210px; background: #f1e4d0ee; padding: 14px; display: flex; flex-direction: column; gap: 10px; font: 12px system-ui, sans-serif; }
+  .panel h3 { margin: 0; font: 600 10px system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--velvet); }
+  .swatches { display: flex; gap: 8px; }
+  .swatches button { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; cursor: pointer; padding: 0; }
+  .swatches button[aria-pressed="true"] { outline: 2px solid var(--velvet); outline-offset: 2px; }
+  .panel .name { min-height: 1.3em; color: #4a3a2e; }
+  .panel .row { display: flex; gap: 8px; align-items: center; }
+  .btn { background: var(--velvet); color: var(--cream); border: 0; padding: 8px; letter-spacing: .12em; text-transform: uppercase; font: 600 10px system-ui, sans-serif; cursor: pointer; }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .labels { position: absolute; inset: 0; pointer-events: none; }
+  .tag3d { position: absolute; left: 0; top: 0; padding-left: 46px; margin-top: -9px; font: 12px/1.25 system-ui, sans-serif; white-space: nowrap; transition: opacity .2s; }
+  .tag3d::before { content: ""; position: absolute; left: 0; top: 9px; width: 38px; border-top: 1px solid var(--ink); }
+  .tag3d::after { content: ""; position: absolute; left: -3px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--velvet); }
+  .tag3d b { display: block; font: 600 14px Georgia, serif; }
+  .tag3d span { color: #6b5a4c; }
+  .slider { display: flex; gap: 12px; align-items: center; margin-top: 10px; font: 12px system-ui, sans-serif; }
+  .slider input { flex: 1; accent-color: var(--velvet); }
+  .err { padding: 16px; font: 13px system-ui, sans-serif; color: var(--velvet); }
+  @media (max-width: 700px) { .panel { position: static; width: auto; } .stage { aspect-ratio: 4 / 5; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Prova 3D</h1>
+    <p class="note">Pagina di prova, fuori dal sito. Trascina per girare, rotella per avvicinarti. I modelli sono studi ricostruiti dalle tavole del portfolio.</p>
+  </header>
+
+  <section>
+    <h2>CREO — <i>Italian Kitchen</i></h2>
+    <p class="note">Residential project · Sharjah, UAE</p>
+    <div class="stage">
+      <div class="view" id="kitchen"></div>
+      <span class="study">3D study based on the project board</span>
+      <div class="panel" id="kitchen-ui"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kyrenia Waterfront Art Centre — <i>Pavilion</i></h2>
+    <p class="note">Pavilion construction · exploded view</p>
+    <div class="stage">
+      <div class="view" id="pavilion"></div>
+      <div class="labels" id="pavilion-labels"></div>
+    </div>
+    <label class="slider">Chiuso <input id="explode" type="range" min="0" max="1" step="0.005" value="0"> Aperto</label>
+    <p class="note">Nel sito questo cursore sarà lo scroll della pagina.</p>
+  </section>
+</main>
+
+<script type="module">
+import { mountKitchen, OPTIONS } from './kitchen.js';
+import { mountPavilion } from './pavilion.js';
+
+const fail = (el, e) => { console.error(e); el.innerHTML = `<p class="err">Non riesco a mostrare il modello: ${e.message}</p>`; };
+
+// ---- cucina ----
+const kEl = document.getElementById('kitchen'), ui = document.getElementById('kitchen-ui');
+mountKitchen(kEl, '/sito/public/models/creo-kitchen.glb').then((k) => {
+  const refresh = [];
+  for (const [part, opt] of Object.entries(OPTIONS)) {
+    const h = document.createElement('h3'); h.textContent = opt.label;
+    const row = document.createElement('div'); row.className = 'swatches';
+    const name = document.createElement('div'); name.className = 'name';
+    for (const [id, c] of Object.entries(opt.choices)) {
+      const b = document.createElement('button');
+      b.type = 'button'; b.style.background = c.swatch; b.title = c.name; b.setAttribute('aria-label', c.name);
+      b.onclick = () => { k.set(part, id); refresh.forEach((f) => f()); };
+      refresh.push(() => {
+        const on = k.state[part] === id;
+        b.setAttribute('aria-pressed', on);
+        if (on) name.textContent = c.name + (id === opt.original ? ' · original' : '');
+      });
+      row.appendChild(b);
+    }
+    ui.append(h, row, name);
+  }
+  const led = document.createElement('label'); led.className = 'row';
+  led.innerHTML = '<input type="checkbox" checked> LED lighting';
+  const box = led.querySelector('input');
+  box.onchange = () => k.setLed(box.checked);
+  const reset = document.createElement('button'); reset.className = 'btn'; reset.type = 'button'; reset.textContent = "Alaa's design";
+  reset.onclick = () => { k.reset(); box.checked = true; refresh.forEach((f) => f()); };
+  ui.append(led, reset);
+  refresh.forEach((f) => f());
+}).catch((e) => fail(kEl, e));
+
+// ---- padiglione ----
+const pEl = document.getElementById('pavilion');
+mountPavilion(pEl, document.getElementById('pavilion-labels'), '/sito/public/models/kyrenia-pavilion.glb').then((p) => {
+  const s = document.getElementById('explode');
+  s.oninput = () => p.setProgress(+s.value);
+}).catch((e) => fail(pEl, e));
+</script>
+</body>
+</html>

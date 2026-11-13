@@ -36,8 +36,12 @@ const tints = ['#5a4033', '#4e3a2f', '#614536', '#533f33', '#5c3f30', '#4a372c']
   .booknav li:nth-child(3n) .booknav__book { margin-right: 8px; }
   .booknav__book:hover, .booknav__book:focus-visible, .booknav__book[aria-current='true'] { transform: translateX(-14px); }
 
-  .booknav--fixed { position: fixed; right: clamp(10px, 2vw, 28px); bottom: clamp(10px, 2vw, 28px); z-index: 60; }
-  .booknav--fixed .booknav__stack { width: 13.5rem; filter: drop-shadow(0 8px 14px rgb(40 25 10 / .25)); }
+  .booknav--fixed { position: fixed; right: clamp(10px, 2vw, 28px); bottom: clamp(48px, 7vh, 80px); z-index: 60; }
+  .booknav--fixed .booknav__stack { width: 8.4rem; gap: 2px; filter: drop-shadow(0 4px 8px rgb(40 25 10 / .22)); }
+  .booknav--fixed .booknav__book { height: 22px; font-size: .58rem; padding: 0 .7rem; }
+  .booknav--fixed .booknav__book:hover, .booknav--fixed .booknav__book:focus-visible, .booknav--fixed .booknav__book[aria-current='true'] { transform: translateX(-8px); }
+  .booknav--fixed { transition: opacity .4s, visibility .4s; }
+  :global(html.at-finale) .booknav--fixed { opacity: 0; visibility: hidden; }
   .booknav__toggle { display: none; }
 
   @media (max-width: 899px) {

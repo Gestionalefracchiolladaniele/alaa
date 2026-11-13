@@ -1,0 +1,48 @@
+{
+  "_nota": "Per ogni clip: quali fotogrammi usare (first..last, numerati da 0) e come esportarli. 'key' rende trasparente il fondo crema (serve al sipario). Dopo una modifica: uv run --no-project python -I tools/build_frames.py",
+  "clip-1": {
+    "first": 0,
+    "last": 119,
+    "desktop": {
+      "width": 1280,
+      "step": 1,
+      "quality": 62
+    },
+    "mobile": {
+      "width": 720,
+      "step": 2,
+      "quality": 66
+    },
+    "_perche": "Scelta di Daniele (12 nov sera): si usa tutta la clip, compreso il passaggio alla seconda pellicola dal fotogramma 42."
+  },
+  "clip-2": {
+    "first": 0,
+    "last": 119,
+    "desktop": {
+      "width": 1280,
+      "step": 1,
+      "quality": 66
+    },
+    "mobile": {
+      "width": 720,
+      "step": 2,
+      "quality": 68
+    }
+  },
+  "clip-3": {
+    "first": 0,
+    "last": 100,
+    "key": true,
+    "desktop": {
+      "width": 1280,
+      "step": 2,
+      "quality": 70
+    },
+    "mobile": {
+      "width": 640,
+      "step": 3,
+      "quality": 66
+    },
+    "_perche": "Dopo il fotogramma 100 circa le tende sono chiuse e ferme. Fotogramma 0 = aperte, ultimo = chiuse."
+  }
+}

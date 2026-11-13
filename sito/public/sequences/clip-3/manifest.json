@@ -1,0 +1,22 @@
+{
+ "clip": "clip-3",
+ "source": [
+  1280,
+  720
+ ],
+ "first": 0,
+ "last": 100,
+ "keyed": true,
+ "desktop": {
+  "frames": 51,
+  "width": 1280,
+  "height": 720,
+  "kb": 728
+ },
+ "mobile": {
+  "frames": 34,
+  "width": 640,
+  "height": 360,
+  "kb": 189
+ }
+}

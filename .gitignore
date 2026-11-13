@@ -6,3 +6,6 @@ da-fornire/clip/
 __pycache__/
 # PDF di partenza: pesanti (23 MB) e il CV contiene dati personali. Restano solo in locale.
 sorgenti/
+# Vecchi fotogrammi delle clip: non piu' usati (il sito usa sito/public/video). Restano solo i manifest.json, letti dalla build.
+sito/public/sequences/*/desktop/
+sito/public/sequences/*/mobile/

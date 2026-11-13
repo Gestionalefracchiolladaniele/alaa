@@ -16,16 +16,22 @@ Stato: `[ ]` da fare · `[~]` in corso · `[x]` fatto. Chi: **F** = Fable, **O**
 
 ### Daniele
 - [ ] D · Guardare le anteprime dei due modelli 3D
-- [ ] D · Dopo F0: generare le clip 1, 2 e 3 partendo da `da-fornire/riferimenti/`
+- [x] D · Clip 1, 2 e 3 generate (la 1 è difettosa: conviene rigenerarla)
 
 ## Blocco B — Fable, sopra il sito statico
 - [ ] F · Revisione dello styleguide e della home statica
-- [ ] F · Motore delle sequenze video con versione di riserva (`ScrollSequence`)
-- [ ] F · Apertura: sipario, ciak, ingresso in profondità sulla copertina
-- [ ] F · Componente "entrare" (`DiveIn`) e prima porta: lo schizzo di Interior
-- [ ] F · Visualizzatore 3D della cucina con configuratore
-- [ ] F · Padiglione che si apre con lo scroll, con etichette agganciate
-- [ ] F · Scritte in corsivo che si scrivono da sole
+- [~] F · Motore delle sequenze video con versione di riserva (`ScrollSequence`) — scritto da Opus, costruito, da rifinire
+- [~] F · Apertura: sipario, ciak, ingresso in profondità sulla copertina — scritta, costruito, da rifinire
+- [~] F · Componente "entrare" (`DiveIn`): scritto per le 6 copertine di sezione, costruito, da rifinire
+- [~] F · Visualizzatore 3D della cucina con configuratore — portato nel sito da Opus, costruito, da rifinire
+- [~] F · Padiglione che si apre con lo scroll, con etichette agganciate — portato nel sito da Opus, costruito, da rifinire
+- [~] O · Scritte in corsivo che si scrivono da sole, testi riga per riga, contatori — scritti da Opus, costruito, da rifinire
+- [~] F · Sipario che si chiude nel finale; porta della copertina verso About — scritti e costruiti, da guardare
+- [x] F · Prima build di tutto il movimento, in `C:/progetti/alaa-attal` (F: è danneggiato)
+- [ ] F · **Alleggerire lo scroll misurando** (`tools/misura_scroll.mjs`): a Daniele il sito risulta pesante
+- [ ] F · **Raccogliere e correggere le cose che a Daniele non piacciono**, scena per scena
+
+> Il Blocco C qui sotto resta fermo finché questi due punti non sono chiusi.
 
 ## Blocco C — Opus, replica e completamento
 - [ ] O · Le altre porte (Architecture, Real Estate, Art, Fashion, Travel) con `DiveIn`

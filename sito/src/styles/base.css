@@ -33,7 +33,7 @@ button { font: inherit; color: inherit; }
 
 /* Grana della carta su tutto il sito (SVG inline, nessuna richiesta esterna) */
 .paper-grain {
-  position: fixed; inset: 0; pointer-events: none; z-index: 90; opacity: 0.07; mix-blend-mode: multiply;
+  position: fixed; inset: 0; pointer-events: none; z-index: 90; opacity: 0.055; /* niente mix-blend-mode: su tutta la finestra rende pesante ogni fotogramma di scroll */ transform: translateZ(0);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .17 0 0 0 1.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 

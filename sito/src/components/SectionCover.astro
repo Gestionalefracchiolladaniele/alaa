@@ -37,6 +37,8 @@ const rectStyle = door ? `left:${door.rect.x}%;top:${door.rect.y}%;width:${door.
 <header class="cover page-frame" id={`${id}-cover`}
   data-divein={door ? '' : undefined} data-divein-slot={door?.slot} data-divein-rect={rect} data-divein-next={next}>
   <SceneLabel n={scene} name={name} />
+  <!-- [data-divein-stage]: tutto cio' che si ingrandisce quando si "entra" nella porta (scripts/motion/divein.js) -->
+  <div class="cover__stage" data-divein-stage>
   <div class="cover__text">
     {kicker && <p class="label label--rule">{kicker}</p>}
     <TwoTone title={title} as="h2" class="cover__title" id={`${id}-title`} />
@@ -63,16 +65,18 @@ const rectStyle = door ? `left:${door.rect.x}%;top:${door.rect.y}%;width:${door.
       )}
     </div>
   )}
+  </div>
   <a class="cover__next label" href={next}>{door?.label ?? 'Continue'} <span aria-hidden="true">↓</span></a>
 </header>
 
 <style>
-  .cover {
+  .cover { position: relative; background: var(--paper); overflow: hidden; }
+  .cover__stage {
     position: relative; display: grid; gap: var(--s-6); align-items: center;
     min-height: 100svh; padding: clamp(4.5rem, 8vw, 6rem) var(--gutter) clamp(3rem, 6vw, 4.5rem);
-    background: var(--paper); overflow: hidden;
+    transform-origin: 0 0;
   }
-  @media (min-width: 900px) { .cover { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); } }
+  @media (min-width: 900px) { .cover__stage { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); } }
   .cover__text { position: relative; z-index: 2; }
   .cover__title { font-size: clamp(3rem, 8.2vw, 7.4rem); line-height: .92; margin: .35em 0 .3em; }
   .cover__tags { margin-bottom: var(--s-4); }

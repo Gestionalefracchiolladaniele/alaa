@@ -1,19 +1,33 @@
 ---
-/* SEGNAPOSTO per la sequenza video legata allo scroll (01-architettura.md, "Pipeline delle sequenze").
-   Lo costruisce Fable (TODO blocco B). Ora mostra solo l'immagine di riserva, ferma.
+/* Sequenza video legata allo scroll (01-architettura.md, "Pipeline delle sequenze").
+   Il movimento e' in scripts/motion/sequence.js; qui solo il markup e l'immagine di riserva.
    Agganci:
-     [data-scroll-sequence]   nome della clip ("clip-1", "clip-2"): i fotogrammi saranno in
-                              /sequences/<clip>/{desktop,mobile}/0001.webp
-     data-frames-desktop / data-frames-mobile   numero di fotogrammi attesi (120 / 60)
-     data-fallback-slot       slot usato in modalita' di riserva (zoom lento + spostamento)
-     [data-sequence-canvas]   posto per il <canvas>
-     [data-sequence-fallback] contenitore dell'immagine di riserva */
+     [data-scroll-sequence]     nome della clip ("clip-1", "clip-2"): fotogrammi in
+                                /sequences/<clip>/{desktop,mobile}/0001.webp, con manifest.json accanto
+     data-sequence-available    presente se al momento della build il manifest c'e': lo script decide
+                                subito (senza aspettare la rete) se creare le sezioni fissate
+     data-frames-desktop / -mobile  solo informativi (letti dal manifest); lo script usa SEMPRE il manifest
+     data-fallback-slot         slot usato in modalita' di riserva (zoom lento + spostamento)
+     [data-sequence-canvas]     posto per il <canvas>
+     [data-sequence-fallback]   contenitore dell'immagine di riserva (resta nel DOM per l'accessibilita') */
+import fs from 'node:fs';
+import path from 'node:path';
 import Slot from './Slot.astro';
 interface Props { clip: string; fallback: string; class?: string; eager?: boolean }
 const { clip, fallback, class: cls, eager = false } = Astro.props;
+
+// La build parte dalla cartella sito/: il manifest sta in public/sequences/<clip>/
+let manifest: { desktop?: { frames?: number }; mobile?: { frames?: number } } | null = null;
+try {
+  const file = path.join(process.cwd(), 'public', 'sequences', clip, 'manifest.json');
+  if (fs.existsSync(file)) manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
+} catch { manifest = null; }
 ---
-<div class:list={['seq', cls]} data-scroll-sequence={clip} data-frames-desktop="120" data-frames-mobile="60" data-fallback-slot={fallback}>
-  <div class="seq__canvas" data-sequence-canvas></div>
+<div class:list={['seq', cls]} data-scroll-sequence={clip}
+  data-sequence-available={manifest ? '' : undefined}
+  data-frames-desktop={manifest?.desktop?.frames} data-frames-mobile={manifest?.mobile?.frames}
+  data-fallback-slot={fallback}>
+  <div class="seq__canvas" data-sequence-canvas aria-hidden="true"></div>
   <div class="seq__fallback" data-sequence-fallback>
     <Slot id={fallback} sizes="100vw" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} />
   </div>
